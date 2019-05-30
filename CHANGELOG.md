@@ -2,6 +2,14 @@
 
 ---
 
+## Version 0.1.4
+
+- Add 'load_weather_stations_raw_data' function
+- No test.
+- Data to be added.
+
+---
+
 ## Version 0.1.3
 
 - Add 'load_weather_station_raw_data' function with a test
