@@ -1,0 +1,5 @@
+^weathr\.Rproj$
+^\.Rproj\.user$
+^packrat/
+^\.Rprofile$
+^data-raw$
