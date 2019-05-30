@@ -9,6 +9,7 @@
 - Introduction
 - Installation
 - Key commands
+- Directory structure
 
 ---
 
@@ -36,5 +37,24 @@ Generate test coverage
 ```
 devtools::test_coverage()
 ```
+
+---
+
+## Directory structure
+
+Data flow
+
+`/data-raw`
+`/data-cleaning`
+`/data`
+
+Functions
+
+`/R`
+
+Documents
+
+`/docs`
+
 
 ---
