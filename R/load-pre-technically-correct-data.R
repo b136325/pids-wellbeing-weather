@@ -1,6 +1,6 @@
 library(stringr)
 
-destination_dir_default <- "data/weather/cleaning-stage-01-pre-technically-correct"
+destination_dir_default <- "data/weather/stage-01-pre-technically-correct"
 source_dir_default <- "data-raw/weather"
 
 #' append_eof
