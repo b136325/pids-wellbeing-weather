@@ -56,6 +56,14 @@ extract_data_below_static_header <- function(source_file_contents) {
   )
 }
 
+genrate_regex_weather_line <- function(num_repeat) {
+  paste0(
+    "([:space:]+[:graph:]+){",
+    num_repat,
+    "}[:space:]+NA\r"
+  )
+}
+
 transform_columns <- function(file_contents) {
   # The majority of the rows contains seven, rather
   # than eight columns. Consequently, replace the
@@ -64,7 +72,7 @@ transform_columns <- function(file_contents) {
   # been used to designate "provisional".
   file_contents <- str_replace_all(
     file_contents,
-    "\r",
+    "[:cntrl:]+",
     " NA\r"
   )
   # The 'second' row of column titles does not
@@ -100,7 +108,7 @@ transform_common_values <- function(file_contents) {
   # (after the static header) has been removed.
   file_contents <- str_replace(
     file_contents,
-    "^\r\n  ",
+    "^[:cntrl:]+[:space:]+",
     ""
   )
   # Replace the missing indicator with "NA"
@@ -118,9 +126,85 @@ transform_specific_files <- function(
   if (str_detect(file_path, WEATHER_STATION_CWMYSTWYTH)) {
     file_contents <- str_replace_all(
       file_contents,
-      "Site closed NA",
+      "Site closed",
+      "Site closed NA NA NA NA NA"
+    )
+  }
+  if (str_detect(file_path, WEATHER_STATION_LOWESTOFT)) {
+    file_contents <- str_replace_all(
+      file_contents,
+      "Change to Monckton Ave NA",
+      "change_to_monchton_ave NA"
+    )
+    file_contents <- str_replace_all(
+      file_contents,
+      " 35.8 NA",
+      " 35.8 NA NA"
+    )
+  }
+  if (str_detect(file_path, WEATHER_STATION_NAIRN)) {
+    file_contents <- str_replace_all(
+      file_contents,
+      "\\|+", 
+      ""
+    )  
+  }
+  if (str_detect(file_path, WEATHER_STATION_RINGWAY)) {
+    file_contents <- str_replace_all(
+      file_contents,
+      "Site Closed NA",
       "Site closed NA NA NA NA NA NA"
     )
   }
+  if (str_detect(file_path, WEATHER_STATION_SOUTHAMPTON)) {
+    file_contents <- str_replace_all(
+      file_contents,
+      "Site Closed NA",
+      "Site closed NA NA NA NA NA NA"
+    )
+  }
+  if (str_detect(file_path, WEATHER_STATION_WHITBY)) {
+    file_contents <- transform_whitby(file_contents)
+  }
   file_contents
 }
+
+transform_whitby <- function(file_contents) {
+  lines <- strsplit(
+    file_contents,
+    split = '\r'
+  )
+  num_lines <- (length(lines[[WHITBY_BASE_INDEX]]))
+  modified_lines <- list()
+  for (i in WHITBY_FIRST_LINE:num_lines) {
+    line <- lines[[WHITBY_BASE_INDEX]][i]
+    if (str_count(line, "[:space:]+[:graph:]+") == WHITBY_TARGET_COUNT) {
+      line <- str_replace_all(
+        line,
+        "NA$",
+        "NA NA"
+      )    
+    }
+    modified_lines[i] <- line
+  }
+  file_contents <- paste(
+    modified_lines,
+    sep = "\n"
+  )
+  file_contents <- str_replace_all(
+    file_contents,
+    "NA \\$ NA",
+    "NA$ NA"
+  )
+  file_contents <- str_replace_all(
+    file_contents,
+    "sun NA NA",
+    "sun NA"
+  )
+  str_replace_all(
+    file_contents,
+    "all data from Whitby NA",
+    " all_data_from_Whitby"
+  )
+}
+

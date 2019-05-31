@@ -74,11 +74,16 @@ WEATHER_COLUMN_NAMES <- c(
 )
 WEATHER_LAST_LINE_SEGMENT <- "^.+Campbell Stokes recorder."
 WEATHER_STATION_CWMYSTWYTH <- "cwmystwyth"
+WEATHER_STATION_LOWESTOFT <- "lowestoft"
+WEATHER_STATION_NAIRN <- "nairn"
+WEATHER_STATION_RINGWAY <- "ringway"
+WEATHER_STATION_SOUTHAMPTON <- "southampton"
+WEATHER_STATION_WHITBY <- "whitby"
 WEATHER_STATION_NAMES <- list(
   "lerwick",
   "wickairport",
   "stornoway",
-  "nairn",
+  WEATHER_STATION_NAIRN,
   "braemar",
   "tiree",
   "dunstaffnage",
@@ -88,15 +93,15 @@ WEATHER_STATION_NAMES <- list(
   "ballypatrick",
   "durham",
   "newtonrigg",
-  "whitby",
+  WEATHER_STATION_WHITBY,
   "armagh",
   "bradford",
   "sheffield",
-  "ringway",
+  WEATHER_STATION_RINGWAY,
   "waddington",
   "suttonbonington",
   "shawbury",
-  "lowestoft",
+  WEATHER_STATION_LOWESTOFT,
   WEATHER_STATION_CWMYSTWYTH,
   "cambridge",
   "aberporth",
@@ -107,7 +112,7 @@ WEATHER_STATION_NAMES <- list(
   "manston",
   "yeovilton",
   "chivenor",
-  "southampton",
+  WEATHER_STATION_SOUTHAMPTON,
   "eastbourne",
   "hurn",
   "camborne"
@@ -127,3 +132,7 @@ WELLBEING_SOURCE_FILE_NAME <- "spring2019"
 FAIL_MESSAGE_LABEL <- "FAIL "
 NO_NEW_LINE_MESSAGE_LABEL <- "NO NEW LINE"
 SUCCESS_MESSAGE_LABEL <- "SUCCESS "
+WHITBY_BASE_INDEX <- 1
+WHITBY_FIRST_LINE <- 1
+WHITBY_TARGET_COUNT <- 7
+
