@@ -1,7 +1,0 @@
-#' weather_station_names
-#' @export
-weather_station_names <- list("lerwick", "wickairport", "stornoway", "nairn", "braemar", "tiree", "dunstaffnage", 
-    "leuchars", "paisley", "eskdalemuir", "ballypatrick", "durham", "newtonrigg", "whitby", "armagh", 
-    "bradford", "sheffield", "ringway", "waddington", "suttonbonington", "shawbury", "lowestoft", "cwmystwyth", 
-    "cambridge", "aberporth", "rossonwye", "oxford", "cardiff", "heathrow", "manston", "yeovilton", "chivenor", 
-    "southampton", "eastbourne", "hurn", "camborne")
