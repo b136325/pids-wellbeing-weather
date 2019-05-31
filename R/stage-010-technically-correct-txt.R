@@ -1,25 +1,9 @@
 library(stringr)
-
-append_eof <- function(destination_file_path) {
-  destination_file_contents <- readChar(
-    destination_file_path,
-    file.info(destination_file_path)$size
-  )
-  if (!str_detect(destination_file_contents, "\n$")) {
-    print(
-      paste0(
-        "NO NEW LINE",
-        destination_file_path
-      )
-    )
-    write(
-      "\n",
-      file = destination_file_path,
-      append = TRUE
-    )
-  }
-}
-
+####################################################
+#                                                  #
+# EXPORTED FUNCTION                                #
+#                                                  #
+####################################################
 #' stage_010
 #' @export
 stage_010 <- function(
@@ -32,5 +16,29 @@ stage_010 <- function(
   )
   for (dest_file_path in dest_file_paths) {
     append_eof(dest_file_path)
+  }
+}
+####################################################
+#                                                  #
+# NON EXPORTED FUNCTIONS (A-Z)                     #
+#                                                  #
+####################################################
+append_eof <- function(destination_file_path) {
+  destination_file_contents <- readChar(
+    destination_file_path,
+    file.info(destination_file_path)$size
+  )
+  if (!str_detect(destination_file_contents, "\n$")) {
+    print(
+      paste0(
+        NO_NEW_LINE_MESSAGE_LABEL,
+        destination_file_path
+      )
+    )
+    write(
+      "\n",
+      file = destination_file_path,
+      append = TRUE
+    )
   }
 }

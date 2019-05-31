@@ -1,3 +1,8 @@
+####################################################
+#                                                  #
+# NON EXPORTED FUNCTIONS (A-Z)                     #
+#                                                  #
+####################################################
 copy_files <- function(
   source_dir,
   destination_dir,
@@ -43,6 +48,30 @@ derive_destination_file_path <- function(
     destination_file_path,
     source_extension,
     destination_extension
+  )
+}
+
+download_file <- function(dest, url) {
+  tryCatch({
+    if (file.exists(dest)) {
+      file.remove(dest)
+    }
+    if (!file.exists(dest)) {
+      file.create(dest)
+    }
+    utils::download.file(
+      url = url,
+      destfile = dest,
+      quiet = TRUE
+    )
+    TRUE
+  },
+  warning = function(cond) {
+    FALSE
+  },
+  error = function(cond) {
+    FALSE
+  }
   )
 }
 

@@ -1,125 +1,15 @@
 library(utils)
-
-met_office_url_suffix <- "data.txt"
-met_office_url_root <- paste0(
-  "http://www.metoffice.gov.uk/",
-  "pub/data/weather/uk/climate/",
-  "stationdata/"
-)
-ons_url_suffix <- ".xls"
-ons_url_root <- paste0(
-  "https://www.ons.gov.uk/",
-  "file?uri=/peoplepopulationandcommunity/",
-  "wellbeing/datasets/",
-  "measuringnationalwellbeingdomainsandmeasures/",
-  "may2019/domainsandmeasures"
-)
-
-weather_dir <- "data-raw/weather/"
-weather_path_extension <- ".txt"
-
-wellbeing_dir <- "data-raw/wellbeing/"
-wellbeing_extension <- ".xls"
-wellbeing_dest_file_name <- "2019-spring"
-wellbeing_source_file_name <- "spring2019"
-
-build_path_weather <- function(weather_station_name) {
-    paste0(
-        weather_dir,
-        weather_station_name,
-        weather_path_extension
-    )
-}
-
-build_path_wellbeing <- function(wellbeing_dest_file_name) {
-    paste0(
-        wellbeing_dir,
-        wellbeing_dest_file_name,
-        wellbeing_extension
-    )
-}
-
-build_url_weather <- function(weather_station_name) {
-  paste0(
-    met_office_url_root,
-    weather_station_name,
-    met_office_url_suffix
-  )
-}
-
-build_url_wellbeing <- function(wellbeing_source_file_name) {
-  paste0(
-    ons_url_root,
-    wellbeing_source_file_name,
-    ons_url_suffix
-  )
-}
-
-load_file <- function(dest, url) {
-  tryCatch({
-      if (file.exists(dest)) {
-        file.remove(dest)
-      }
-      if (!file.exists(dest)) {
-        file.create(dest)
-      }
-      utils::download.file(
-        url = url,
-        destfile = dest,
-        quiet = TRUE
-      )
-      TRUE
-    },
-    warning = function(cond) {
-      FALSE
-    },
-    error = function(cond) {
-      FALSE
-    }
-  )
-}
-
-load_raw_data_weather <- function(
-    weather_station_names_list = WEATHER_STATION_NAMES
-) {
-  for (weather_station_name in weather_station_names_list) {
-    dest <- build_path_weather(
-        weather_station_name
-    )
-    url <- build_url_weather(
-        weather_station_name
-    )
-    if (!load_file(dest, url)) {
-        print(paste0("FAIL ", weather_station_name))
-    } else {
-        print(paste0("SUCCESS ", weather_station_name))
-    }
-  }
-}
-
-load_raw_data_wellbeing <- function(
-  wellbeing_destination_name = wellbeing_dest_file_name,
-  wellbeing_source_name = wellbeing_source_file_name
-) {
-  dest <- build_path_wellbeing(
-      wellbeing_destination_name
-  )
-  url <- build_url_wellbeing(
-      wellbeing_source_name
-  )
-  if (!load_file(dest, url)) {
-      print(paste0("FAIL ", wellbeing_source_name))
-  } else {
-      print(paste0("SUCCESS ", wellbeing_source_name))
-  }
-}
-
+####################################################
+#                                                  #
+# EXPORTED FUNCTION                                #
+#                                                  #
+####################################################
 #' stage_000
 #' @export
 stage_000 <- function(
   weather_station_names_list = WEATHER_STATION_NAMES,
-  wellbeing_destination_name = wellbeing_dest_file_name,
-  wellbeing_source_name = wellbeing_source_file_name
+  wellbeing_destination_name = WELLBEING_DEST_FILE_NAME,
+  wellbeing_source_name = WELLBEING_SOURCE_FILE_NAME
 ) {
   load_raw_data_weather(
     weather_station_names_list
@@ -128,4 +18,95 @@ stage_000 <- function(
     wellbeing_destination_name,
     wellbeing_source_name
   )
+}
+####################################################
+#                                                  #
+# NON EXPORTED FUNCTIONS (A-Z)                     #
+#                                                  #
+####################################################
+build_path_weather <- function(weather_station_name) {
+  paste0(
+    DIR_RAW_DATA_WEATHER,
+    weather_station_name,
+    FILE_EXTENSION_TXT
+  )
+}
+
+build_path_wellbeing <- function(wellbeing_file_name) {
+  paste0(
+    DIR_RAW_DATA_WELLBEING,
+    wellbeing_file_name,
+    FILE_EXTENSION_XLS
+  )
+}
+
+build_url_weather <- function(weather_station_name) {
+  paste0(
+    MET_OFFICE_URL_ROOT,
+    weather_station_name,
+    MET_OFFICE_URL_SUFFIX
+  )
+}
+
+build_url_wellbeing <- function(wellbeing_source_file_name) {
+  paste0(
+    ONS_URL_ROOT,
+    wellbeing_source_file_name,
+    FILE_EXTENSION_XLS
+  )
+}
+
+load_raw_data_weather <- function(
+    weather_station_names_list = WEATHER_STATION_NAMES
+) {
+  for (weather_station_name in weather_station_names_list) {
+    dest <- build_path_weather(
+      weather_station_name
+    )
+    url <- build_url_weather(
+      weather_station_name
+    )
+    if (!download_file(dest, url)) {
+      print(
+        paste0(
+          FAIL_MESSAGE_LABEL,
+          weather_station_name
+        )
+      )
+    } else {
+      print(
+        paste0(
+          SUCCESS_MESSAGE_LABEL,
+          weather_station_name
+        )
+      )
+    }
+  }
+}
+
+load_raw_data_wellbeing <- function(
+  wellbeing_destination_name = WELLBEING_DEST_FILE_NAME,
+  wellbeing_source_name = WELLBEING_SOURCE_FILE_NAME
+) {
+  dest <- build_path_wellbeing(
+    wellbeing_destination_name
+  )
+  url <- build_url_wellbeing(
+    wellbeing_source_name
+  )
+  if (!download_file(dest, url)) {
+    print(
+      paste0(
+        FAIL_MESSAGE_LABEL,
+        wellbeing_source_name
+      )
+    )
+  } else {
+    print(
+      paste0(
+        SUCCESS_MESSAGE_LABEL,
+        wellbeing_source_name
+      )
+    )
+  }
 }

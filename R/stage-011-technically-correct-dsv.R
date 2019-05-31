@@ -1,8 +1,56 @@
 library(stringr)
-
+####################################################
+#                                                  #
+# EXPORTED FUNCTION                                #
+#                                                  #
+####################################################
+#' stage_011
+#' @export
+stage_011 <- function(
+  destination_dir = DIR_TECHNICALLY_CORRECT_WEATHER_DSV,
+  source_dir = DIR_TECHNICALLY_CORRECT_WEATHER_TXT
+) {
+  source_file_paths <- files_per_directory(
+    source_dir
+  )
+  for (source_file_path in source_file_paths) {
+    source_file_contents <- retrieve_txt_file_contents(
+      source_file_path
+    )
+    destination_file_contents <- extract_data_below_static_header(
+      source_file_contents
+    )
+    destination_file_contents <- transform_common_values(
+      destination_file_contents
+    )
+    destination_file_contents <- transform_columns(
+      destination_file_contents
+    )
+    destination_file_contents <- transform_specific_files(
+      destination_file_contents,
+      source_file_path
+    )
+    destination_file_path <- derive_destination_file_path(
+      destination_dir,
+      FILE_EXTENSION_DSV,
+      source_dir,
+      FILE_EXTENSION_TXT,
+      source_file_path
+    )
+    save_file(
+      destination_file_contents,
+      destination_file_path
+    )
+  }
+}
+####################################################
+#                                                  #
+# NON EXPORTED FUNCTIONS (A-Z)                     #
+#                                                  #
+####################################################
 extract_data_below_static_header <- function(source_file_contents) {
   sub(
-    "^.+Campbell Stokes recorder.",
+    WEATHER_LAST_LINE_SEGMENT,
     "",
     source_file_contents
   )
@@ -75,44 +123,4 @@ transform_specific_files <- function(
     )
   }
   file_contents
-}
-
-#' stage_011
-#' @export
-stage_011 <- function(
-  destination_dir = DIR_TECHNICALLY_CORRECT_WEATHER_DSV,
-  source_dir = DIR_TECHNICALLY_CORRECT_WEATHER_TXT
-) {
-  source_file_paths <- files_per_directory(
-    source_dir
-  )
-  for (source_file_path in source_file_paths) {
-    source_file_contents <- retrieve_txt_file_contents(
-      source_file_path
-    )
-    destination_file_contents <- extract_data_below_static_header(
-      source_file_contents
-    )
-    destination_file_contents <- transform_common_values(
-      destination_file_contents
-    )
-    destination_file_contents <- transform_columns(
-      destination_file_contents
-    )
-    destination_file_contents <- transform_specific_files(
-      destination_file_contents,
-      source_file_path
-    )
-    destination_file_path <- derive_destination_file_path(
-      destination_dir,
-      FILE_EXTENSION_DSV,
-      source_dir,
-      FILE_EXTENSION_TXT,
-      source_file_path
-    )
-    save_file(
-      destination_file_contents,
-      destination_file_path
-    )
-  }
 }

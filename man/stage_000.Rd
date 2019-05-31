@@ -5,8 +5,8 @@
 \title{stage_000}
 \usage{
 stage_000(weather_station_names_list = WEATHER_STATION_NAMES,
-  wellbeing_destination_name = wellbeing_dest_file_name,
-  wellbeing_source_name = wellbeing_source_file_name)
+  wellbeing_destination_name = WELLBEING_DEST_FILE_NAME,
+  wellbeing_source_name = WELLBEING_SOURCE_FILE_NAME)
 }
 \description{
 stage_000
