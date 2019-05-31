@@ -1,8 +1,5 @@
 library(stringr)
 
-destination_dir_default <- "data/weather/stage-01-pre-technically-correct"
-source_dir_default <- "data-raw/weather"
-
 #' append_eof
 #' @export
 append_eof <- function(destination_file_path) {
@@ -25,11 +22,11 @@ append_eof <- function(destination_file_path) {
   }
 }
 
-#' copy_raw_data_weather
+#' copy_files
 #' @export
-copy_raw_data_weather <- function(
-  destination_dir = destination_dir_default,
-  srource_dir = source_dir_default
+copy_files <- function(
+  destination_dir,
+  srource_dir
 ) {
   source_file_paths <- list.files(
     full.names = TRUE,
@@ -41,7 +38,12 @@ copy_raw_data_weather <- function(
     destination_dir
   )
   if (length(source_file_paths) != length(destination_file_paths)) {
-    stop("There are not the same number of 'source' and 'destination' file paths.")
+    stop(
+      paste0(
+        "There are not the same number",
+        "of 'source' and 'destination' file paths."
+      )
+    )
   }
   file.copy(
     source_file_paths,
@@ -51,13 +53,13 @@ copy_raw_data_weather <- function(
   destination_file_paths
 }
 
-#' load_pre_technically_correct_data
+#' load_technically_correct_txt
 #' @export
-load_pre_technically_correct_data<- function(
-  destination_dir = destination_dir_default,
-  source_dir = source_dir_default
+load_technically_correct_txt <- function(
+  destination_dir = DIR_TECHNICALLY_CORRECT_WEATHER_TXT,
+  source_dir = DIR_RAW_DATA_WEATHER
 ) {
-  dest_file_paths <- copy_raw_data_weather(
+  dest_file_paths <- copy_files(
     destination_dir,
     source_dir
   )

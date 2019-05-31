@@ -17,7 +17,7 @@ ons_url_suffix <- ".xls"
 ons_url_root <- paste0(
   "https://www.ons.gov.uk/",
   "file?uri=/peoplepopulationandcommunity/",
-  "wellbeing/datasets/", 
+  "wellbeing/datasets/",
   "measuringnationalwellbeingdomainsandmeasures/",
   "may2019/domainsandmeasures"
 )
@@ -78,20 +78,26 @@ build_url_wellbeing <- function(wellbeing_source_file_name) {
 
 #' @describeIn load_file
 load_file <- function(dest, url) {
-    tryCatch({
-        if (file.exists(dest)) {
-            file.remove(dest)
-        }
-        if (!file.exists(dest)) {
-            file.create(dest)
-        }
-        utils::download.file(url = url, destfile = dest, quiet = TRUE)
-        TRUE
+  tryCatch(
+    {
+      if (file.exists(dest)) {
+        file.remove(dest)
+      }
+      if (!file.exists(dest)) {
+        file.create(dest)
+      }
+      utils::download.file(
+        url = url,
+        destfile = dest,
+        quiet = TRUE
+      )
+      TRUE
     }, warning = function(cond) {
-        FALSE
+      FALSE
     }, error = function(cond) {
-        FALSE
-    })
+      FALSE
+    }
+  )
 }
 
 #' load_raw_data_weather
@@ -117,7 +123,7 @@ load_raw_data_weather <- function(
 #' load_raw_data_wellbeing
 #' @export
 load_raw_data_wellbeing <- function(
-  wellbeing_destination_name = wellbeing_dest_file_name, 
+  wellbeing_destination_name = wellbeing_dest_file_name,
   wellbeing_source_name = wellbeing_source_file_name
 ) {
     dest <- build_path_wellbeing(
@@ -137,7 +143,7 @@ load_raw_data_wellbeing <- function(
 #' @export
 load_raw_data <- function(
     weather_station_names_list = weather_station_names,
-    wellbeing_destination_name = wellbeing_dest_file_name, 
+    wellbeing_destination_name = wellbeing_dest_file_name,
     wellbeing_source_name = wellbeing_source_file_name
 ) {
     load_raw_data_weather(
