@@ -8,14 +8,16 @@ library(readr)
 #' @export
 stage_012 <- function(
   source_dir = DIR_TECHNICALLY_CORRECT_WEATHER_DSV,
-  destination_dir = DIR_TECHNICALLY_CORRECT_WEATHER_DATAFRAME
+  destination_dir = DIR_TECHNICALLY_CORRECT_WEATHER_DATAFRAME,
+  col_names = WEATHER_COLUMN_NAMES
 ) {
   source_file_paths <- files_per_directory(
     source_dir
   )
   for (source_file_path in source_file_paths) {
     destination_data_frame <- generate_data_frame(
-      source_file_path
+      source_file_path,
+      col_names
     )
     destination_data_frame <- remove_existing_header_rows(
       destination_data_frame
@@ -40,7 +42,7 @@ stage_012 <- function(
 ####################################################
 generate_data_frame <- function(
   source_file_path,
-  col_names = WEATHER_COLUMN_NAMES
+  col_names
 ) {
   read_delim(
     source_file_path,

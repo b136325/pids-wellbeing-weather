@@ -57,7 +57,7 @@ build_url_wellbeing <- function(wellbeing_source_file_name) {
 }
 
 load_raw_data_weather <- function(
-    weather_station_names_list = WEATHER_STATION_NAMES
+    weather_station_names_list
 ) {
   for (weather_station_name in weather_station_names_list) {
     dest <- build_path_weather(
@@ -85,8 +85,8 @@ load_raw_data_weather <- function(
 }
 
 load_raw_data_wellbeing <- function(
-  wellbeing_destination_name = WELLBEING_DEST_FILE_NAME,
-  wellbeing_source_name = WELLBEING_SOURCE_FILE_NAME
+  wellbeing_destination_name,
+  wellbeing_source_name
 ) {
   dest <- build_path_wellbeing(
     wellbeing_destination_name
