@@ -31,7 +31,7 @@ DIR_TECHNICALLY_CORRECT_WEATHER_DATAFRAME <- paste0(
 #                                                  #
 ####################################################
 FILE_EXTENSION_DSV <- ".dsv"
-FILE_EXTENSION_RDA <- "Rda"
+FILE_EXTENSION_RDA <- ".Rda"
 FILE_EXTENSION_TXT <- ".txt"
 FILE_EXTENSION_XLS <- ".xls"
 ####################################################
