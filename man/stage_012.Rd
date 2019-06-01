@@ -6,7 +6,7 @@
 \usage{
 stage_012(source_dir = DIR_TECHNICALLY_CORRECT_WEATHER_DSV,
   destination_dir = DIR_TECHNICALLY_CORRECT_WEATHER_DATAFRAME,
-  col_names = WEATHER_COLUMN_NAMES)
+  col_names = WEATHER_COLUMN_NAMES, force = TRUE)
 }
 \description{
 stage_012

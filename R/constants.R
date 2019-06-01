@@ -25,13 +25,17 @@ DIR_TECHNICALLY_CORRECT_WEATHER_DATAFRAME <- paste0(
   DIR_DATA_WEATHER,
   "stage-012-technically-correct-dataframe"
 )
+DIR_TECHNICALLY_CORRECT_WEATHER_COMPLETE <- paste0(
+  DIR_DATA_WEATHER,
+  "stage-013-technically-correct-complete"
+)
 ####################################################
 #                                                  #
 # 2. FILE EXTENSION CONSTANTS                      #
 #                                                  #
 ####################################################
 FILE_EXTENSION_DSV <- ".dsv"
-FILE_EXTENSION_RDA <- ".Rda"
+FILE_EXTENSION_RDS <- ".Rds"
 FILE_EXTENSION_TXT <- ".txt"
 FILE_EXTENSION_XLS <- ".xls"
 ####################################################

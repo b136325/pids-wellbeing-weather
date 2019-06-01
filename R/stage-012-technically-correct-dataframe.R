@@ -9,7 +9,8 @@ library(readr)
 stage_012 <- function(
   source_dir = DIR_TECHNICALLY_CORRECT_WEATHER_DSV,
   destination_dir = DIR_TECHNICALLY_CORRECT_WEATHER_DATAFRAME,
-  col_names = WEATHER_COLUMN_NAMES
+  col_names = WEATHER_COLUMN_NAMES,
+  force = TRUE
 ) {
   source_file_paths <- files_per_directory(
     source_dir
@@ -24,12 +25,16 @@ stage_012 <- function(
     )
     destination_file_path <- derive_destination_file_path(
       destination_dir,
-      FILE_EXTENSION_RDA,
+      FILE_EXTENSION_RDS,
       source_dir,
       FILE_EXTENSION_DSV,
       source_file_path
     )
-    save(
+    if (force & file.exists(destination_file_path)) {
+      file.remove(destination_file_path)
+    }
+    file.create(destination_file_path)
+    saveRDS(
       destination_data_frame,
       file = destination_file_path
     )
