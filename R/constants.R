@@ -83,6 +83,17 @@ WEATHER_COLUMN_NAMES <- c(
   "hours_sun",
   "provisional"
 )
+WEATHER_EMPTY_DATA_FRAME <- data.frame(
+  `observation_year` = as.integer(integer()),
+  `observation_month` = as.integer(integer()),
+  `temp_max_degrees_c` = as.double(double()),
+  `temp_min_degrees_c` = as.double(double()),
+  `af_days` = as.integer(integer()),
+  `rain_mm` = as.double(double()),
+  `hours_sun` = as.double(double()),
+  `provisional` = as.character(character()),
+  `weather_station_name` = as.character(character())
+)
 WEATHER_LAST_LINE_SEGMENT <- "^.+Campbell Stokes recorder."
 WEATHER_STATION_CWMYSTWYTH <- "cwmystwyth"
 WEATHER_STATION_LOWESTOFT <- "lowestoft"

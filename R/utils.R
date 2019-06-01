@@ -75,6 +75,7 @@ download_file <- function(dest, url) {
   }
   )
 }
+
 extract_weather_station_name <- function(
   dir,
   file_path,
@@ -96,11 +97,24 @@ extract_weather_station_name <- function(
     ""
   )
 }
+
 files_per_directory <- function(dir) {
   list.files(
     full.names = TRUE,
     path = dir
   )
+}
+
+join_data_frames <- function(source_file_paths) {
+  data_frame_destination <- WEATHER_EMPTY_DATA_FRAME
+  for (source_file_path in source_file_paths) {
+    data_frame <- readRDS(source_file_path)
+    data_frame_destination <- rbind(
+      data_frame_destination,
+      data_frame
+    )
+  }
+  data_frame_destination
 }
 
 retrieve_txt_file_contents <- function(txt_file_path) {
@@ -117,6 +131,17 @@ save_file <- function(contents, path, force = TRUE) {
   file.create(path)
   write(
     contents,
+    file = path
+  )
+}
+
+save_rds_force <- function(data_frame, path, force = TRUE) {
+  if (force & file.exists(path)) {
+    file.remove(path)
+  }
+  file.create(path)
+  saveRDS(
+    data_frame,
     file = path
   )
 }

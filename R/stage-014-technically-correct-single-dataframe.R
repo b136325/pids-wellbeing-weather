@@ -1,4 +1,5 @@
 library(readr)
+library(tidyr)
 ####################################################
 #                                                  #
 # EXPORTED FUNCTION                                #
@@ -11,61 +12,64 @@ stage_014 <- function(
   destination_dir = DIR_TECHNICALLY_CORRECT_ALL,
   force = TRUE
 ) {
-  source_file_paths <- files_per_directory(
-    source_dir
+  source_file_paths <- files_per_directory(source_dir)
+  data_frame_with_nas <- join_data_frames(source_file_paths)
+  save_data_frame_with_nas(
+    data_frame_with_nas,
+    destination_dir,
+    force
   )
-  data_frame_anchor <- data.frame(
-    `observation_year` = as.integer(integer()),
-    `observation_month` = as.integer(integer()),
-    `temp_max_degrees_c` = as.double(double()),
-    `temp_min_degrees_c` = as.double(double()),
-    `af_days` = as.integer(integer()),
-    `rain_mm` = as.double(double()),
-    `hours_sun` = as.double(double()),
-    `provisional` = as.character(character()),
-    `weather_station_name` = as.character(character())
+  save_data_frame_without_nas(
+    data_frame_with_nas,
+    destination_dir,
+    force
   )
-  for (source_file_path in source_file_paths) {
-    data_frame <- readRDS(source_file_path)
-    data_frame_anchor <- rbind(
-      data_frame_anchor,
-      data_frame
-    )
-  }
-  data_frame_simplified <- data.frame(
-    `weather_station_name` = data_frame_anchor$weather_station_name,
-    `observation_year` = data_frame_anchor$observation_year,
-    `observation_month` = data_frame_anchor$observation_month,
-    `temp_max_degrees_c` = data_frame_anchor$temp_max_degrees_c,
-    `temp_min_degrees_c` = data_frame_anchor$temp_min_degrees_c,
-    `average_temp_degrees_c` = data_frame_anchor$average_temp_degrees_c
-  )
+}
+####################################################
+#                                                  #
+# NOT EXPORTED FUNCTIONS                           #
+#                                                  #
+####################################################
+save_data_frame_with_nas <- function(
+  data_frame_with_nas,
+  destination_dir,
+  force
+) {
   destination_file_path <- paste0(
     destination_dir,
     "/",
     WEATHER_ALL_DATA_FRAMES
   )
-  if (force & file.exists(destination_file_path)) {
-    file.remove(destination_file_path)
-  }
-  file.create(destination_file_path)
-  saveRDS(
-    data_frame_simplified,
-    file = destination_file_path
+  save_rds_force(
+    data_frame_with_nas,
+    destination_file_path,
+    force
   )
+}
 
+save_data_frame_without_nas <- function(
+  data_frame_with_nas,
+  destination_dir,
+  force
+) {
+  data_frame_without_nas <- data_frame_with_nas %>% drop_na(
+    c(
+      `temp_max_degrees_c`,
+      `temp_min_degrees_c`,
+      `temp_min_degrees_c`,
+      `average_temp_degrees_c`,
+      `rain_mm`,
+      `hours_sun`
+    )
+  )
   destination_file_path <- paste0(
     destination_dir,
     "/",
     WEATHER_ALL_DATA_FRAMES_NO_NAS
   )
-  data_frame_simplified <- na.omit( data_frame_simplified)
-  if (force & file.exists(destination_file_path)) {
-    file.remove(destination_file_path)
-  }
-  file.create(destination_file_path)
-  saveRDS(
-    data_frame_simplified,
-    file = destination_file_path
+  save_rds_force(
+    data_frame_without_nas,
+    destination_file_path,
+    force
   )
 }
