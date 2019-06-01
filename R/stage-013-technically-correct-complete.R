@@ -16,6 +16,30 @@ stage_013 <- function(
   )
   for (source_file_path in source_file_paths) {
     destination_data_frame <- readRDS(source_file_path)
+    destination_data_frame$observation_year <- as.integer(
+      destination_data_frame$observation_year
+    )
+    destination_data_frame$observation_month <- as.integer(
+      destination_data_frame$observation_month
+    )
+    destination_data_frame$temp_max_degrees_c <- as.double(
+      destination_data_frame$temp_max_degrees_c
+    )
+    destination_data_frame$temp_min_degrees_c <- as.double(
+      destination_data_frame$temp_min_degrees_c
+    )
+    destination_data_frame$af_days <- as.integer(
+      destination_data_frame$af_days
+    )
+    destination_data_frame$rain_mm <- as.double(
+      destination_data_frame$rain_mm
+    )
+    destination_data_frame$hours_sun <- as.double(
+      destination_data_frame$hours_sun
+    )
+    destination_data_frame$provisional <- as.character(
+      destination_data_frame$provisional
+    )
     destination_file_path <- derive_destination_file_path(
       destination_dir,
       FILE_EXTENSION_RDS,
