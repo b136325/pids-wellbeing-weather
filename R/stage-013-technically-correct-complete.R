@@ -16,6 +16,14 @@ stage_013 <- function(
   )
   for (source_file_path in source_file_paths) {
     destination_data_frame <- readRDS(source_file_path)
+    destination_data_frame$weather_station_name <- extract_weather_station_name(
+      source_dir,
+      source_file_path,
+      FILE_EXTENSION_RDS
+    )
+    destination_data_frame$weather_station_name <- as.character(
+      destination_data_frame$weather_station_name
+    )
     destination_data_frame$observation_year <- as.integer(
       destination_data_frame$observation_year
     )

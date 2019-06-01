@@ -145,9 +145,8 @@ transform_specific_files <- function(
   if (str_detect(file_path, WEATHER_STATION_NAIRN)) {
     file_contents <- str_replace_all(
       file_contents,
-      "\\|+", 
-      ""
-    )  
+      "\\|+",
+      "")
   }
   if (str_detect(file_path, WEATHER_STATION_RINGWAY)) {
     file_contents <- str_replace_all(
@@ -172,7 +171,7 @@ transform_specific_files <- function(
 transform_whitby <- function(file_contents) {
   lines <- strsplit(
     file_contents,
-    split = '\r'
+    split = "\r"
   )
   num_lines <- (length(lines[[WHITBY_BASE_INDEX]]))
   modified_lines <- list()
@@ -182,8 +181,7 @@ transform_whitby <- function(file_contents) {
       line <- str_replace_all(
         line,
         "NA$",
-        "NA NA"
-      )    
+        "NA NA")
     }
     modified_lines[i] <- line
   }
@@ -207,4 +205,3 @@ transform_whitby <- function(file_contents) {
     " all_data_from_Whitby"
   )
 }
-

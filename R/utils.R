@@ -75,7 +75,27 @@ download_file <- function(dest, url) {
   }
   )
 }
-
+extract_weather_station_name <- function(
+  dir,
+  file_path,
+  file_extension
+) {
+  weather_station_name <- str_replace_all(
+    file_path,
+    dir,
+    ""
+  )
+  weather_station_name <- str_replace_all(
+    weather_station_name,
+    file_extension,
+    ""
+  )
+  str_replace_all(
+    weather_station_name,
+    "/",
+    ""
+  )
+}
 files_per_directory <- function(dir) {
   list.files(
     full.names = TRUE,
