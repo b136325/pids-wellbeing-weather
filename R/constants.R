@@ -166,6 +166,7 @@ WHITBY_TARGET_COUNT <- 7
 ####################################################
 LATITUDES <- list()
 LATITUDES[["lerwick"]] <- 60.139
+LATITUDES[["wickairport"]] <- 58.454
 LATITUDES[["stornoway"]] <- 58.214
 LATITUDES[[WEATHER_STATION_NAIRN]] <- 57.593
 LATITUDES[["braemar"]] <- 57.006
@@ -207,6 +208,7 @@ LATITUDES[["camborne"]] <- 50.218
 ####################################################
 LONGITUDES <- list()
 LONGITUDES[["lerwick"]] <- -1.183
+LATITUDES[["wickairport"]] <- -3.088
 LONGITUDES[["stornoway"]] <- -6.318
 LONGITUDES[[WEATHER_STATION_NAIRN]] <- -3.821
 LONGITUDES[["braemar"]] <- -3.396

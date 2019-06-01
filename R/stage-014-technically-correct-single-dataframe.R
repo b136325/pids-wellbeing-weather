@@ -58,8 +58,12 @@ save_data_frame_without_nas <- function(
       `temp_min_degrees_c`,
       `average_temp_degrees_c`,
       `rain_mm`,
-      `hours_sun`
+      `hours_sun`,
+      `weather_station_name`
     )
+  )
+  data_frame_without_nas$weather_station_name <- as.factor(
+    data_frame_without_nas$weather_station_name
   )
   destination_file_path <- paste0(
     destination_dir,

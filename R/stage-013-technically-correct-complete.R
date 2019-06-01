@@ -22,11 +22,15 @@ stage_013 <- function(
       FILE_EXTENSION_RDS
     )
     data_frame$weather_station_name <- weather_station_name
-    data_frame$latitude <- derive_latitude(
-      weather_station_name
+    data_frame$latitude <- as.character(
+      derive_latitude(
+        weather_station_name
+      )
     )
-    data_frame$longitude <- derive_longitude(
-      weather_station_name
+    data_frame$longitude <- as.character(
+      derive_longitude(
+        weather_station_name
+      )
     )
     data_frame <- coerce_column_types(data_frame)
     data_frame$average_temp_degrees_c <- rowMeans(
@@ -40,6 +44,12 @@ stage_013 <- function(
     )
     data_frame$average_temp_degrees_c <- as.double(
       data_frame$average_temp_degrees_c
+    )
+    data_frame$latitude <- as.double(
+      data_frame$latitude
+    )
+    data_frame$longitude <- as.double(
+      data_frame$longitude
     )
     file_path <- derive_destination_file_path(
       destination_dir,
