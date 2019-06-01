@@ -1,3 +1,4 @@
+library(stringr)
 ####################################################
 #                                                  #
 # NON EXPORTED FUNCTIONS (A-Z)                     #
