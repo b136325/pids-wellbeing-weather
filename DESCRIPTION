@@ -1,6 +1,6 @@
 Package: weathr
 Title: What the Package Does (one line, title case)
-Version: 0.3.2
+Version: 0.3.3
 Description: What the package does (one paragraph).
 Depends: R (>= 3.5.1)
 License: What license is it under?

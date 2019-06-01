@@ -52,6 +52,18 @@ derive_destination_file_path <- function(
   )
 }
 
+derive_latitude <- function(
+  weather_station_name
+) {
+  LATITUDES[weather_station_name]
+}
+
+derive_longitude <- function(
+  weather_station_name
+) {
+  LONGITUDES[weather_station_name]
+}
+
 download_file <- function(dest, url) {
   tryCatch({
     if (file.exists(dest)) {

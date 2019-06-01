@@ -92,7 +92,9 @@ WEATHER_EMPTY_DATA_FRAME <- data.frame(
   `rain_mm` = as.double(double()),
   `hours_sun` = as.double(double()),
   `provisional` = as.character(character()),
-  `weather_station_name` = as.character(character())
+  `weather_station_name` = as.character(character()),
+  `latitude` = as.double(double()),
+  `longitude` = as.double(double())
 )
 WEATHER_LAST_LINE_SEGMENT <- "^.+Campbell Stokes recorder."
 WEATHER_STATION_CWMYSTWYTH <- "cwmystwyth"
@@ -157,3 +159,85 @@ SUCCESS_MESSAGE_LABEL <- "SUCCESS "
 WHITBY_BASE_INDEX <- 1
 WHITBY_FIRST_LINE <- 1
 WHITBY_TARGET_COUNT <- 7
+####################################################
+#                                                  #
+# 8. LATITUDES                                     #
+#                                                  #
+####################################################
+LATITUDES <- list()
+LATITUDES[["lerwick"]] <- 60.139
+LATITUDES[["stornoway"]] <- 58.214
+LATITUDES[[WEATHER_STATION_NAIRN]] <- 57.593
+LATITUDES[["braemar"]] <- 57.006
+LATITUDES[["tiree"]] <- 56.500
+LATITUDES[["dunstaffnage"]] <- 56.451
+LATITUDES[["leuchars"]] <- 56.377
+LATITUDES[["paisley"]] <- 55.846
+LATITUDES[["eskdalemuir"]] <- 55.311
+LATITUDES[["ballypatrick"]] <- 55.181
+LATITUDES[["durham"]] <- 54.768
+LATITUDES[["newtonrigg"]] <- 54.670
+LATITUDES[[WEATHER_STATION_WHITBY]] <- 54.481
+LATITUDES[["armagh"]] <- 54.352
+LATITUDES[["bradford"]] <- 53.813
+LATITUDES[["sheffield"]] <- 53.381
+LATITUDES[[WEATHER_STATION_RINGWAY]] <- 53.356
+LATITUDES[["waddington"]] <- 53.175
+LATITUDES[["suttonbonington"]] <- 52.833
+LATITUDES[["shawbury"]] <- 52.794
+LATITUDES[[WEATHER_STATION_LOWESTOFT]] <- 52.483
+LATITUDES[[WEATHER_STATION_CWMYSTWYTH]] <- 52.358
+LATITUDES[["cambridge"]] <- 52.245
+LATITUDES[["aberporth"]] <- 52.139
+LATITUDES[["rossonwye"]] <- 51.911
+LATITUDES[["oxford"]] <- 51.761
+LATITUDES[["cardiff"]] <- 51.488
+LATITUDES[["heathrow"]] <- 51.479
+LATITUDES[["manston"]] <- 51.346
+LATITUDES[["yeovilton"]] <- 51.006
+LATITUDES[["chivenor"]] <- 51.089
+LATITUDES[[WEATHER_STATION_SOUTHAMPTON]] <- 50.898
+LATITUDES[["eastbourne"]] <- 50.762
+LATITUDES[["hurn"]] <- 50.779
+LATITUDES[["camborne"]] <- 50.218
+####################################################
+#                                                  #
+# 8. LATITUDES                                     #
+#                                                  #
+####################################################
+LONGITUDES <- list()
+LONGITUDES[["lerwick"]] <- -1.183
+LONGITUDES[["stornoway"]] <- -6.318
+LONGITUDES[[WEATHER_STATION_NAIRN]] <- -3.821
+LONGITUDES[["braemar"]] <- -3.396
+LONGITUDES[["tiree"]] <- -6.880
+LONGITUDES[["dunstaffnage"]] <- -5.439
+LONGITUDES[["leuchars"]] <- -2.861
+LONGITUDES[["paisley"]] <- -4.430
+LONGITUDES[["eskdalemuir"]] <- -3.206
+LONGITUDES[["ballypatrick"]] <- -6.153
+LONGITUDES[["durham"]] <- -1.585
+LONGITUDES[["newtonrigg"]] <- -2.786
+LONGITUDES[[WEATHER_STATION_WHITBY]] <- -0.624
+LONGITUDES[["armagh"]] <- -6.649
+LONGITUDES[["bradford"]] <- -1.772
+LONGITUDES[["sheffield"]] <- -1.490
+LONGITUDES[[WEATHER_STATION_RINGWAY]] <- -2.279
+LONGITUDES[["waddington"]] <- -0.522
+LONGITUDES[["suttonbonington"]] <- -1.250
+LONGITUDES[["shawbury"]] <- -2.663
+LONGITUDES[[WEATHER_STATION_LOWESTOFT]] <- 1.727
+LONGITUDES[[WEATHER_STATION_CWMYSTWYTH]] <- -3.802
+LONGITUDES[["cambridge"]] <- 0.102
+LONGITUDES[["aberporth"]] <- -4.570
+LONGITUDES[["rossonwye"]] <- -2.584
+LONGITUDES[["oxford"]] <- -1.262
+LONGITUDES[["cardiff"]] <- -3.187
+LONGITUDES[["heathrow"]] <- -0.449
+LONGITUDES[["manston"]] <- 1.337
+LONGITUDES[["yeovilton"]] <- -2.641
+LONGITUDES[["chivenor"]] <- -4.147
+LONGITUDES[[WEATHER_STATION_SOUTHAMPTON]] <- -1.408
+LONGITUDES[["eastbourne"]] <- 0.285
+LONGITUDES[["hurn"]] <- -1.835
+LONGITUDES[["camborne"]] <- -5.327

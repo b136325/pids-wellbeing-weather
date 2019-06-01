@@ -56,7 +56,6 @@ save_data_frame_without_nas <- function(
     c(
       `temp_max_degrees_c`,
       `temp_min_degrees_c`,
-      `temp_min_degrees_c`,
       `average_temp_degrees_c`,
       `rain_mm`,
       `hours_sun`
