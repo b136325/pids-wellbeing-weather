@@ -48,6 +48,18 @@ stage_013 <- function(
     destination_data_frame$provisional <- as.character(
       destination_data_frame$provisional
     )
+    destination_data_frame$average_temp_degrees_c <- rowMeans(
+      destination_data_frame[
+        c(
+          'temp_max_degrees_c',
+          'temp_min_degrees_c'
+        )
+        ], 
+      na.rm = TRUE
+    )
+    destination_data_frame$average_temp_degrees_c <- as.double(
+      destination_data_frame$average_temp_degrees_c
+    )
     destination_file_path <- derive_destination_file_path(
       destination_dir,
       FILE_EXTENSION_RDS,
@@ -65,8 +77,3 @@ stage_013 <- function(
     )
   }
 }
-####################################################
-#                                                  #
-# NON EXPORTED FUNCTIONS (A-Z)                     #
-#                                                  #
-####################################################

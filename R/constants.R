@@ -29,6 +29,11 @@ DIR_TECHNICALLY_CORRECT_WEATHER_COMPLETE <- paste0(
   DIR_DATA_WEATHER,
   "stage-013-technically-correct-complete"
 )
+DIR_TECHNICALLY_CORRECT_ALL <- paste0(
+  DIR_DATA_WEATHER,
+  "stage-014-",
+  "technically-correct-single-dataframe"
+)
 ####################################################
 #                                                  #
 # 2. FILE EXTENSION CONSTANTS                      #
@@ -66,6 +71,7 @@ ONS_URL_ROOT <- paste0(
 # 5. WEATHER CONSTANTS                             #
 #                                                  #
 ####################################################
+WEATHER_ALL_DATA_FRAMES <- "all_data_frames.Rds"
 WEATHER_COLUMN_NAMES <- c(
   "observation_year",
   "observation_month",
