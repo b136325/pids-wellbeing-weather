@@ -1,4 +1,5 @@
 library(dplyr)
+library(ggplot2)
 library(scales)
 ####################################################
 #                                                  #
@@ -8,15 +9,39 @@ library(scales)
 #' question_1
 #' @export
 question_1 <- function() {
-  data_frame <- readRDS(
-    generate_data_frame_path()
-  )
+  data_frame <- load_data_frame()
   perform_k_means(
     data_frame, 
     k_value = 2, 
     seed = 20,
     month = 1
   )
+}
+#' question_1_charts
+#' @export
+question_1_charts <- function() {
+  data_frame <- load_data_frame()
+  data_frame <- rescale_data_frame(data_frame)
+  heathrow <- data_frame %>% filter(
+    weather_station_name == "heathrow"
+  )
+  ggplot(
+    heathrow,
+    aes(
+      x = as.factor(observation_month),
+      y = temp_max_degrees_c,
+    )
+  ) + geom_boxplot()
+  nairn <- data_frame %>% filter(
+    weather_station_name == "nairn"
+  )
+  ggplot(
+    nairn,
+    aes(
+      x = as.factor(observation_month),
+      y = temp_max_degrees_c,
+    )
+  ) + geom_boxplot()
 }
 ####################################################
 #                                                  #
@@ -55,6 +80,12 @@ group_by_month_and_weather_station_name <- function(data_frame) {
     latitude = min(latitude),
     longitude = min(longitude)
   ) 
+}
+
+load_data_frame <- function(
+  data_frame_path = generate_data_frame_path()
+) {
+  readRDS(data_frame_path)
 }
 
 perform_k_means <- function(data_frame, k_value, seed, month) {
