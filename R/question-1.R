@@ -11,8 +11,8 @@ library(scales)
 question_1 <- function() {
   data_frame <- load_data_frame()
   perform_k_means(
-    data_frame, 
-    k_value = 2, 
+    data_frame,
+    k_value = 2,
     seed = 20,
     month = 1
   )
@@ -49,7 +49,7 @@ question_1_charts <- function() {
 #                                                  #
 ####################################################
 filter_by_month <- function(data_frame, month) {
-  data_frame %>% 
+  data_frame %>%
   filter(
     observation_month == month
   )
@@ -79,7 +79,7 @@ group_by_month_and_weather_station_name <- function(data_frame) {
     hours_sun = mean(hours_sun),
     latitude = min(latitude),
     longitude = min(longitude)
-  ) 
+  )
 }
 
 load_data_frame <- function(
@@ -90,7 +90,7 @@ load_data_frame <- function(
 
 perform_k_means <- function(data_frame, k_value, seed, month) {
   data_frame_rescaled <- rescale_data_frame(
-    data_frame 
+    data_frame
   )
   data_frame_grouped <- group_by_month_and_weather_station_name(
     data_frame_rescaled
@@ -100,7 +100,7 @@ perform_k_means <- function(data_frame, k_value, seed, month) {
     month
   )
   data_frame_kmeans_features <- filter_for_kmeans(
-    data_frame_by_month 
+    data_frame_by_month
   )
   set.seed(seed)
   clusters <- kmeans(
