@@ -39,13 +39,27 @@ stage_014 <- function(
     `temp_max_degrees_c` = data_frame_anchor$temp_max_degrees_c,
     `temp_min_degrees_c` = data_frame_anchor$temp_min_degrees_c,
     `average_temp_degrees_c` = data_frame_anchor$average_temp_degrees_c
-  )    
-  data_frame_simplified <- na.omit( data_frame_simplified)
+  )
   destination_file_path <- paste0(
     destination_dir,
     "/",
     WEATHER_ALL_DATA_FRAMES
   )
+  if (force & file.exists(destination_file_path)) {
+    file.remove(destination_file_path)
+  }
+  file.create(destination_file_path)
+  saveRDS(
+    data_frame_simplified,
+    file = destination_file_path
+  )
+
+  destination_file_path <- paste0(
+    destination_dir,
+    "/",
+    WEATHER_ALL_DATA_FRAMES_NO_NAS
+  )
+  data_frame_simplified <- na.omit( data_frame_simplified)
   if (force & file.exists(destination_file_path)) {
     file.remove(destination_file_path)
   }

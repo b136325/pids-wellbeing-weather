@@ -51,10 +51,10 @@ stage_013 <- function(
     destination_data_frame$average_temp_degrees_c <- rowMeans(
       destination_data_frame[
         c(
-          'temp_max_degrees_c',
-          'temp_min_degrees_c'
+          "temp_max_degrees_c",
+          "temp_min_degrees_c"
         )
-        ], 
+        ],
       na.rm = TRUE
     )
     destination_data_frame$average_temp_degrees_c <- as.double(

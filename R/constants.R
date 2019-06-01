@@ -72,6 +72,7 @@ ONS_URL_ROOT <- paste0(
 #                                                  #
 ####################################################
 WEATHER_ALL_DATA_FRAMES <- "all_data_frames.Rds"
+WEATHER_ALL_DATA_FRAMES_NO_NAS <- "all_data_frames_no_nas.Rds"
 WEATHER_COLUMN_NAMES <- c(
   "observation_year",
   "observation_month",
