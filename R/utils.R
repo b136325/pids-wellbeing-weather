@@ -117,14 +117,6 @@ files_per_directory <- function(dir) {
   )
 }
 
-generate_question_1a_data_frame_path <- function() {
-  paste0(
-    DIR_TECHNICALLY_CORRECT_ALL,
-    "/",
-    WEATHER_ALL_DATA_FRAMES_NO_NAS
-  )
-}
-
 join_data_frames <- function(source_file_paths) {
   data_frame_destination <- WEATHER_EMPTY_DATA_FRAME
   for (source_file_path in source_file_paths) {
@@ -135,12 +127,6 @@ join_data_frames <- function(source_file_paths) {
     )
   }
   data_frame_destination
-}
-
-load_question_1a_data_frame <- function(
-  data_frame_path = generate_question_1a_data_frame_path()
-) {
-  readRDS(data_frame_path)
 }
 
 retrieve_txt_file_contents <- function(txt_file_path) {
