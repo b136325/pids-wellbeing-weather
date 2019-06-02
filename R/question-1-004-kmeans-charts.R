@@ -6,10 +6,10 @@ library(gridExtra)
 # EXPORTED FUNCTIONS (A-Z                          #
 #                                                  #
 ####################################################
-#' question_1a_004_kmeans_charts
+#' question_1_004_kmeans_charts
 #' @export
-question_1a_004_kmeans_charts <- function() {
-  data_frame <- question_1a_003_kmeans()$data_frame
+question_1_004_kmeans_charts <- function() {
+  data_frame <- question_1_003_kmeans()$data_frame
   generate_latitude_charts(
     data_frame,
     c(

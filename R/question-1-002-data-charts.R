@@ -5,10 +5,10 @@ library(ggplot2)
 # EXPORTED FUNCTIONS (A-Z                          #
 #                                                  #
 ####################################################
-#' question_1a_002_data_charts
+#' question_1_002_data_charts
 #' @export
-question_1a_002_data_charts <- function() {
-  data_frame <- question_1a_001_data()
+question_1_002_data_charts <- function() {
+  data_frame <- question_1_001_data()
   heathrow <- data_frame %>% filter(
     weather_station_name == "heathrow"
   )

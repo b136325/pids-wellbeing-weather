@@ -5,9 +5,9 @@ library(scales)
 # EXPORTED FUNCTION                                #
 #                                                  #
 ####################################################
-#' question_1a_001_data
+#' question_1_001_data
 #' @export
-question_1a_001_data <- function() {
+question_1_001_data <- function() {
   data_frame <- load_technically_correct_data_frame()
   data_frame <- group_by_weather_station(
     data_frame

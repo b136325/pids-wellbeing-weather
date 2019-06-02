@@ -3,11 +3,11 @@
 # EXPORTED FUNCTION                                #
 #                                                  #
 ####################################################
-#' question_1a_003_kmeans
+#' question_1_003_kmeans
 #' @export
-question_1a_003_kmeans <- function() {
+question_1_003_kmeans <- function() {
   within_sum_squares <- list()
-  data_frame <- question_1a_001_data()
+  data_frame <- question_1_001_data()
   for (i in 1:5) {
     results <- perform_k_means(
       data_frame,
