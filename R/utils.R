@@ -129,6 +129,20 @@ join_data_frames <- function(source_file_paths) {
   data_frame_destination
 }
 
+generate_tehcnically_correct_data_frame_path <- function() {
+  paste0(
+    DIR_TECHNICALLY_CORRECT_ALL,
+    "/",
+    WEATHER_ALL_DATA_FRAMES_NO_NAS
+  )
+}
+
+load_technically_correct_data_frame <- function() {
+  readRDS(
+    generate_tehcnically_correct_data_frame_path()
+  )
+}
+
 retrieve_txt_file_contents <- function(txt_file_path) {
   readChar(
     txt_file_path,
