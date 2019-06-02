@@ -3,19 +3,23 @@
 # EXPORTED FUNCTION                                #
 #                                                  #
 ####################################################
-#' question_1_003_kmeans
+#' question_1a_004_kmeans
 #' @export
-question_1_003_kmeans <- function() {
-  within_sum_squares <- list()
-  data_frame <- question_1_001_data()
-  for (i in 1:5) {
+question_1a_004_kmeans <- function(
+  k_max = MAX_NUM_K,
+  num_iterations = MAX_NUM_ITERATIONS,
+  seed = SEED_DEFAULT
+) {
+  sum_squares <- list()
+  data_frame <- question_1a_001_data()
+  for (i in 1:k_max) {
     results <- perform_k_means(
       data_frame,
       k_value = i,
-      num_iterations = 100,
-      seed = 20
+      num_iterations = num_iterations,
+      seed = seed
     )
-    within_sum_squares[[i]] <- results$withinss
+    sum_squares[[i]] <- results$tot.withinss
     column_name <- paste0("cluster_", i)
     data_frame[[column_name]] <- as.factor(
       results$cluster
@@ -23,7 +27,7 @@ question_1_003_kmeans <- function() {
   }
   results <- list()
   results$data_frame <- data_frame
-  results$within_sum_squares <- within_sum_squares
+  results$sum_squares <- sum_squares
   results
 }
 

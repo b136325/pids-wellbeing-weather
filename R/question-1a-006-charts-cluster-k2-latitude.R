@@ -6,19 +6,19 @@ library(gridExtra)
 # EXPORTED FUNCTIONS (A-Z                          #
 #                                                  #
 ####################################################
-#' question_1_004_kmeans_charts
+#' question_1a_006_charts_cluster_k2_latitude
 #' @export
-question_1_004_kmeans_charts <- function() {
-  data_frame <- question_1_003_kmeans()$data_frame
-  generate_latitude_charts(
-    data_frame,
+question_1a_006_charts_cluster_k2_latitude <- function() {
+  cluster_results <- question_1a_004_kmeans()
+  generate_latitude_charts_with_cluster_colour(
+    cluster_results$data_frame,
     c(
       "hours_sun",
       "rain_mm",
       "temp_max_degrees_c",
       "temp_min_degrees_c"
     ),
-    "weather_station_name"
+    "cluster_2"
   )
 }
 ####################################################
@@ -26,7 +26,7 @@ question_1_004_kmeans_charts <- function() {
 # NON EXPORTED FUNCTIONS (A-Z)                     #
 #                                                  #
 ####################################################
-generate_latitude_chart <- function(
+generate_latitude_chart_with_cluster_colour <- function(
   data_frame,
   x_variable_name,
   cluster_variable_name
@@ -41,7 +41,7 @@ generate_latitude_chart <- function(
     ) + geom_point() + ylim(50, 60)
 }
 
-generate_latitude_charts <- function(
+generate_latitude_charts_with_cluster_colour <- function(
   data_frame,
   x_variable_names,
   cluster_variable_name
@@ -49,7 +49,7 @@ generate_latitude_charts <- function(
   charts <- list()
   i <- 1
   for (x_variable_name in x_variable_names) {
-    charts[[i]] <- generate_latitude_chart(
+    charts[[i]] <- generate_latitude_chart_with_cluster_colour(
       data_frame,
       x_variable_name,
       cluster_variable_name

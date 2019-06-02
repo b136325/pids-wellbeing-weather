@@ -208,7 +208,7 @@ LATITUDES[["camborne"]] <- 50.218
 ####################################################
 LONGITUDES <- list()
 LONGITUDES[["lerwick"]] <- -1.183
-LATITUDES[["wickairport"]] <- -3.088
+LONGITUDES[["wickairport"]] <- -3.088
 LONGITUDES[["stornoway"]] <- -6.318
 LONGITUDES[[WEATHER_STATION_NAIRN]] <- -3.821
 LONGITUDES[["braemar"]] <- -3.396
@@ -243,3 +243,11 @@ LONGITUDES[[WEATHER_STATION_SOUTHAMPTON]] <- -1.408
 LONGITUDES[["eastbourne"]] <- 0.285
 LONGITUDES[["hurn"]] <- -1.835
 LONGITUDES[["camborne"]] <- -5.327
+####################################################
+#                                                  #
+# 9. K-MEANS                                       #
+#                                                  #
+####################################################
+MAX_NUM_K <- 10
+MAX_NUM_ITERATIONS <- 100
+SEED_DEFAULT <- 20

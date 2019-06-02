@@ -5,14 +5,17 @@ library(scales)
 # EXPORTED FUNCTION                                #
 #                                                  #
 ####################################################
-#' question_1_001_data
+#' question_1a_001_data
 #' @export
-question_1_001_data <- function() {
+question_1a_001_data <- function(scale = TRUE) {
   data_frame <- load_technically_correct_data_frame()
   data_frame <- group_by_weather_station(
     data_frame
   )
-  rescale_data_frame(data_frame)
+  if (scale) {
+    data_frame <- rescale_data_frame(data_frame)
+  }
+  data_frame
 }
 ####################################################
 #                                                  #
