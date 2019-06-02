@@ -7,10 +7,13 @@ library(scales)
 ####################################################
 #' question_1a_001_data
 #' @export
-question_1a_001_data <- function(scale = TRUE) {
-  data_frame <- load_technically_correct_data_frame()
-  data_frame <- group_by_weather_station(
-    data_frame
+question_1a_001_data <- function(
+  group_by_variable_name = "weather_station_name",
+  scale = TRUE
+) {
+  data_frame <- group_by_variable(
+    load_technically_correct_data_frame(),
+    group_by_variable_name
   )
   if (scale) {
     data_frame <- rescale_data_frame(data_frame)
@@ -22,10 +25,13 @@ question_1a_001_data <- function(scale = TRUE) {
 # NON EXPORTED FUNCTIONS (A-Z)                     #
 #                                                  #
 ####################################################
-group_by_weather_station <- function(data_frame) {
+group_by_variable <- function(
+  data_frame,
+  group_by_variable_name
+) {
   data_frame %>%
     group_by(
-      weather_station_name
+      !!sym(group_by_variable_name)
     ) %>%
     summarize(
       temp_max_degrees_c = mean(temp_max_degrees_c),
@@ -40,15 +46,15 @@ group_by_weather_station <- function(data_frame) {
 rescale_data_frame <- function(data_frame) {
   cbind(
     data_frame %>% select(
-      `temp_max_degrees_c`,
-      `temp_min_degrees_c`,
-      `rain_mm`,
-      `hours_sun`,
+      temp_max_degrees_c,
+      temp_min_degrees_c,
+      rain_mm,
+      hours_sun,
     ) %>% mutate_each(rescale),
     data_frame %>% select(
-      `weather_station_name`,
-      `latitude`,
-      `longitude`
+      weather_station_name,
+      latitude,
+      longitude
     )
   )
 }

@@ -101,4 +101,3 @@ question_1a_008_charts_cluster_k2_latitude_longitude_temp_min <- function() {
       )
     )
 }
-

@@ -2,7 +2,7 @@ library(dplyr)
 library(ggplot2)
 ####################################################
 #                                                  #
-# EXPORTED FUNCTIONS (A-Z                          #
+# EXPORTED FUNCTIONS                               #
 #                                                  #
 ####################################################
 #' question_1a_005_charts_sum_squares
@@ -17,6 +17,20 @@ question_1a_005_charts_sum_squares <- function(
     num_iterations,
     seed
   )
+  generate_sum_squares_chart(
+    cluster_results,
+    k_max
+  )
+}
+####################################################
+#                                                  #
+# NON EXPORTED FUNCTIONS                           #
+#                                                  #
+####################################################
+generate_sum_squares_chart <- function(
+  cluster_results,
+  k_max
+) {
   sum_squares <- cluster_results$sum_squares
   chart_data_frame <- data.frame(
     k = c(1:k_max),
@@ -30,10 +44,10 @@ question_1a_005_charts_sum_squares <- function(
       group = 1
     )
   ) +
-  geom_line(color = "blue") +
-  geom_text(
-    aes(
-      label = k
+    geom_line(color = "blue") +
+    geom_text(
+      aes(
+        label = k
+      )
     )
-  )
 }

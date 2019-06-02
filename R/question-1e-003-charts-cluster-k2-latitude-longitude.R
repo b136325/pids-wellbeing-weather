@@ -6,41 +6,41 @@ library(plotly)
 # EXPORTED FUNCTIONS (A-Z                          #
 #                                                  #
 ####################################################
-#' question_1a_003_charts_latitude_longitude_hours_sun
+#' question_1e_003_charts_cluster_k2_latitude_longitude_hours_sun
 #' @export
-question_1a_003_charts_latitude_longitude_hours_sun <- function() {
+question_1e_003_charts_cluster_k2_latitude_longitude_hours_sun <- function() {
   plot_ly(
-    question_1a_001_data(scale = FALSE),
+    question_1e_001_kmeans()$data_frame,
     x = ~hours_sun,
     y = ~longitude,
     z = ~latitude,
     marker = list(
-      color = ~hours_sun,
+      color = ~cluster_2,
       colorscale = c("#FFE1A1", "#683531"),
       showscale = TRUE
     )
   ) %>%
-  add_markers() %>%
-  layout(
-    scene = list(
-      xaxis = list(title = "Hours sunshine"),
-      yaxis = list(title = "Longitude"),
-      zaxis = list(title = "Latitude")
+    add_markers() %>%
+    layout(
+      scene = list(
+        xaxis = list(title = "Hours sunshine"),
+        yaxis = list(title = "Longitude"),
+        zaxis = list(title = "Latitude")
+      )
     )
-  )
 }
 
-#' question_1a_data_charts_latitude_longitude_rain
+#' question_1e_003_charts_cluster_k2_latitude_longitude_rain
 #' @export
-question_1a_003_charts_latitude_longitude_rain <- function() {
+question_1e_003_charts_cluster_k2_latitude_longitude_rain <- function() {
   plot_ly(
-    question_1a_001_data(scale = FALSE),
+    question_1e_001_kmeans()$data_frame,
     x = ~rain_mm,
     y = ~longitude,
     z = ~latitude,
     marker = list(
-      color = ~rain_mm,
-      colorscale = c("#0033CC", "#CCD9ff"),
+      color = ~cluster_2,
+      colorscale = c("#FFE1A1", "#683531"),
       showscale = TRUE
     )
   ) %>%
@@ -54,48 +54,48 @@ question_1a_003_charts_latitude_longitude_rain <- function() {
     )
 }
 
-#' question_1a_003_charts_latitude_longitude_max_temp
+#' question_1e_003_charts_cluster_k2_latitude_longitude_temp_max
 #' @export
-question_1a_003_charts_latitude_longitude_max_temp <- function() {
+question_1e_003_charts_cluster_k2_latitude_longitude_temp_max <- function() {
   plot_ly(
-    question_1a_001_data(scale = FALSE),
+    question_1e_001_kmeans()$data_frame,
     x = ~temp_max_degrees_c,
     y = ~longitude,
     z = ~latitude,
     marker = list(
-      color = ~temp_max_degrees_c,
-      colorscale = c("#0033CC", "#CCD9ff"),
+      color = ~cluster_2,
+      colorscale = c("#FFE1A1", "#683531"),
       showscale = TRUE
     )
   ) %>%
     add_markers() %>%
     layout(
       scene = list(
-        xaxis = list(title = "Max temp (degrees c)"),
+        xaxis = list(title = "Temp max (degrees c)"),
         yaxis = list(title = "Longitude"),
         zaxis = list(title = "Latitude")
       )
     )
 }
 
-#' question_1a_003_charts_latitude_longitude_min_temp
+#' question_1e_003_charts_cluster_k2_latitude_longitude_temp_min
 #' @export
-question_1a_003_charts_latitude_longitude_min_temp <- function() {
+question_1e_003_charts_cluster_k2_latitude_longitude_temp_min <- function() {
   plot_ly(
-    question_1a_001_data(scale = FALSE),
+    question_1e_001_kmeans()$data_frame,
     x = ~temp_min_degrees_c,
     y = ~longitude,
     z = ~latitude,
     marker = list(
-      color = ~temp_min_degrees_c,
-      colorscale = c("#0033CC", "#CCD9ff"),
+      color = ~cluster_2,
+      colorscale = c("#FFE1A1", "#683531"),
       showscale = TRUE
     )
   ) %>%
     add_markers() %>%
     layout(
       scene = list(
-        xaxis = list(title = "Min temp (degrees c)"),
+        xaxis = list(title = "Temp min (degrees c)"),
         yaxis = list(title = "Longitude"),
         zaxis = list(title = "Latitude")
       )

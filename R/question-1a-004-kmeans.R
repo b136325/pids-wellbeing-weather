@@ -10,6 +10,50 @@ question_1a_004_kmeans <- function(
   num_iterations = MAX_NUM_ITERATIONS,
   seed = SEED_DEFAULT
 ) {
+  perform_k_means_repeat(
+    k_max,
+    num_iterations,
+    seed,
+    filter = filter_for_kmeans_all
+  )
+}
+
+####################################################
+#                                                  #
+# NON EXPORTED FUNCTIONS (A-Z)                     #
+#                                                  #
+####################################################
+filter_for_kmeans_all <- function(data_frame) {
+  as.data.frame(
+    data_frame[, 1:4]
+  )
+}
+
+perform_k_means <- function(
+  data_frame,
+  k_value,
+  num_iterations,
+  seed,
+  filter
+) {
+  data_frame <- filter(
+    data_frame
+  )
+  set.seed(seed)
+  kmeans(
+    x = data_frame,
+    centers = k_value,
+    iter.max = num_iterations,
+    nstart = k_value
+  )
+}
+
+perform_k_means_repeat <- function(
+  k_max,
+  num_iterations,
+  seed,
+  filter
+) {
   sum_squares <- list()
   data_frame <- question_1a_001_data()
   for (i in 1:k_max) {
@@ -17,7 +61,8 @@ question_1a_004_kmeans <- function(
       data_frame,
       k_value = i,
       num_iterations = num_iterations,
-      seed = seed
+      seed = seed,
+      filter
     )
     sum_squares[[i]] <- results$tot.withinss
     column_name <- paste0("cluster_", i)
@@ -29,33 +74,4 @@ question_1a_004_kmeans <- function(
   results$data_frame <- data_frame
   results$sum_squares <- sum_squares
   results
-}
-
-####################################################
-#                                                  #
-# NON EXPORTED FUNCTIONS (A-Z)                     #
-#                                                  #
-####################################################
-filter_for_kmeans <- function(data_frame) {
-  as.data.frame(
-    data_frame[, 1:4]
-  )
-}
-
-perform_k_means <- function(
-  data_frame,
-  k_value,
-  num_iterations,
-  seed
-) {
-  data_frame <- filter_for_kmeans(
-    data_frame
-  )
-  set.seed(seed)
-  kmeans(
-    x = data_frame,
-    centers = k_value,
-    iter.max = num_iterations,
-    nstart = k_value
-  )
 }
