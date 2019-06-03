@@ -251,3 +251,15 @@ LONGITUDES[["camborne"]] <- -5.327
 MAX_NUM_K <- 10
 MAX_NUM_ITERATIONS <- 100
 SEED_DEFAULT <- 20
+####################################################
+#                                                  #
+# 10. LATITUDE CATGEORY BOUNDARIES                 #
+#                                                  #
+####################################################
+LATITUDE_CATEGORY_BOTTOM_LOWER_BOUNDARY <- 49.9
+LATITUDE_CATEGORY_BOTTOM_UPPER_BOUNDARY <- 53.567
+LATITUDE_CATEGORY_MIDDLE_LOWER_BOUNDARY <- 53.567
+LATITUDE_CATEGORY_MIDDLE_UPPER_BOUNDARY <- 57.234
+LATITUDE_CATEGORY_TOP_LOWER_BOUNDARY <- 57.234
+LATITUDE_CATEGORY_TOP_UPPER_BOUNDARY <- 60.9
+
