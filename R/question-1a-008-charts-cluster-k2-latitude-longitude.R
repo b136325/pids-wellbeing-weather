@@ -14,11 +14,8 @@ question_1a_008_charts_cluster_k2_latitude_longitude_hours_sun <- function() {
     x = ~hours_sun,
     y = ~longitude,
     z = ~latitude,
-    marker = list(
-      color = ~cluster_2,
-      colorscale = c("#FFE1A1", "#683531"),
-      showscale = TRUE
-    )
+    color = ~cluster_2,
+    colors = HEX_COLOURS_TRIPLE
   ) %>%
     add_markers() %>%
     layout(
@@ -38,11 +35,8 @@ question_1a_008_charts_cluster_k2_latitude_longitude_rain <- function() {
     x = ~rain_mm,
     y = ~longitude,
     z = ~latitude,
-    marker = list(
-      color = ~cluster_2,
-      colorscale = c("#FFE1A1", "#683531"),
-      showscale = TRUE
-    )
+    color = ~cluster_2,
+    colors = HEX_COLOURS_TRIPLE
   ) %>%
     add_markers() %>%
     layout(
@@ -62,11 +56,8 @@ question_1a_008_charts_cluster_k2_latitude_longitude_temp_max <- function() {
     x = ~temp_max_degrees_c,
     y = ~longitude,
     z = ~latitude,
-    marker = list(
-      color = ~cluster_2,
-      colorscale = c("#FFE1A1", "#683531"),
-      showscale = TRUE
-    )
+    color = ~cluster_2,
+    colors = HEX_COLOURS_TRIPLE
   ) %>%
     add_markers() %>%
     layout(
@@ -86,11 +77,8 @@ question_1a_008_charts_cluster_k2_latitude_longitude_temp_min <- function() {
     x = ~temp_min_degrees_c,
     y = ~longitude,
     z = ~latitude,
-    marker = list(
-      color = ~cluster_2,
-      colorscale = c("#FFE1A1", "#683531"),
-      showscale = TRUE
-    )
+    color = ~cluster_2,
+    colors = HEX_COLOURS_TRIPLE
   ) %>%
     add_markers() %>%
     layout(

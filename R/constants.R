@@ -262,4 +262,17 @@ LATITUDE_CATEGORY_MIDDLE_LOWER_BOUNDARY <- 53.567
 LATITUDE_CATEGORY_MIDDLE_UPPER_BOUNDARY <- 57.234
 LATITUDE_CATEGORY_TOP_LOWER_BOUNDARY <- 57.234
 LATITUDE_CATEGORY_TOP_UPPER_BOUNDARY <- 60.9
+####################################################
+#                                                  #
+# 11. HEX COLOURS                                  #
+#                                                  #
+####################################################
+HEX_COLOUR_RED <- "#DC143C"
+HEX_COLOUR_ORANGE <- "#FF8C00"
+HEX_COLOUR_GREEN <- "#008000"
+HEX_COLOURS_TRIPLE <- c(
+  HEX_COLOUR_RED,
+  HEX_COLOUR_ORANGE,
+  HEX_COLOUR_GREEN
+)
 

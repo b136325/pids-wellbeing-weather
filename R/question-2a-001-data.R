@@ -14,7 +14,16 @@ question_2a_001_data <- function(
     group_by_variable_name,
     scale
   )
-  append_latitude_category(data_frame)
+  data_frame_updated <- append_latitude_category(
+    data_frame
+  )
+  if (has_latitude_category_errors(data_frame_updated)) {
+    stop("Latitude category errors")
+  }
+  data_frame_updated$latitude_category <- as.factor(
+    data_frame_updated$latitude_category
+  )
+  data_frame_updated
 }
 ####################################################
 #                                                  #
@@ -22,20 +31,16 @@ question_2a_001_data <- function(
 #                                                  #
 ####################################################
 append_latitude_category <- function(data_frame) {
-  data_frame_updated <- data_frame %>%
+  data_frame %>%
     mutate(
       latitude_category = derive_latitude_category(
           latitude  
       )
     )
-  if (has_latitude_category_errors(data_frame_updated)) {
-    stop("Latitude category errors")
-  }
-  data_frame_updated
 }
 
 derive_latitude_category <- function(latitudes) {
-  latitude_categories <- list()
+  latitude_categories <- character()
   for (latitude in latitudes) {
     if (latitude >= LATITUDE_CATEGORY_BOTTOM_LOWER_BOUNDARY
         && latitude < LATITUDE_CATEGORY_BOTTOM_UPPER_BOUNDARY) {
