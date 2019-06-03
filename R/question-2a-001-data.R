@@ -34,7 +34,7 @@ append_latitude_category <- function(data_frame) {
   data_frame %>%
     mutate(
       latitude_category = derive_latitude_category(
-          latitude  
+          latitude
       )
     )
 }
@@ -53,18 +53,18 @@ derive_latitude_category <- function(latitudes) {
       latitude_categories <- append(
         latitude_categories,
         "middle"
-      )      
+      )
     } else if (latitude >= LATITUDE_CATEGORY_TOP_LOWER_BOUNDARY
         && latitude < LATITUDE_CATEGORY_TOP_UPPER_BOUNDARY) {
       latitude_categories <- append(
         latitude_categories,
         "top"
-      )     
+      )
     } else {
       latitude_categories <- append(
         latitude_categories,
         "error"
-      )     
+      )
     }
   }
   latitude_categories

@@ -11,15 +11,17 @@ question_1b_001_data <- function(
   scale = TRUE
 ) {
   data_frame <- load_technically_correct_data_frame()
-  data_frame_updated_hours_sun <- replace_outliers_with_mean_all_weather_stations(
-    data_frame,
-    "hours_sun"
-  )
+  data_frame_updated_hours_sun <-
+    replace_outliers_with_mean_all_weather_stations(
+      data_frame,
+      "hours_sun"
+    )
   data_frame$hours_sun <- data_frame_updated_hours_sun$hours_sun
-  data_frame_updated_rain_mm <- replace_outliers_with_mean_all_weather_stations(
-    data_frame,
-    "rain_mm"
-  )
+  data_frame_updated_rain_mm <-
+    replace_outliers_with_mean_all_weather_stations(
+      data_frame,
+      "rain_mm"
+    )
   data_frame$rain_mm <- data_frame_updated_rain_mm$rain_mm
   data_frame <- group_by_variable(
     data_frame,
@@ -90,7 +92,7 @@ replace_outliers_with_mean_all_weather_stations <- function(
     )
   }
   if (nrow(data_frame) != nrow(data_frame_updated)) {
-    stop("Unequal data_frame lengths.")    
+    stop("Unequal data_frame lengths.")
   }
   data_frame_updated
 }
@@ -102,8 +104,8 @@ replace_outliers_with_mean_by_weather_station <- function(
 ) {
   data_frame %>%
     filter(
-      weather_station_name == unique_weather_station   
-    ) %>% 
+      weather_station_name == unique_weather_station
+    ) %>%
     mutate_at(
       c(feature_name),
       replace_outliers_with_mean
