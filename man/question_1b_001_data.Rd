@@ -4,7 +4,8 @@
 \alias{question_1b_001_data}
 \title{question_1b_001_data}
 \usage{
-question_1b_001_data()
+question_1b_001_data(group_by_variable_name = "weather_station_name",
+  scale = TRUE)
 }
 \description{
 question_1b_001_data

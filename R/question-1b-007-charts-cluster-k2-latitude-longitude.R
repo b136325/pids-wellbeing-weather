@@ -6,11 +6,11 @@ library(plotly)
 # EXPORTED FUNCTIONS (A-Z                          #
 #                                                  #
 ####################################################
-#' question_1e_003_charts_cluster_k2_latitude_longitude_hours_sun
+#' question_1b_007_charts_cluster_k2_latitude_longitude_hours_sun
 #' @export
-question_1e_003_charts_cluster_k2_latitude_longitude_hours_sun <- function() {
+question_1b_007_charts_cluster_k2_latitude_longitude_hours_sun <- function() {
   plot_ly(
-    question_1e_001_kmeans()$data_frame,
+    question_1b_003_kmeans()$data_frame,
     x = ~hours_sun,
     y = ~longitude,
     z = ~latitude,
@@ -30,11 +30,11 @@ question_1e_003_charts_cluster_k2_latitude_longitude_hours_sun <- function() {
     )
 }
 
-#' question_1e_003_charts_cluster_k2_latitude_longitude_rain
+#' question_1b_007_charts_cluster_k2_latitude_longitude_rain
 #' @export
-question_1e_003_charts_cluster_k2_latitude_longitude_rain <- function() {
+question_1b_007_charts_cluster_k2_latitude_longitude_rain <- function() {
   plot_ly(
-    question_1e_001_kmeans()$data_frame,
+    question_1b_003_kmeans()$data_frame,
     x = ~rain_mm,
     y = ~longitude,
     z = ~latitude,
@@ -54,11 +54,11 @@ question_1e_003_charts_cluster_k2_latitude_longitude_rain <- function() {
     )
 }
 
-#' question_1e_003_charts_cluster_k2_latitude_longitude_temp_max
+#' question_1b_007_charts_cluster_k2_latitude_longitude_temp_max
 #' @export
-question_1e_003_charts_cluster_k2_latitude_longitude_temp_max <- function() {
+question_1b_007_charts_cluster_k2_latitude_longitude_temp_max <- function() {
   plot_ly(
-    question_1e_001_kmeans()$data_frame,
+    question_1b_003_kmeans()$data_frame,
     x = ~temp_max_degrees_c,
     y = ~longitude,
     z = ~latitude,
@@ -78,11 +78,11 @@ question_1e_003_charts_cluster_k2_latitude_longitude_temp_max <- function() {
     )
 }
 
-#' question_1e_003_charts_cluster_k2_latitude_longitude_temp_min
+#' question_1b_007_charts_cluster_k2_latitude_longitude_temp_min
 #' @export
-question_1e_003_charts_cluster_k2_latitude_longitude_temp_min <- function() {
+question_1b_007_charts_cluster_k2_latitude_longitude_temp_min <- function() {
   plot_ly(
-    question_1e_001_kmeans()$data_frame,
+    question_1b_003_kmeans()$data_frame,
     x = ~temp_min_degrees_c,
     y = ~longitude,
     z = ~latitude,

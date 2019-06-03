@@ -11,6 +11,7 @@ question_1a_004_kmeans <- function(
   seed = SEED_DEFAULT
 ) {
   perform_k_means_repeat(
+    question_1a_001_data(),
     k_max,
     num_iterations,
     seed,
@@ -49,13 +50,13 @@ perform_k_means <- function(
 }
 
 perform_k_means_repeat <- function(
+  data_frame,
   k_max,
   num_iterations,
   seed,
   filter
 ) {
   sum_squares <- list()
-  data_frame <- question_1a_001_data()
   for (i in 1:k_max) {
     results <- perform_k_means(
       data_frame,

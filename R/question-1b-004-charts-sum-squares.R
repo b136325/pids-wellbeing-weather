@@ -5,14 +5,14 @@ library(ggplot2)
 # EXPORTED FUNCTIONS                               #
 #                                                  #
 ####################################################
-#' question_1b_002_charts_sum_squares
+#' question_1b_004_charts_sum_squares
 #' @export
-question_1b_002_charts_sum_squares <- function(
+question_1b_004_charts_sum_squares <- function(
   k_max = MAX_NUM_K,
   num_iterations = MAX_NUM_ITERATIONS,
   seed = SEED_DEFAULT
 ) {
-  cluster_results <- question_1b_001_kmeans(
+  cluster_results <- question_1b_003_kmeans(
     k_max,
     num_iterations,
     seed

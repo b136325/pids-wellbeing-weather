@@ -1,24 +1,20 @@
-library(dplyr)
-library(ggplot2)
 ####################################################
 #                                                  #
-# EXPORTED FUNCTIONS                               #
+# EXPORTED FUNCTION                                #
 #                                                  #
 ####################################################
-#' question_1c_002_charts_sum_squares
+#' question_1b_003_kmeans
 #' @export
-question_1c_002_charts_sum_squares <- function(
+question_1b_003_kmeans <- function(
   k_max = MAX_NUM_K,
   num_iterations = MAX_NUM_ITERATIONS,
   seed = SEED_DEFAULT
 ) {
-  cluster_results <- question_1c_001_kmeans(
+  perform_k_means_repeat(
+    question_1b_001_data(),
     k_max,
     num_iterations,
-    seed
-  )
-  generate_sum_squares_chart(
-    cluster_results,
-    k_max
+    seed,
+    filter = filter_for_kmeans_all
   )
 }
