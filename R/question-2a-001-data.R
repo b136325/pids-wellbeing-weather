@@ -8,7 +8,8 @@ library(dplyr)
 #' @export
 question_2a_001_data <- function(
   group_by_variable_name = "weather_station_name",
-  scale = TRUE
+  scale = TRUE,
+  latitude_category_as_factor = TRUE
 ) {
   data_frame <- question_1b_001_data(
     group_by_variable_name,
@@ -20,9 +21,11 @@ question_2a_001_data <- function(
   if (has_latitude_category_errors(data_frame_updated)) {
     stop("Latitude category errors")
   }
-  data_frame_updated$latitude_category <- as.factor(
-    data_frame_updated$latitude_category
-  )
+  if (latitude_category_as_factor) {
+    data_frame_updated$latitude_category <- as.factor(
+      data_frame_updated$latitude_category
+    )
+  }
   data_frame_updated
 }
 ####################################################

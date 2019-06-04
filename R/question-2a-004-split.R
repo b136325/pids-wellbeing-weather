@@ -4,9 +4,9 @@ library(dplyr)
 # EXPORTED FUNCTION                                #
 #                                                  #
 ####################################################
-#' question_2a_003_split
+#' question_2a_004_split
 #' @export
-question_2a_003_split <- function(
+question_2a_004_split <- function(
   group_by_variable_name = "weather_station_name",
   scale = TRUE,
   num_test_rows = 5

@@ -1,6 +1,8 @@
 library(dplyr)
 library(ggplot2)
+# Begin Exclude Linting
 library(gridExtra)
+# End Exclude Linting
 ####################################################
 #                                                  #
 # EXPORTED FUNCTIONS (A-Z                          #

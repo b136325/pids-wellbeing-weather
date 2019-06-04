@@ -34,12 +34,12 @@ group_by_variable <- function(
       !!sym(group_by_variable_name)
     ) %>%
     summarize(
-      temp_max_degrees_c = mean(temp_max_degrees_c),
-      temp_min_degrees_c = mean(temp_min_degrees_c),
-      rain_mm = mean(rain_mm),
       hours_sun = mean(hours_sun),
       latitude = min(latitude),
-      longitude = min(longitude)
+      longitude = min(longitude),
+      rain_mm = mean(rain_mm),
+      temp_max_degrees_c = mean(temp_max_degrees_c),
+      temp_min_degrees_c = mean(temp_min_degrees_c)
     )
 }
 

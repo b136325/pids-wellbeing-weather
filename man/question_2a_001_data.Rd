@@ -5,7 +5,7 @@
 \title{question_2a_001_data}
 \usage{
 question_2a_001_data(group_by_variable_name = "weather_station_name",
-  scale = TRUE)
+  scale = TRUE, latitude_category_as_factor = TRUE)
 }
 \description{
 question_2a_001_data

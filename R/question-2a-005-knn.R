@@ -5,9 +5,9 @@ library(dplyr)
 # EXPORTED FUNCTION                                #
 #                                                  #
 ####################################################
-#' question_2a_004_knn
+#' question_2a_005_knn
 #' @export
-question_2a_004_knn <- function(
+question_2a_005_knn <- function(
   group_by_variable_name = "weather_station_name",
   scale = TRUE,
   num_test_rows = 5,
@@ -103,4 +103,3 @@ select_knn_labels <- function(data_frame) {
     data_frame$latitude_category
   )
 }
-
