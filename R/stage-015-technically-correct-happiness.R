@@ -22,6 +22,16 @@ stage_015 <- function(
   data_frame <- rename_happiness_columns(
     data_frame
   )
+  data_frame <- data_frame %>%
+    filter(
+      region != "England"
+    ) %>%
+    mutate(
+      region = tolower(region)
+    ) %>%
+    mutate(
+      region = str_replace_all(region, " ", "_")
+    )
   create_destination_file(
     destination_file_path,
     force

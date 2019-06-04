@@ -31,13 +31,14 @@ question_1a_006_charts_cluster_k2_latitude <- function() {
 generate_latitude_chart_with_cluster_colour <- function(
   data_frame,
   x_variable_name,
-  cluster_variable_name
+  cluster_variable_name,
+  y_variable_name
 ) {
   data_frame %>%
     ggplot(
       aes(
         x = !!sym(x_variable_name),
-        y = latitude,
+        y = !!sym(y_variable_name),
         color = !!sym(cluster_variable_name)
       )
     ) + geom_point() + ylim(50, 60)
@@ -46,7 +47,8 @@ generate_latitude_chart_with_cluster_colour <- function(
 generate_latitude_charts_with_cluster_colour <- function(
   data_frame,
   x_variable_names,
-  cluster_variable_name
+  cluster_variable_name,
+  y_variable_name = "latitude"
 ) {
   charts <- list()
   i <- 1
@@ -54,7 +56,8 @@ generate_latitude_charts_with_cluster_colour <- function(
     charts[[i]] <- generate_latitude_chart_with_cluster_colour(
       data_frame,
       x_variable_name,
-      cluster_variable_name
+      cluster_variable_name,
+      y_variable_name
     )
     i <- i + 1
   }

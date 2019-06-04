@@ -33,10 +33,13 @@ question_2a_001_data <- function(
 # NON EXPORTED FUNCTIONS (A-Z)                     #
 #                                                  #
 ####################################################
-append_latitude_category <- function(data_frame) {
+append_latitude_category <- function(
+  data_frame,
+  derive_category = derive_latitude_category
+) {
   data_frame %>%
     mutate(
-      latitude_category = derive_latitude_category(
+      latitude_category = derive_category(
           latitude
       )
     )
