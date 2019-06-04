@@ -8,7 +8,11 @@ library(gridExtra)
 # EXPORTED FUNCTIONS (A-Z                          #
 #                                                  #
 ####################################################
-#' question_1_002_charts_latitude
+#' question_1a_002_charts_latitude
+#' 
+#' Generate scatterplot charts comparing weather variables with latitude.
+#' @examples
+#' question_1_002_charts_latitude()
 #' @export
 question_1a_002_charts_latitude <- function() {
   generate_latitude_charts(
@@ -27,6 +31,14 @@ question_1a_002_charts_latitude <- function() {
 # NON EXPORTED FUNCTIONS (A-Z)                     #
 #                                                  #
 ####################################################
+#' generate_latitude_chart
+#' 
+#' Generates a single scatterplot chart from a data_frame, comparing "x_variable_name" with "latitude".
+#' @param data_frame A data_frame with "x_variable_name" and "latitude" features.
+#' @param x_variable_name A string defining the name of the feature to be represent on the x-axis.
+#' @param cluster_variable_name A string defining the clustering feature. Not being used at present.
+#' @examples
+#' generate_latitude_chart(data_frame = my_data_frame, x_variable_name = "x" cluster_variable_name = "region")
 generate_latitude_chart <- function(
   data_frame,
   x_variable_name,

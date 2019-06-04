@@ -6,6 +6,12 @@ library(scales)
 #                                                  #
 ####################################################
 #' question_1a_001_data
+#' @param group_by_variable_name Defines the group by variable. String. Defaults to "weather_station_name"
+#' @param scale Whether or not the data should be scaled. Boolean. Defaults to TRUE.
+#' @examples
+#' question_1a_001_data()
+#' question_1a_001_data(scale = FALSE)
+#' question_1a_001_data(group_by_variable_name = "some_variable")
 #' @export
 question_1a_001_data <- function(
   group_by_variable_name = "weather_station_name",

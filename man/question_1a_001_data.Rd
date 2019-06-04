@@ -7,6 +7,16 @@
 question_1a_001_data(group_by_variable_name = "weather_station_name",
   scale = TRUE)
 }
+\arguments{
+\item{group_by_variable_name}{Defines the group by variable. String. Defaults to "weather_station_name"}
+
+\item{scale}{Whether or not the data should be scaled. Boolean. Defaults to TRUE.}
+}
 \description{
 question_1a_001_data
+}
+\examples{
+question_1a_001_data()
+question_1a_001_data(scale = FALSE)
+question_1a_001_data(group_by_variable_name = "some_variable")
 }
