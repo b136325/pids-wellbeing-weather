@@ -4,6 +4,7 @@
 #                                                  #
 ####################################################
 DIR_DATA_WEATHER <- "data/weather/"
+DIR_DATA_WELLBEING <- "data/wellbeing/"
 DIR_RAW_DATA <- "data-raw/"
 DIR_RAW_DATA_WEATHER <- paste0(
   DIR_RAW_DATA,
@@ -39,6 +40,7 @@ DIR_TECHNICALLY_CORRECT_ALL <- paste0(
 # 2. FILE EXTENSION CONSTANTS                      #
 #                                                  #
 ####################################################
+FILE_EXTENSION_CSV <- ".csv"
 FILE_EXTENSION_DSV <- ".dsv"
 FILE_EXTENSION_RDS <- ".Rds"
 FILE_EXTENSION_TXT <- ".txt"
@@ -274,4 +276,20 @@ HEX_COLOURS_TRIPLE <- c(
   HEX_COLOUR_RED,
   HEX_COLOUR_ORANGE,
   HEX_COLOUR_GREEN
+)
+####################################################
+#                                                  #
+# 12. WELLBING HAPPINESS PATHS                     #
+#                                                  #
+####################################################
+WELLBEING_HAPPINESS_FILE_NAME <- "happiness"
+DATA_RAW_WELLBEING_HAPPINESS_PATH <- paste0(
+  DIR_RAW_DATA_WELLBEING,
+  WELLBEING_HAPPINESS_FILE_NAME,
+  FILE_EXTENSION_CSV
+)
+DATA_WELLBEING_HAPPINESS_PATH <- paste(
+  DIR_DATA_WELLBEING,
+  WELLBEING_HAPPINESS_FILE_NAME,
+  FILE_EXTENSION_RDS
 )
