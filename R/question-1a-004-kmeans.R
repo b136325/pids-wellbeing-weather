@@ -37,15 +37,15 @@ perform_k_means <- function(
   seed,
   filter
 ) {
-  data_frame <- filter(
+  data_frame <- filter_for_kmeans_all(
     data_frame
   )
   set.seed(seed)
-  kmeans(
+  result <- kmeans(
     x = data_frame,
     centers = k_value,
     iter.max = num_iterations,
-    nstart = k_value
+    nstart = 25
   )
 }
 
