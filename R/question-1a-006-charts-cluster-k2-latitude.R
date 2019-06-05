@@ -43,10 +43,10 @@ generate_latitude_chart_with_cluster_colour <- function(
         y = !!sym(y_variable_name),
         color = !!sym(cluster_variable_name)
       )
-    ) + 
-    geom_point() + 
+    ) +
+    geom_point() +
     ylim(
-      y_lim_lower_boundary, 
+      y_lim_lower_boundary,
       y_lim_upper_boundary
     )
 }
