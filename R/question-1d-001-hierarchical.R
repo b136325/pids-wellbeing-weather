@@ -1,5 +1,4 @@
 library(dplyr)
-library(mclust)
 ####################################################
 #                                                  #
 # EXPORTED FUNCTION                                #
@@ -9,9 +8,10 @@ library(mclust)
 #' @export
 question_1d_001_hierarchical <- function(
 ) {
+  data_frame <- question_1b_001_data()
   distances <- dist(
     as.matrix(
-      question_1b_001_data() %>%
+      data_frame %>%
         select(
           hours_sun,
           rain_mm,
@@ -21,5 +21,8 @@ question_1d_001_hierarchical <- function(
     )
   )
   hc <- hclust(distances)
-  plot(hc)
+  plot(
+    hc,
+    data_frame$weather_station_name
+  )
 }
