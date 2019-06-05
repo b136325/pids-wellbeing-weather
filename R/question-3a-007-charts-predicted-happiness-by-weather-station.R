@@ -3,8 +3,11 @@
 # EXPORTED FUNCTIONS (A-Z                          #
 #                                                  #
 ####################################################
-question_3a_003_latitude_by_happiness_with_region <- function() {
-  data_frame <- question_3a_002_data_join()
+#' question_3a_007_charts_predicted_happiness_by_weather_station
+#' @export
+question_3a_007_charts_predicted_happiness_by_weather_station <- function() {
+  data_frame <- question_3a_006_regression_test()
+  data_frame <- arrange(data_frame, desc(latitude))
   data_frame %>%
     generate_latitude_charts_with_cluster_colour(
       c(
@@ -13,16 +16,16 @@ question_3a_003_latitude_by_happiness_with_region <- function() {
         "temp_max_degrees_c",
         "temp_min_degrees_c"
       ),
-      "region",
-      "happiness",
+      "weather_station_name",
+      "predicted_happiness",
       as.double(
         min(
-          data_frame$happiness
+          data_frame$predicted_happiness
         )
       ),
       as.double(
         max(
-          data_frame$happiness
+          data_frame$predicted_happiness
         )
       )
     )
