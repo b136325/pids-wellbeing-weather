@@ -2,13 +2,11 @@
 % Please edit documentation in R/question-1a-002-charts-latitude.R
 \name{question_1a_002_charts_latitude}
 \alias{question_1a_002_charts_latitude}
-\title{question_1a_002_charts_latitude
-Generate scatterplot charts comparing weather variables with latitude.}
+\title{question_1a_002_charts_latitude}
 \usage{
 question_1a_002_charts_latitude()
 }
 \description{
-question_1a_002_charts_latitude
 Generate scatterplot charts comparing weather variables with latitude.
 }
 \examples{

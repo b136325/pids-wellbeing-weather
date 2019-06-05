@@ -32,7 +32,9 @@ generate_latitude_chart_with_cluster_colour <- function(
   data_frame,
   x_variable_name,
   cluster_variable_name,
-  y_variable_name
+  y_variable_name,
+  y_lim_lower_boundary,
+  y_lim_upper_boundary
 ) {
   data_frame %>%
     ggplot(
@@ -41,14 +43,21 @@ generate_latitude_chart_with_cluster_colour <- function(
         y = !!sym(y_variable_name),
         color = !!sym(cluster_variable_name)
       )
-    ) + geom_point() + ylim(50, 60)
+    ) + 
+    geom_point() + 
+    ylim(
+      y_lim_lower_boundary, 
+      y_lim_upper_boundary
+    )
 }
 
 generate_latitude_charts_with_cluster_colour <- function(
   data_frame,
   x_variable_names,
   cluster_variable_name,
-  y_variable_name = "latitude"
+  y_variable_name = "latitude",
+  y_lim_lower_boundary = 50,
+  y_lim_upper_boundary = 60
 ) {
   charts <- list()
   i <- 1
@@ -57,7 +66,9 @@ generate_latitude_charts_with_cluster_colour <- function(
       data_frame,
       x_variable_name,
       cluster_variable_name,
-      y_variable_name
+      y_variable_name,
+      y_lim_lower_boundary,
+      y_lim_upper_boundary
     )
     i <- i + 1
   }

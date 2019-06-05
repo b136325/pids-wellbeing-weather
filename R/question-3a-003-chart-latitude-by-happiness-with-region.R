@@ -4,7 +4,8 @@
 #                                                  #
 ####################################################
 question_3a_003_latitude_by_happiness_with_region <- function() {
-  question_3a_002_data_join() %>%
+  data_frame <- question_3a_002_data_join()
+  data_frame %>%
     generate_latitude_charts_with_cluster_colour(
       c(
         "hours_sun",
@@ -13,6 +14,16 @@ question_3a_003_latitude_by_happiness_with_region <- function() {
         "temp_min_degrees_c"
       ),
       "region",
-      "latitude_mean"
+      "happiness",
+      as.double(
+        min(
+          data_frame$happiness
+        )
+      ),
+      as.double(
+        max(
+          data_frame$happiness
+        )
+      )
     )
 }
