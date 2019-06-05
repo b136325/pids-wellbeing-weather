@@ -7,7 +7,9 @@
 #' @export
 question_3a_007_charts_predicted_happiness_by_weather_station <- function() {
   data_frame <- question_3a_006_regression_test()
-  data_frame <- arrange(data_frame, desc(latitude))
+  # Begin Exclude Linting
+  data_frame <- arrange(data_frame, desc(`slatitude`))
+  # End Exclude Linting
   data_frame %>%
     generate_latitude_charts_with_cluster_colour(
       c(

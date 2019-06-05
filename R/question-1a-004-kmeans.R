@@ -35,7 +35,8 @@ perform_k_means <- function(
   k_value,
   num_iterations,
   seed,
-  filter
+  filter,
+  nstart = 50
 ) {
   data_frame <- filter_for_kmeans_all(
     data_frame
@@ -45,7 +46,7 @@ perform_k_means <- function(
     x = data_frame,
     centers = k_value,
     iter.max = num_iterations,
-    nstart = 25
+    nstart = nstar
   )
 }
 

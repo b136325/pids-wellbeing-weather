@@ -9,7 +9,7 @@ library(mclust)
 question_1c_003_charts_density_bic <- function(
 ) {
   plot(
-    question_1c_001_density_estimation(), 
+    question_1c_001_density_estimation(),
     what = "BIC"
   )
 }
