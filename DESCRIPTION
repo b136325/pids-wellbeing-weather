@@ -1,13 +1,9 @@
-Package: weathr
-Title: What the Package Does (one line, title case)
+Package: pids.wellbing.weather
+Title: Practical Introduction to Data Science: Wellbing Weather
 Version: 0.4.8
-Description: What the package does (one paragraph).
+Description: An R based project for Assessment 3 from Practical Introduction to Data Science, University of Edinburgh, Scotland.
 Depends: R (>= 3.5.1)
 License: What license is it under?
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.1.2
-Imports: 
-    curl
-Suggests: 
-    testthat (>= 2.1.0)
