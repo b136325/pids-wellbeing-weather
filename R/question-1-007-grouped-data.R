@@ -5,15 +5,15 @@ library(scales)
 # EXPORTED FUNCTION                                #
 #                                                  #
 ####################################################
-#' question_1a_001_data
+#' question_1_007_grouped_data
 #' @param group_by_variable_name Defines the group by variable. String. Defaults to "weather_station_name"
 #' @param scale Whether or not the data should be scaled. Boolean. Defaults to TRUE.
 #' @examples
-#' question_1a_001_data()
-#' question_1a_001_data(scale = FALSE)
-#' question_1a_001_data(group_by_variable_name = "some_variable")
+#' question_1_007_grouped_data()
+#' question_1_007_grouped_data(scale = FALSE)
+#' qquestion_1_007_grouped_data(group_by_variable_name = "some_variable")
 #' @export
-question_1a_001_data <- function(
+question_1_007_grouped_data <- function(
   group_by_variable_name = "weather_station_name",
   scale = TRUE
 ) {

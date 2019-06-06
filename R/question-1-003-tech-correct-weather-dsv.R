@@ -187,7 +187,7 @@ transform_specific_files <- function(
     )
   }
   if (str_detect(file_path, WEATHER_STATION_WHITBY)) {
-    #file_contents <- transform_whitby(file_contents)
+    file_contents <- transform_whitby(file_contents)
   }
   file_contents
 }

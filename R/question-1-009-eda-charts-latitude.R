@@ -8,13 +8,13 @@ library(gridExtra)
 # EXPORTED FUNCTIONS (A-Z                          #
 #                                                  #
 ####################################################
-#' question_1a_002_charts_latitude
+#' question_1_009_eda_charts_latitude
 #' 
 #' Generate scatterplot charts comparing weather variables with latitude.
 #' @examples
-#' question_1_002_charts_latitude()
+#' question_1_009_eda_charts_latitude()
 #' @export
-question_1a_002_charts_latitude <- function() {
+question_1_009_eda_charts_latitude <- function() {
   generate_latitude_charts(
     question_1a_001_data(),
     c(

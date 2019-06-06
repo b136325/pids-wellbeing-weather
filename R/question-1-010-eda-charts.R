@@ -6,9 +6,13 @@ library(plotly)
 # EXPORTED FUNCTIONS (A-Z                          #
 #                                                  #
 ####################################################
-#' question_1a_003_charts_latitude_longitude_hours_sun
+#' question_1_010_eda_charts_hours_sun
+#' 
+#' Generate scatterplot charts comparing hours_sun with both latitude and longitude.
+#' @examples
+#' question_1_010_eda_charts_hours_sun()
 #' @export
-question_1a_003_charts_latitude_longitude_hours_sun <- function() {
+question_1_010_eda_charts_hours_sun <- function() {
   plot_ly(
     question_1a_001_data(scale = FALSE),
     x = ~hours_sun,
@@ -30,9 +34,13 @@ question_1a_003_charts_latitude_longitude_hours_sun <- function() {
   )
 }
 
-#' question_1a_data_charts_latitude_longitude_rain
+#' question_1_010_eda_charts_rain
+#' 
+#' Generate scatterplot charts comparing rain with both latitude and longitude.
+#' @examples
+#' question_1_010_eda_charts_rain()
 #' @export
-question_1a_003_charts_latitude_longitude_rain <- function() {
+question_1_010_eda_charts_rain <- function() {
   plot_ly(
     question_1a_001_data(scale = FALSE),
     x = ~rain_mm,
@@ -54,9 +62,13 @@ question_1a_003_charts_latitude_longitude_rain <- function() {
     )
 }
 
-#' question_1a_003_charts_latitude_longitude_max_temp
+#' question_1_010_eda_charts_max_temp
+#' 
+#' Generate scatterplot charts comparing max_temp with both latitude and longitude.
+#' @examples
+#' question_1_010_eda_charts_max_temp()
 #' @export
-question_1a_003_charts_latitude_longitude_max_temp <- function() {
+question_1_010_eda_charts_max_temp <- function() {
   plot_ly(
     question_1a_001_data(scale = FALSE),
     x = ~temp_max_degrees_c,
@@ -78,9 +90,13 @@ question_1a_003_charts_latitude_longitude_max_temp <- function() {
     )
 }
 
-#' question_1a_003_charts_latitude_longitude_min_temp
+#' question_1_010_eda_charts_min_temp
+#' 
+#' Generate scatterplot charts comparing max_temp with both latitude and longitude.
+#' @examples
+#' question_1_010_eda_charts_min_temp()
 #' @export
-question_1a_003_charts_latitude_longitude_min_temp <- function() {
+question_1_010_eda_charts_min_temp <- function() {
   plot_ly(
     question_1a_001_data(scale = FALSE),
     x = ~temp_min_degrees_c,
