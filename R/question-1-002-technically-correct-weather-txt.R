@@ -42,10 +42,6 @@ question_1_002_tech_correct_weather_txt <- function(
 #                                                  #
 ####################################################
 append_eof <- function(destination_file_path) {
-  if (file.exists(destination_file_path)) {
-    file.remove(destination_file_path)
-  }
-  file.create(destination_file_path)
   destination_file_contents <- readChar(
     destination_file_path,
     file.info(destination_file_path)$size

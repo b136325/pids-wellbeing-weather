@@ -21,7 +21,6 @@ question_1_003_tech_correct_weather_dsv <- function(
   destination_dir = DIR_TECHNICALLY_CORRECT_WEATHER_DSV,
   source_dir = DIR_TECHNICALLY_CORRECT_WEATHER_TXT
 ) {
-  destination_file_path <- NULL
   results <- character()
   source_file_paths <- files_per_directory(
     source_dir
