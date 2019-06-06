@@ -4,12 +4,25 @@ library(stringr)
 # EXPORTED FUNCTION                                #
 #                                                  #
 ####################################################
-#' stage_011
+#' question_1_003_tech_correct_weather_dsv
+#' 
+#' Convert the weather files into a delimited file format with a standard number of columns.
+#' 
+#' @param destination_dir An OPTIONAL string describing the destination dir.
+#'                        Defaults to DIR_TECHNICALLY_CORRECT_WEATHER_DSV defined within constants.dirs.R.
+#'                                   
+#' @param source_dir An OPTIONAL string describing the source dir.
+#'                   Defaults to DIR_TECHNICALLY_CORRECT_WEATHER_TXT defined within constants.dirs.R.
+#'  
+#' @return A list describing the success or failure of each file.                           
+#' @usage pids.wellbeing.weather::question_1_003_tech_correct_weather_dsv()
 #' @export
-stage_011 <- function(
+question_1_003_tech_correct_weather_dsv <- function(
   destination_dir = DIR_TECHNICALLY_CORRECT_WEATHER_DSV,
   source_dir = DIR_TECHNICALLY_CORRECT_WEATHER_TXT
 ) {
+  destination_file_path <- NULL
+  results <- character()
   source_file_paths <- files_per_directory(
     source_dir
   )
@@ -37,11 +50,23 @@ stage_011 <- function(
       FILE_EXTENSION_TXT,
       source_file_path
     )
+    if (file.exists(destination_file_path)) {
+      file.remove(destination_file_path)
+    }
+    file.create(destination_file_path)
     save_file(
       destination_file_contents,
       destination_file_path
     )
+    results <- append(
+      results,
+      paste0(
+        SUCCESS_MESSAGE_LABEL,
+        destination_file_path
+      )
+    )
   }
+  results
 }
 ####################################################
 #                                                  #
@@ -163,7 +188,7 @@ transform_specific_files <- function(
     )
   }
   if (str_detect(file_path, WEATHER_STATION_WHITBY)) {
-    file_contents <- transform_whitby(file_contents)
+    #file_contents <- transform_whitby(file_contents)
   }
   file_contents
 }
