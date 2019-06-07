@@ -1,4 +1,4 @@
-library(ggplot2)
+library(factoextra)
 ####################################################
 #                                                  #
 # EXPORTED FUNCTION                                #
@@ -7,7 +7,9 @@ library(ggplot2)
 #' question_1_024_analysis_charts_sum_squares
 #' @export
 question_1_024_analysis_charts_sum_squares <- function(
-  sum_squares = question_1_023_analysis_kmeans()$sum_squares
+  sum_squares = question_1_023_analysis_kmeans()$sum_squares,
+  x_intercept = 3,
+  x_intercept_line_type = 2
 ) {
   df <- data.frame(
     k_values = 1:length(sum_squares),
@@ -21,5 +23,9 @@ question_1_024_analysis_charts_sum_squares <- function(
     )
   ) +
   geom_line() +
+  geom_vline(
+    xintercept = x_intercept,
+    linetype = x_intercept_line_type
+  ) +
   geom_point()
 }

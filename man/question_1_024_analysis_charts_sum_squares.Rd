@@ -5,7 +5,8 @@
 \title{question_1_024_analysis_charts_sum_squares}
 \usage{
 
-  question_1_024_analysis_charts_sum_squares(sum_squares = question_1_023_analysis_kmeans()$sum_squares)
+  question_1_024_analysis_charts_sum_squares(sum_squares = question_1_023_analysis_kmeans()$sum_squares,
+  x_intercept = 3, x_intercept_line_type = 2)
 }
 \description{
 question_1_024_analysis_charts_sum_squares
