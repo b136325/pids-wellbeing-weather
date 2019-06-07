@@ -25,5 +25,10 @@ question_1_012_eda_remove_outliers_summary <- function(
   results$scaled <- build_summary(
     data_frame
   )
+  results$num_rows <-   df %>%
+    group_by(
+      weather_station_name
+    ) %>%
+    tally()
   results
 }
