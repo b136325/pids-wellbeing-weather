@@ -36,7 +36,7 @@ select_weather_features <- function(
   df,
   weather_features_as_row_names = FALSE
 ) {
-  df_selected <- df %>% 
+  df_selected <- df %>%
     select(
       hours_sun,
       rain_mm,

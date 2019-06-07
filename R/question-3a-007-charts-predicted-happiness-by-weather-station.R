@@ -11,7 +11,9 @@ question_3a_007_charts_predicted_happiness_by_weather_station <- function() {
   data_frame <- arrange(data_frame, desc(`slatitude`))
   # End Exclude Linting
   data_frame %>%
+    # Begin Exclude Linting
     generate_latitude_charts_with_cluster_colour(
+    # End Exclude Linting  
       c(
         "hours_sun",
         "rain_mm",

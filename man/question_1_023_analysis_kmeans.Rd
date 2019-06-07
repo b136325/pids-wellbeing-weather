@@ -4,7 +4,9 @@
 \alias{question_1_023_analysis_kmeans}
 \title{question_1_023_analysis_kmeans}
 \usage{
-question_1_023_analysis_kmeans(k_max = MAX_NUM_K, metric = "euclidean",
+
+  question_1_023_analysis_kmeans(df = question_1_011_eda_remove_outliers(scale
+  = TRUE), k_max = MAX_NUM_K, num_iterations = MAX_NUM_ITERATIONS,
   seed = SEED_DEFAULT)
 }
 \description{
