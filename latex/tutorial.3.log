@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  7 JUN 2019 03:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  7 JUN 2019 04:16
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1351,7 +1351,7 @@ Here is how much of TeX's memory you used:
 ></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
 /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></
 usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on tutorial.3.pdf (14 pages, 71411 bytes).
+Output written on tutorial.3.pdf (14 pages, 71408 bytes).
 PDF statistics:
  69 PDF objects out of 1000 (max. 8388607)
  48 compressed objects within 1 object stream
