@@ -37,74 +37,122 @@ question_1_008_grouped_data_summary <- function(
 # ENON XPORTED FUNCTIONS (A-Z)                     #
 #                                                  #
 ####################################################
-build_summary <- function(data_frame) {
+build_summary <- function(data_frame, num_decimal_places = 3) {
   hours_sun <- double()
   hours_sun <- append(
     hours_sun,
-    mean(data_frame$hours_sun)
+    round(
+      mean(data_frame$hours_sun),
+      num_decimal_places
+    )
   )
   hours_sun <- append(
     hours_sun,
-    min(data_frame$hours_sun)
+    round(
+      min(data_frame$hours_sun),
+      num_decimal_places
+    )
   )
   hours_sun <- append(
     hours_sun,
-    max(data_frame$hours_sun)
+    round(
+      max(data_frame$hours_sun),
+      num_decimal_places
+    )
   )
   hours_sun <- append(
     hours_sun,
-    sd(data_frame$hours_sun)
+    round(
+      sd(data_frame$hours_sun),
+      num_decimal_places
+    )
   )
   rain_mm <- double()
   rain_mm <- append(
     rain_mm,
-    mean(data_frame$rain_mm)
+    round(
+      mean(data_frame$rain_mm),
+      num_decimal_places
+    )
   )
   rain_mm <- append(
     rain_mm,
-    min(data_frame$rain_mm)
+    round(
+      min(data_frame$rain_mm),
+      num_decimal_places
+    )
   )
   rain_mm <- append(
     rain_mm,
-    max(data_frame$rain_mm)
+    round(
+      max(data_frame$rain_mm),
+      num_decimal_places
+    )
   )
   rain_mm <- append(
     rain_mm,
-    sd(data_frame$rain_mm)
+    round(
+      sd(data_frame$rain_mm),
+      num_decimal_places
+    )
   )
   temp_max <- double()
   temp_max <- append(
     temp_max,
-    mean(data_frame$temp_max_degrees_c)
+    round(
+      mean(data_frame$temp_max_degrees_c),
+      num_decimal_places
+    )
   )
   temp_max <- append(
     temp_max,
-    min(data_frame$temp_max_degrees_c)
+    round(
+      min(data_frame$temp_max_degrees_c),
+      num_decimal_places
+    )
   )
   temp_max <- append(
     temp_max,
-    max(data_frame$temp_max_degrees_c)
+    round(
+      max(data_frame$temp_max_degrees_c),
+      num_decimal_places
+    )
   )
   temp_max <- append(
     temp_max,
-    sd(data_frame$temp_max_degrees_c)
+    round(
+      sd(data_frame$temp_max_degrees_c),
+      num_decimal_places
+    )
   )
   temp_min <- double()
   temp_min <- append(
     temp_min,
-    mean(data_frame$temp_min_degrees_c)
+    round(
+      mean(data_frame$temp_min_degrees_c),
+      num_decimal_places
+    )
   )
   temp_min <- append(
     temp_min,
-    min(data_frame$temp_min_degrees_c)
+    round(
+      min(data_frame$temp_min_degrees_c),
+      num_decimal_places
+    )
   )
   temp_min <- append(
     temp_min,
-    max(data_frame$temp_min_degrees_c)
+    round(
+      max(data_frame$temp_min_degrees_c),
+      num_decimal_places
+    )
   )
   temp_min <- append(
     temp_min,
-    sd(data_frame$temp_min_degrees_c)
+    round(
+      sd(data_frame$temp_min_degrees_c),
+      num_decimal_places
+    )
   )
   results <- data.frame(
     hours_sun = hours_sun,
