@@ -3,8 +3,8 @@
 # EXPORTED FUNCTION                                #
 #                                                  #
 ####################################################
-#' question_1_020
+#' question_1_019_k_choice
 #' @export
-question_1_020 <- function() {
+question_1_019_k_choice <- function() {
   
 }

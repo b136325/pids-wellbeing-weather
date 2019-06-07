@@ -5,9 +5,9 @@ library(dplyr)
 # EXPORTED FUNCTION                                #
 #                                                  #
 ####################################################
-#' question_1_018_algorithm_choice
+#' question_1_020_algorithm_choice
 #' @export
-question_1_018_algorithm_choice <- function(
+question_1_020_algorithm_choice <- function(
   cluster_methods = c(
     "hierarchical",
     "kmeans",

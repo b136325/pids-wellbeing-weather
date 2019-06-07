@@ -7,9 +7,9 @@
 pids.wellbeing.weather::question_1_017_cluster_tendency()
 }
 \arguments{
-\item{group_by_variable_name}{An OPTIONAL string describing the group_by variable. Defaults to "weather_station_name".}
+\item{df}{An OPTIONAL data frame containing weather feature data,}
 
-\item{scale}{An OPTIONAL boolean indicating whether or not the data should be scaled.}
+\item{show_chart}{An OPTIONAL boolean flag, incdicating whether or not a chart should be generated.}
 }
 \value{
 A list describing the Hopkins cluster tendency

@@ -1,21 +1,23 @@
+library(cluster)
+library(dplyr)
 ####################################################
 #                                                  #
 # EXPORTED FUNCTION                                #
 #                                                  #
 ####################################################
-#' question_1_021_kmediods
+#' question_1_021_cluster
 #' @export
-question_1_021_kmediods <- function(
+question_1_021_cluster <- function(
   k_max = MAX_NUM_K,
-  num_iterations = MAX_NUM_ITERATIONS,
+  metric = "euclidean",
   seed = SEED_DEFAULT
 ) {
-  perform_k_mediods_repeat(
-    question_1_010_remove_outliers(),
+  data_frame <-  question_1_010_remove_outliers()
+  perform_cluster_repeat(
+    data_frame,
     k_max,
-    num_iterations,
-    seed,
-    filter = filter_for_kmediods_all
+    metric,
+    seed
   )
 }
 ####################################################
@@ -23,55 +25,45 @@ question_1_021_kmediods <- function(
 # NON EXPORTED FUNCTIONS (A-Z)                     #
 #                                                  #
 ####################################################
-filter_for_k_mediods_all <- function(data_frame) {
-  as.data.frame(
-    data_frame[, 1:4]
-  )
-}
-
-perform_k_mediods <- function(
+perform_cluster <- function(
   data_frame,
   k_value,
-  num_iterations,
-  seed,
-  filter,
-  nstart = 50
+  metric, 
+  seed
 ) {
-  data_frame <- filter_for_k_mediods_all(
-    data_frame
-  )
   set.seed(seed)
-  result <- pam(
-    x = data_frame,
+  pam(
+    x = select_weather_features(
+      data_frame,
+      weather_stations_as_row_names = TRUE
+    ),
     k = k_value,
-    metric = c("euclidean")
+    metric = metric
   )
 }
 
-perform_k_mediods_repeat <- function(
+perform_cluster_repeat <- function(
   data_frame,
   k_max,
-  num_iterations,
-  seed,
-  filter
+  metric,
+  seed
 ) {
-  sum_squares <- list()
+  cluster_results <- list()
   for (i in 1:k_max) {
-    results <- perform_k_mediods(
+    cluster_result <- perform_cluster(
       data_frame,
-      k_value = i,
-      num_iterations = num_iterations,
-      seed = seed,
-      filter
+      i,
+      metric,
+      seed
     )
-    sum_squares[[i]] <- results$tot.withinss
+    cluster_results[[i]] <- cluster_result
     column_name <- paste0("cluster_", i)
     data_frame[[column_name]] <- as.factor(
-      results$cluster
+      cluster_result$cluster
     )
   }
   results <- list()
   results$data_frame <- data_frame
-  results$sum_squares <- sum_squares
+  results$cluster_results <- cluster_results
   results
 }
