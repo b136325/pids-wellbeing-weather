@@ -10,7 +10,7 @@ library(plotly)
 #' @export
 question_1_025_charts_cluster_k2_latitude_longitude_hours_sun <- function() {
   plot_ly(
-    question_1_021_kmeans()$data_frame,
+    question_1_021_kmediods()$data_frame,
     x = ~hours_sun,
     y = ~longitude,
     z = ~latitude,
@@ -34,7 +34,7 @@ question_1_025_charts_cluster_k2_latitude_longitude_hours_sun <- function() {
 #' @export
 question_1_025_charts_cluster_k2_latitude_longitude_rain <- function() {
   plot_ly(
-    question_1_021_kmeans()$data_frame,
+    question_1_021_kmediods()$data_frame,
     x = ~rain_mm,
     y = ~longitude,
     z = ~latitude,
@@ -58,7 +58,7 @@ question_1_025_charts_cluster_k2_latitude_longitude_rain <- function() {
 #' @export
 question_1_025_charts_cluster_k2_latitude_longitude_temp_max <- function() {
   plot_ly(
-    question_1_021_kmeans()$data_frame,
+    question_1_021_kmediods()$data_frame,
     x = ~temp_max_degrees_c,
     y = ~longitude,
     z = ~latitude,
@@ -82,7 +82,7 @@ question_1_025_charts_cluster_k2_latitude_longitude_temp_max <- function() {
 #' @export
 question_1_025_charts_cluster_k2_latitude_longitude_temp_min <- function() {
   plot_ly(
-    question_1_021_kmeans()$data_frame,
+    question_1_021_kmediods()$data_frame,
     x = ~temp_min_degrees_c,
     y = ~longitude,
     z = ~latitude,

@@ -21,7 +21,6 @@ question_1_017_cluster_tendency <- function(
   scale = FALSE,
   show_chart = FALSE
 ) {
-  results <- list()
   data_frame <- question_1_010_remove_outliers(
     group_by_variable_name,
     scale
@@ -33,9 +32,8 @@ question_1_017_cluster_tendency <- function(
       temp_min_degrees_c
     )
   get_clust_tendency(
-    data_frame, 
-    n = nrow(data_frame) -1,
+    data_frame,
+    n = nrow(data_frame) - 1,
     graph = show_chart,
   )$hopkins_stat
 }
-

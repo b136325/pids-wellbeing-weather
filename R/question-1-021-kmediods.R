@@ -1,0 +1,77 @@
+####################################################
+#                                                  #
+# EXPORTED FUNCTION                                #
+#                                                  #
+####################################################
+#' question_1_021_kmediods
+#' @export
+question_1_021_kmediods <- function(
+  k_max = MAX_NUM_K,
+  num_iterations = MAX_NUM_ITERATIONS,
+  seed = SEED_DEFAULT
+) {
+  perform_k_mediods_repeat(
+    question_1_010_remove_outliers(),
+    k_max,
+    num_iterations,
+    seed,
+    filter = filter_for_kmediods_all
+  )
+}
+####################################################
+#                                                  #
+# NON EXPORTED FUNCTIONS (A-Z)                     #
+#                                                  #
+####################################################
+filter_for_k_mediods_all <- function(data_frame) {
+  as.data.frame(
+    data_frame[, 1:4]
+  )
+}
+
+perform_k_mediods <- function(
+  data_frame,
+  k_value,
+  num_iterations,
+  seed,
+  filter,
+  nstart = 50
+) {
+  data_frame <- filter_for_k_mediods_all(
+    data_frame
+  )
+  set.seed(seed)
+  result <- pam(
+    x = data_frame,
+    k = k_value,
+    metric = c("euclidean")
+  )
+}
+
+perform_k_mediods_repeat <- function(
+  data_frame,
+  k_max,
+  num_iterations,
+  seed,
+  filter
+) {
+  sum_squares <- list()
+  for (i in 1:k_max) {
+    results <- perform_k_mediods(
+      data_frame,
+      k_value = i,
+      num_iterations = num_iterations,
+      seed = seed,
+      filter
+    )
+    sum_squares[[i]] <- results$tot.withinss
+    column_name <- paste0("cluster_", i)
+    data_frame[[column_name]] <- as.factor(
+      results$cluster
+    )
+  }
+  results <- list()
+  results$data_frame <- data_frame
+  results$sum_squares <- sum_squares
+  results
+}

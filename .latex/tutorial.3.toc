@@ -1,0 +1,33 @@
+\contentsline {chapter}{Question 1}{1}
+\contentsline {subsection}{Introduction}{1}
+\contentsline {section}{Business Understanding}{1}
+\contentsline {subsection}{GitHub}{1}
+\contentsline {subsection}{RStudio}{2}
+\contentsline {section}{Data understanding}{2}
+\contentsline {subsection}{Statistical value chain}{2}
+\contentsline {subsubsection}{Raw data}{2}
+\contentsline {subsubsection}{Technically correct: weather .txt data}{2}
+\contentsline {subsubsection}{Technically correct: weather .dsv data}{3}
+\contentsline {subsubsection}{Technically correct: weather data frames}{3}
+\contentsline {subsubsection}{Technically correct: weather data frames correct}{3}
+\contentsline {subsubsection}{Technically correct: weather single data frame}{4}
+\contentsline {subsection}{Exploratory data analysis (EDS)}{4}
+\contentsline {subsubsection}{Summary}{4}
+\contentsline {subsubsection}{Box and whisker}{4}
+\contentsline {subsubsection}{Remove outliers}{4}
+\contentsline {subsubsection}{Weather variables by latitude}{4}
+\contentsline {subsection}{Cluster tendency}{5}
+\contentsline {subsection}{Algorithm choice}{5}
+\contentsline {section}{Data preparation}{5}
+\contentsline {subsection}{Determining K}{5}
+\contentsline {subsection}{Distance metric}{6}
+\contentsline {subsection}{Feature selection}{6}
+\contentsline {section}{Analysis}{6}
+\contentsline {subsection}{K-means}{6}
+\contentsline {subsection}{Model based}{6}
+\contentsline {section}{Evaluation}{6}
+\contentsline {section}{Deployment}{6}
+\contentsline {chapter}{Question 2}{7}
+\contentsline {chapter}{Question 3}{8}
+\contentsline {chapter}{Appendices}{10}
+\contentsline {section}{Raw data output}{11}

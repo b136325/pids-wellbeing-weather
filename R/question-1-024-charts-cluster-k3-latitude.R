@@ -6,7 +6,7 @@
 #' question_1b_006_charts_cluster_k3_latitude
 #' @export
 question_1b_006_charts_cluster_k3_latitude <- function() {
-  cluster_results <- question_1_021_kmeans()
+  cluster_results <- question_1_021_kmediods()
   generate_latitude_charts_with_cluster_colour(
     cluster_results$data_frame,
     c(
