@@ -3,14 +3,13 @@
 # EXPORTED FUNCTIONS (A-Z                          #
 #                                                  #
 ####################################################
-#' question_3a_007_charts_predicted_happiness_by_weather_station
+#' question_3_010_eval_charts_predicted_happiness
 #' @export
-question_3a_007_charts_predicted_happiness_by_weather_station <- function() {
-  data_frame <- question_3a_006_regression_test()
-  # Begin Exclude Linting
-  data_frame <- arrange(data_frame, desc(`slatitude`))
-  # End Exclude Linting
-  data_frame %>%
+question_3_010_eval_charts_predicted_happiness <- function(
+  df = question_3_008_analysis_regression_test()
+) {
+  df <- arrange(df, desc(`slatitude`))
+  df %>%
     # Begin Exclude Linting
     generate_latitude_charts_with_cluster_colour(
     # End Exclude Linting  
@@ -24,12 +23,12 @@ question_3a_007_charts_predicted_happiness_by_weather_station <- function() {
       "predicted_happiness",
       as.double(
         min(
-          data_frame$predicted_happiness
+          df$predicted_happiness
         )
       ),
       as.double(
         max(
-          data_frame$predicted_happiness
+          df$predicted_happiness
         )
       )
     )

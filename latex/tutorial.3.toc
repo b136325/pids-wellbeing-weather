@@ -26,8 +26,8 @@
 \contentsline {section}{Analysis}{8}
 \contentsline {subsection}{Hierarchical}{8}
 \contentsline {subsection}{K-means}{8}
-\contentsline {section}{Evaluation}{8}
-\contentsline {subsection}{Hierarchical}{8}
+\contentsline {section}{Evaluation}{9}
+\contentsline {subsection}{Hierarchical}{9}
 \contentsline {section}{Deployment}{9}
 \contentsline {chapter}{Question 2}{10}
 \contentsline {section}{Business Understanding}{10}
@@ -41,8 +41,18 @@
 \contentsline {subsubsection}{Latitude and longitude per latitude category}{11}
 \contentsline {section}{Data Preparation}{11}
 \contentsline {subsubsection}{Training and test data split}{11}
+\contentsline {subsection}{Algorithm choice}{12}
 \contentsline {section}{Analysis}{12}
 \contentsline {subsubsection}{K Nearest Neighbours}{12}
-\contentsline {chapter}{Question 3}{13}
-\contentsline {chapter}{Appendices}{15}
-\contentsline {section}{Raw data output}{16}
+\contentsline {chapter}{Question 2}{13}
+\contentsline {section}{Business Understanding}{13}
+\contentsline {section}{Data Understanding}{13}
+\contentsline {subsection}{Statistical value chain}{13}
+\contentsline {subsubsection}{Technically correct: well-being}{13}
+\contentsline {subsubsection}{Consistently correct: weather and well-being}{13}
+\contentsline {subsection}{Exploratory data analysis (EDA)}{13}
+\contentsline {section}{Data Preparation}{14}
+\contentsline {section}{Analysis}{14}
+\contentsline {section}{Evaluation}{14}
+\contentsline {chapter}{Appendices}{16}
+\contentsline {section}{Raw data output}{17}

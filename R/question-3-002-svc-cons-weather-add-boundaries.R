@@ -4,13 +4,14 @@ library(dplyr)
 # EXPORTED FUNCTION                                #
 #                                                  #
 ####################################################
-#' question_3a_001_data_weather
+#' question_3_002_svc_cons_weather_add_boundaries
 #' @export
-question_3a_001_data_weather <- function(
+question_3_002_svc_cons_weather_add_boundaries <- function(
+  df =  question_2_001_bu_append_latitude_categories(),
   num_boundaries = 10
 ) {
   append_happiness_latitude_category(
-    question_2a_001_data(),
+    df,
     build_happiness_latitude_category_boundaries(
       num_boundaries
     )

@@ -4,14 +4,15 @@ library(dplyr)
 # EXPORTED FUNCTION                                #
 #                                                  #
 ####################################################
-#' question_3a_006_regression_test
+#' question_3_008_analysis_regression_test
 #' @export
-question_3a_006_regression_test <- function() {
-  model <- question_3a_004_regression_model()
-  data_frame_test <- question_3a_001_data_weather()
-  data_frame_test$predicted_happiness <- predict(
+question_3_008_analysis_regression_test <- function(
+  df_test = question_3_002_svc_cons_weather_add_boundaries(),
+  model = question_3_007_analysis_regression()
+) {
+  df_test$predicted_happiness <- predict(
     model,
-    data_frame_test %>%
+    df_test %>%
       select(
         hours_sun,
         rain_mm,

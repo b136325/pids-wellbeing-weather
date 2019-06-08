@@ -4,18 +4,19 @@ library(dplyr)
 # EXPORTED FUNCTION                                #
 #                                                  #
 ####################################################
-#' question_3a_002_data_join
+#' question_3_003_svc_cons_weather_wellbeing_join
 #' @export
-question_3a_002_data_join <- function() {
-  data_frame_happiness <- load_happiness_data_frame()
-  data_frame_weather <- group_weather_data_frame_by_region(
-    question_3a_001_data_weather()
+question_3_003_svc_cons_weather_wellbeing_join <- function(
+  df_happiness = load_happiness_data_frame(),
+  df_weather = question_3_002_svc_cons_weather_add_boundaries()
+) {
+  df_weather <- group_weather_data_frame_by_region(
+    df_weather
   )
-  data_frame <- join_happiness_with_weather_by_region(
-    data_frame_happiness,
-    data_frame_weather
+  join_happiness_with_weather_by_region(
+    df_happiness,
+    df_weather
   )
-  data_frame
 }
 ####################################################
 #                                                  #
@@ -23,9 +24,9 @@ question_3a_002_data_join <- function() {
 #                                                  #
 ####################################################
 group_weather_data_frame_by_region <- function(
-  data_frame_weather
+  df_weather
 ) {
-  data_frame_weather %>%
+  df_weather %>%
     group_by(region) %>%
     summarise(
       hours_sun = mean(hours_sun),
@@ -42,11 +43,11 @@ group_weather_data_frame_by_region <- function(
 }
 
 join_happiness_with_weather_by_region <- function(
-  data_frame_happiness,
-  data_frame_weather
+  df_happiness,
+  df_weather
 ) {
-  data_frame_happiness %>%
-    inner_join(data_frame_weather)
+  df_happiness %>%
+    inner_join(df_weather)
 }
 
 load_happiness_data_frame <- function(

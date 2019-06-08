@@ -393,6 +393,22 @@ Within the \emph{pids.wellbeing.weather} package the function described above ca
 \subsection*{Algorithm choice}
 \addcontentsline{toc}{subsection}{Algorithm choice}
 
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{ |l|c|c|c|c| }
+		\hline
+		Model type &  Speed & Independence & Unequal cluster sizes  & Unusual density   \\
+		\hline
+		\hline
+		K-Means &   &   & No & No  \\
+		K-Mediods &   &   &  Yes  & No  \\
+		Hierarchical &  &   &   &  \\
+		Distribution based &   &   & Yes  & Yes  \\
+		\hline
+	\end{tabular}
+	\caption{Summary of clustering algorithms by feature)}
+\end{table}
+
 \begin{minted}{R}
 pids.wellbeing.weather::question_1_021_prep_algorithm_choice()
 \end{minted}
@@ -590,6 +606,24 @@ The function described above can be found within the \emph{pids.wellbeing.weathe
 ./R/question-2-006-prep-split.R
 \end{minted}
 
+\subsection*{Algorithm choice}
+\addcontentsline{toc}{subsection}{Algorithm choice}
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{ |l|c|c|c|c| }
+		\hline
+		Model type &  Speed & Normal & Independence & Conditional prob   \\
+		\hline
+		\hline
+		K-NN &   &   & &  \\
+		Multiple Logistic Regression &   &   &   &  \\
+		Naive Bayes &   &   & &  \\
+		\hline
+	\end{tabular}
+	\caption{Summary of clustering algorithms by feature)}
+\end{table}
+
 \section*{Analysis}
 \addcontentsline{toc}{section}{Analysis}
 
@@ -600,7 +634,7 @@ The function described above can be found within the \emph{pids.wellbeing.weathe
 \begin{minted}{R}
 pids.wellbeing.weather::question_2_007_analysis_knn()
 \end{minted}
-
+ 
 The function described above can be found within the \emph{pids.wellbeing.weather} package at the following address:
 
 \begin{minted}{Bash}
@@ -609,7 +643,84 @@ The function described above can be found within the \emph{pids.wellbeing.weathe
 
 \setcounter{equation}{0}
 \chapter*{Question 3}
-\addcontentsline{toc}{chapter}{Question 3}
+\addcontentsline{toc}{chapter}{Question 2}
+
+\section*{Business Understanding}
+\addcontentsline{toc}{section}{Business Understanding}
+
+\section*{Data Understanding}
+\addcontentsline{toc}{section}{Data Understanding}
+
+\subsection*{Statistical value chain}
+\addcontentsline{toc}{subsection}{Statistical value chain}
+
+\subsubsection*{Technically correct: well-being}
+\addcontentsline{toc}{subsubsection}{Technically correct: well-being}
+
+\begin{minted}{R}
+pids.wellbeing.weather::question_3_001_svc_tech_wellbeing()
+\end{minted}
+
+\begin{minted}{Bash}
+./R/question-3-001-svc-tech-wellbeing.R
+\end{minted}
+
+\subsubsection*{Consistently correct: weather and well-being}
+\addcontentsline{toc}{subsubsection}{Consistently correct: weather and well-being}
+
+\begin{minted}{R}
+pids.wellbeing.weather::question_3_002_svc_cons_weather_add_boundaries()
+pids.wellbeing.weather::question_3_003_svc_cons_weather_wellbeing_join()
+pids.wellbeing.weather::question_3_004_svc_cons_weather_wellbeing_summary()
+\end{minted}
+
+\begin{minted}{Bash}
+./R/question-3-002-svc-cons-weather-add-boundaries.R
+./R/question-3-003-svc-cons-weather-wellbeing-join.R
+./R/question-3-004-svc-cons-weather-wellbeing-summary.R
+\end{minted}
+
+\subsection*{Exploratory data analysis (EDA)}
+\addcontentsline{toc}{subsection}{Exploratory data analysis (EDA)}
+
+\begin{minted}{R}
+pids.wellbeing.weather::question_3_005_eda_charts_wellbeing_by_region()
+pids.wellbeing.weather::question_3_006_eda_charts_correlation()
+\end{minted}
+
+\begin{minted}{Bash}
+./R/question-3-005-eda-charts-wellbeing-by-region.R
+./R/question-3-006-eda-charts-correlation.R
+\end{minted}
+
+\section*{Data Preparation}
+\addcontentsline{toc}{section}{Data Preparation}
+
+\section*{Analysis}
+\addcontentsline{toc}{section}{Analysis}
+
+\begin{minted}{R}
+pids.wellbeing.weather::question_3_007_analysis_regression()
+pids.wellbeing.weather::question_3_008_analysis_regression_test()
+\end{minted}
+
+\begin{minted}{Bash}
+./R/question-3-007-analysis-regression.R
+./R/question-3-008-analysis-regression-test.R
+\end{minted}
+
+\section*{Evaluation}
+\addcontentsline{toc}{section}{Evaluation}
+
+\begin{minted}{R}
+pids.wellbeing.weather::question_3_009_eval_regression_summary()
+pids.wellbeing.weather::question_3_010_eval_charts_predicted_happinesst()
+\end{minted}
+
+\begin{minted}{Bash}
+./R/question-3-009-eval-regression-summary.R
+./R/question-3-010-eval-charts-predicted-happiness.R
+\end{minted}
 
 \pagebreak
 \bibliography{references} 

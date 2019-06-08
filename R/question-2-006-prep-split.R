@@ -30,7 +30,7 @@ derive_training_data_frame <- function(
   df,
   num_training_rows
 ) {
-  data_frame %>%
+  df %>%
     top_n(
       num_training_rows,
       weather_station_name

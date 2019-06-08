@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  8 JUN 2019 04:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  8 JUN 2019 17:15
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1386,6 +1386,13 @@ AFC5A75.pygtex)
 
 (./_minted-tutorial.3/193A825A61D638972CBE797C95BFDA29E1A99BB315655138CA0560A60
 95C1B63.pygtex)
+Overfull \hbox (25.92256pt too wide) in paragraph at lines 398--409
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 \openout3 = `tutorial.3.pyg'.
 
 
@@ -1430,12 +1437,12 @@ AFC5A75.pygtex)
 
 
 (./_minted-tutorial.3/363207212E0655245DFFFE556BF5D3E07B9A0CCEF41BCBC2BC2038A82
-AFC5A75.pygtex)
+AFC5A75.pygtex [8])
 \openout3 = `tutorial.3.pyg'.
 
 
 (./_minted-tutorial.3/4FECC023AFD6F8427C3DBEDB275765CFE1A99BB315655138CA0560A60
-95C1B63.pygtex [8]) [9]
+95C1B63.pygtex) [9]
 \openout3 = `tutorial.3.pyg'.
 
 
@@ -1508,26 +1515,91 @@ AFC5A75.pygtex)
 
 (./_minted-tutorial.3/1D0594D5AA46554D4991C69C5A22D9A8E1A99BB315655138CA0560A60
 95C1B63.pygtex)
+Overfull \hbox (12.44077pt too wide) in paragraph at lines 614--624
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 \openout3 = `tutorial.3.pyg'.
 
 
 (./_minted-tutorial.3/9A9A97C5293435A95CE5D238367D5A2E7B9A0CCEF41BCBC2BC2038A82
-AFC5A75.pygtex) [11]
+AFC5A75.pygtex [11])
 \openout3 = `tutorial.3.pyg'.
 
 
 (./_minted-tutorial.3/A854FF80EB9C040BEF81AA44A5F5E9C6E1A99BB315655138CA0560A60
-95C1B63.pygtex) [12] [13
+95C1B63.pygtex) [12]
+\openout3 = `tutorial.3.pyg'.
 
-] (./tutorial.3.bbl
+
+(./_minted-tutorial.3/AC446EE3E5BA4593BAF875822FA962A27B9A0CCEF41BCBC2BC2038A82
+AFC5A75.pygtex)
+\openout3 = `tutorial.3.pyg'.
+
+
+(./_minted-tutorial.3/7499F167450BB017BB13DCA79CC25C39E1A99BB315655138CA0560A60
+95C1B63.pygtex)
+\openout3 = `tutorial.3.pyg'.
+
+
+(./_minted-tutorial.3/39DE256243B2C72110051365687558EE7B9A0CCEF41BCBC2BC2038A82
+AFC5A75.pygtex)
+\openout3 = `tutorial.3.pyg'.
+
+
+(./_minted-tutorial.3/432D141D64CD3EF428E5198EF4B1E4BEE1A99BB315655138CA0560A60
+95C1B63.pygtex)
+\openout3 = `tutorial.3.pyg'.
+
+
+(./_minted-tutorial.3/3E96F9D4FC92D3DD0F10F5BB71081F377B9A0CCEF41BCBC2BC2038A82
+AFC5A75.pygtex)
+\openout3 = `tutorial.3.pyg'.
+
+
+(./_minted-tutorial.3/533C8FCCFB11F5A98B87E597DF2BFE55E1A99BB315655138CA0560A60
+95C1B63.pygtex)
+\openout3 = `tutorial.3.pyg'.
+
+
+(./_minted-tutorial.3/EBB9806DFD718EDFAF0D42B60FB4315E7B9A0CCEF41BCBC2BC2038A82
+AFC5A75.pygtex [13
+
+])
+\openout3 = `tutorial.3.pyg'.
+
+
+(./_minted-tutorial.3/E82AC3156EABBCA4B54018E4AFE771D0E1A99BB315655138CA0560A60
+95C1B63.pygtex)
+\openout3 = `tutorial.3.pyg'.
+
+runsystem(pygmentize -l R -f latex -P commandprefix=PYG -F tokenmerge -o _minte
+d-tutorial.3/BACA5AE7FC018AED022740F5EA3A26247B9A0CCEF41BCBC2BC2038A82AFC5A75.p
+ygtex tutorial.3.pyg)...executed.
+
+
+(./_minted-tutorial.3/BACA5AE7FC018AED022740F5EA3A26247B9A0CCEF41BCBC2BC2038A82
+AFC5A75.pygtex)
+\openout3 = `tutorial.3.pyg'.
+
+
+(./_minted-tutorial.3/425DED6795516E4177ED600BA798829CE1A99BB315655138CA0560A60
+95C1B63.pygtex) [14] (./tutorial.3.bbl
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-) [14
+) [15
 
-] [15
+] [16
 
-] [16] (./tutorial.3.aux)
+] [17]
+runsystem(rm _minted-tutorial.3/4FA0766324C710958C6D6B67B5704C467B9A0CCEF41BCBC
+2BC2038A82AFC5A75.pygtex)...executed.
+
+ (./tutorial.3.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1538,10 +1610,10 @@ runsystem(rm tutorial.3.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 27666 strings out of 492649
- 547154 string characters out of 6129622
- 595190 words of memory out of 5000000
- 30985 multiletter control sequences out of 15000+600000
+ 27707 strings out of 492649
+ 550528 string characters out of 6129622
+ 596118 words of memory out of 5000000
+ 30995 multiletter control sequences out of 15000+600000
  537557 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,8n,54p,10379b,363s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1549,10 +1621,10 @@ Here is how much of TeX's memory you used:
 ></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
 /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></
 usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on tutorial.3.pdf (19 pages, 76579 bytes).
+Output written on tutorial.3.pdf (20 pages, 79153 bytes).
 PDF statistics:
- 85 PDF objects out of 1000 (max. 8388607)
- 59 compressed objects within 1 object stream
+ 88 PDF objects out of 1000 (max. 8388607)
+ 61 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

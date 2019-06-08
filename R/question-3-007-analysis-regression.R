@@ -4,12 +4,13 @@ library(dplyr)
 # EXPORTED FUNCTION                                #
 #                                                  #
 ####################################################
-#' question_3a_004_regression_model
+#' question_3_007_analysis_regression
 #' @export
-question_3a_004_regression_model <- function() {
-  data_frame_training <- question_3a_002_data_join()
+question_3_007_analysis_regression <- function(
+  df_training = question_3_003_svc_cons_weather_wellbeing_join()
+) {
   lm(
     happiness ~ hours_sun + rain_mm + temp_max_degrees_c + temp_min_degrees_c,
-    data_frame_training
+    df_training
   )
 }

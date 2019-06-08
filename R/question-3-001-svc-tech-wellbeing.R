@@ -6,9 +6,9 @@ library(tidyr)
 # EXPORTED FUNCTION                                #
 #                                                  #
 ####################################################
-#' stage_015
+#' question_3_001_svc_tech_wellbeing
 #' @export
-stage_015 <- function(
+question_3_001_svc_tech_wellbeing <- function(
   source_file_path = DATA_RAW_WELLBEING_HAPPINESS_PATH,
   destination_file_path = DATA_WELLBEING_HAPPINESS_PATH,
   force = TRUE

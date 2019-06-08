@@ -4,10 +4,10 @@ library(dplyr)
 # EXPORTED FUNCTION                                #
 #                                                  #
 ####################################################
-#' question_3a_005_regression_summary
+#' question_3_009_eval_regression_summary
 #' @export
-question_3a_005_regression_summary <- function() {
+question_3_009_eval_regression_summary <- function() {
   summary(
-    question_3a_004_regression_model()
+    question_3_007_analysis_regression()
   )
 }

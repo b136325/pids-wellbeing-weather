@@ -3,11 +3,12 @@
 # EXPORTED FUNCTIONS (A-Z                          #
 #                                                  #
 ####################################################
-# 'question_3a_003_charts_happiness_by_region
+#' question_3_005_eda_charts_wellbeing_by_region
 #' @export
-question_3a_003_charts_happiness_by_region <- function() {
-  data_frame <- question_3a_002_data_join()
-  data_frame %>%
+question_3_005_eda_charts_wellbeing_by_region <- function(
+  df = question_3_003_svc_cons_join_weather_wellbeing()
+) {
+  df %>%
     # Begin Exclude Linting
     generate_latitude_charts_with_cluster_colour(
     # End Exclude Linting
