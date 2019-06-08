@@ -1,4 +1,4 @@
-www\documentclass[12pt, oneside, openany]{book}
+\documentclass[12pt, oneside, openany]{book}
 
 \usepackage[left=1.6in,top=1.1in,right=1.1in,bottom=1.5in]{geometry}
 
@@ -87,8 +87,8 @@ www\documentclass[12pt, oneside, openany]{book}
 \chapter*{Question 1}
 \addcontentsline{toc}{chapter}{Question 1}
 
-\subsection*{Introduction}
-\addcontentsline{toc}{subsection}{Introduction}
+\section*{Introduction}
+\addcontentsline{toc}{section}{Introduction}
 The demonstration will be structured with regard to the CRISP-DM data science project methodology, which describes such projects in terms of the following six sequential phases: Business Understanding, Data Understanding, Data Preparation, Analysis, Evaluation and Deployment. The first of those phases, Business Understanding, will be presented immediately below.
 
 \section*{Business Understanding}
@@ -140,6 +140,12 @@ This process downloads the required files into the \emph{pids-wellbeing-weather}
 pids.wellbeing.weather::question_1_001_svc_raw_data()
 \end{minted}
 
+Within the \emph{pids.wellbeing.weather} package the function described above can be found at the following address:
+
+\begin{minted}{Bash}
+./R/question-1-001-svc-raw-data.R
+\end{minted}
+
 \subsubsection*{Technically correct: weather .txt data}
 \addcontentsline{toc}{subsubsection}{Technically correct: weather .txt data}
 
@@ -147,6 +153,11 @@ In order to ensure a strong data related 'separation of concerns', such that, no
 
 \begin{minted}{R}
 pids.wellbeing.weather::question_1_002_svc_tech_weather_txt()
+\end{minted}
+
+Within the \emph{pids.wellbeing.weather} package the function described above can be found at the following address:
+\begin{minted}{Bash}
+./R/question-1-002-svc-tech-weather-txt.R
 \end{minted}
 
 \subsubsection*{Technically correct: weather .dsv data}
@@ -158,6 +169,11 @@ The next stage of technically correct data processing transforms the .txt files 
 pids.wellbeing.weather::question_1_003_svc_tech_weather_dsv()
 \end{minted}
 
+Within the \emph{pids.wellbeing.weather} package the function described above can be found at the following address:
+\begin{minted}{Bash}
+./R/question-1-003-svc-tech-weather-dsv.R
+\end{minted}
+
 \subsubsection*{Technically correct: weather data frames}
 \addcontentsline{toc}{subsubsection}{Technically correct: weather data frames}
 
@@ -167,13 +183,25 @@ The stage of technically correct data processing transforms the .dsv files into 
 pids.wellbeing.weather::question_1_004_svc_tech_weather_df()
 \end{minted}
 
+Within the \emph{pids.wellbeing.weather} package the function described above can be found at the following address:
+
+\begin{minted}{Bash}
+./R/question-1-004-svc-tech-weather-df.R
+\end{minted}
+
 \subsubsection*{Technically correct: weather data frames completet}
-\addcontentsline{toc}{subsubsection}{Technically correct: weather data frames completet}
+\addcontentsline{toc}{subsubsection}{Technically correct: weather data frames complete}
 
 The stage of technically correct data processing transforms the .Rds files from the data/weather/stage-012-technically-correct-dataframe directory. It ensures that the data frames have common lower case column names, along with appropriate data types. The transformed data frames are stored within the `stage-013-technically-correct-complete` directory. The function associated with this process has been exported from the package and it can be run using the command below. The function returns a list containing the destination paths of the successfully saved files, along with any errors.
 
 \begin{minted}{R}
 pids.wellbeing.weather::question_1_005_svc_tech_weather_complete()
+\end{minted}
+
+Within the \emph{pids.wellbeing.weather} package the function described above can be found at the following address:
+
+\begin{minted}{Bash}
+./R/question-1-005-svc-tech-weather-complete.R
 \end{minted}
 
 \subsubsection*{Technically correct: weather single data frame}
@@ -183,6 +211,12 @@ The stage of technically correct data processing transforms the .Rds files from 
 
 \begin{minted}{R}
 pids.wellbeing.weather::question_1_006_svc_tech_weather_single_df()
+\end{minted}
+
+Within the \emph{pids.wellbeing.weather} package the function described above can be found at the following address:
+
+\begin{minted}{Bash}
+./R/question-1-006-svc-tech-weather-single-df.R
 \end{minted}
 
 \subsubsection*{Consistently correct}
@@ -207,12 +241,20 @@ pids.wellbeing.weather::question_1_006_svc_tech_weather_single_df()
 
 \begin{minted}{R}
 pids.wellbeing.weather::question_1_007_svc_cons_summary()
-pids.wellbeing.weather::question_1_008_svc_cons_grouped_data
+pids.wellbeing.weather::question_1_008_svc_cons_grouped_data()
 pids.wellbeing.weather::question_1_009_svc_cons_grouped_data_summary()
 \end{minted}
 
+Within the \emph{pids.wellbeing.weather} package the functions described above can be found at the following address:
+
+\begin{minted}{Bash}
+./R/question-1-007-svc-cons-summary.R
+./R/question-1-008-svc-cons-grouped-data.R
+./R/question-1-009-svc-cons-grouped-data-summary.R
+\end{minted}
+
 \subsection*{Exploratory data analysis (EDA)}
-\addcontentsline{toc}{subsection}{Exploratory data analysis (EDS)}
+\addcontentsline{toc}{subsection}{Exploratory data analysis (EDA)}
 
 \subsubsection*{Box and whisker}
 \addcontentsline{toc}{subsubsection}{Box and whisker}
@@ -222,6 +264,15 @@ pids.wellbeing.weather::question_1_010_eda_charts_box_whisker_hours_sun()
 pids.wellbeing.weather::question_1_010_eda_charts_box_whisker_hours_rain()
 pids.wellbeing.weather::question_1_010_eda_charts_box_whisker_max_temp()
 pids.wellbeing.weather::question_1_010_eda_charts_box_whisker_min_temp()
+\end{minted}
+
+Within the \emph{pids.wellbeing.weather} package the functions described above can be found at the following address:
+
+\begin{minted}{Bash}
+./R/question_1_010_eda_charts_box_whisker_hours_sun.R
+./R/question_1_010_eda_charts_box_whisker_hours_rain.R
+./R/question_1_010_eda_charts_box_whisker_max_temp.R
+./R/question_1_010_eda_charts_box_whisker_min_temp.R
 \end{minted}
 
 \subsubsection*{Remove outliers}
@@ -249,6 +300,13 @@ pids.wellbeing.weather::question_1_011_eda_remove_outliers()
 pids.wellbeing.weather::question_1_012_eda_remove_outliers_summary()
 \end{minted}
 
+Within the \emph{pids.wellbeing.weather} package the functions described above can be found at the following address:
+
+\begin{minted}{Bash}
+./R/question-1-011-eda-remove-outliers.R
+./R/question-1-012-eda-remove-outliers-summary.R
+\end{minted}
+
 \subsubsection*{Weather variables by latitude}
 \addcontentsline{toc}{subsubsection}{Weather variables by latitude}
 
@@ -256,11 +314,29 @@ pids.wellbeing.weather::question_1_012_eda_remove_outliers_summary()
 pids.wellbeing.weather::question_1_013_eda_charts_latitude()
 \end{minted}
 
+Within the \emph{pids.wellbeing.weather} package the function described above can be found at the following address:
+
+\begin{minted}{Bash}
+./R/question-1-013-eda-charts-latitude.R
+\end{minted}
+
+\subsubsection*{Weather variables by latitude and longitude}
+\addcontentsline{toc}{subsubsection}{Weather variables by latitude and longitude}
+
 \begin{minted}{R}
-pids.wellbeing.weather::question_1_014_eda_charts_latitude_longitude_hours_sun()
-pids.wellbeing.weather::question_1_015_eda_charts_latitude_longitude_rain_mm()
-pids.wellbeing.weather::question_1_016_eda_charts_latitude_longitude_max_temp()
-pids.wellbeing.weather::question_1_017_eda_charts_latitude_longitude_min_temp()
+pids.wellbeing.weather::question_1_014_eda_charts_longitude_latitude_hours_sun()
+pids.wellbeing.weather::question_1_015_eda_charts_longitude_latitude_rain()
+pids.wellbeing.weather::question_1_016_eda_charts_longitude_latitude_max_temp()
+pids.wellbeing.weather::question_1_017_eda_charts_longitude_latitude_min_temp()
+\end{minted}
+
+Within the \emph{pids.wellbeing.weather} package the functions described above can be found at the following address:
+
+\begin{minted}{Bash}
+./R/question-1-014-eda-charts-longitude-latitude-hours-sun.R
+./R/question-1-015-eda-charts-longitude-latitude-rain.R
+./R/question-1-016-eda-charts-longitude-latitude-max-temp.R
+./R/question-1-017-eda-charts-longitude-latitude-min-temp.R
 \end{minted}
 
 \subsection*{Cluster tendency}
@@ -279,61 +355,125 @@ pids.wellbeing.weather::question_1_018_prep_cluster_tendency()
 pids.wellbeing.weather::question_1_018_prep_cluster_tendency(show_chart = TRUE)
 \end{minted}
 
-\subsubsection*{VAT}
-\addcontentsline{toc}{subsubsection}{VAT}
+Within the \emph{pids.wellbeing.weather} package the function described above can be found at the following address:
+
+\begin{minted}{Bash}
+./R/question-1-018-prep-cluster-tendency.R
+\end{minted}
+
+\subsection*{VAT}
+\addcontentsline{toc}{subsection}{VAT}
 
 \begin{minted}{R}
 pids.wellbeing.weather::question_1_019_prep_charts_vat()
 \end{minted}
 
-\subsection*{Algorithm choice}
-\addcontentsline{toc}{subsection}{Algorithm choice}
+Within the \emph{pids.wellbeing.weather} package the function described above can be found at the following address:
 
-WHY USE A PARTITION METHOD RATHER THAN DENSITY
-
-\begin{minted}{R}
-pids.wellbeing.weather::question_1_018_algorithm_choice()
+\begin{minted}{Bash}
+./R/question-1-019-prep-charts-vat.R
 \end{minted}
 
 \section*{Data preparation}
 \addcontentsline{toc}{section}{Data preparation}
 
-\subsection*{Determining K}
-\addcontentsline{toc}{subsection}{Determining K}
+\subsection*{ K choice}
+\addcontentsline{toc}{subsection}{K choice}
 
-1_019
+\begin{minted}{R}
+pids.wellbeing.weather::question_1_020_prep_k_choice()
+\end{minted}
 
-\subsection*{Distance metric}
-\addcontentsline{toc}{subsection}{Distance metric}
+Within the \emph{pids.wellbeing.weather} package the function described above can be found at the following address:
 
-\subsection*{Feature selection}
-\addcontentsline{toc}{subsection}{Feature selection}
+\begin{minted}{Bash}
+./R/question-1-020-prep-k-choice.R
+\end{minted}
 
-1_020
+\subsection*{Algorithm choice}
+\addcontentsline{toc}{subsection}{Algorithm choice}
+
+\begin{minted}{R}
+pids.wellbeing.weather::question_1_021_prep_algorithm_choice()
+\end{minted}
+
+Within the \emph{pids.wellbeing.weather} package the function described above can be found at the following address:
+
+\begin{minted}{Bash}
+./R/question-1-021-prep-algorithm-choice.R
+\end{minted}
+
+\subsection*{Linkage choice}
+\addcontentsline{toc}{subsection}{Linkage choice}
+
+\begin{minted}{R}
+pids.wellbeing.weather::question_1_022_linkage_choice()
+\end{minted}
+
+Within the \emph{pids.wellbeing.weather} package the function described above can be found at the following address:
+
+\begin{minted}{Bash}
+./R/question-1-022-linkage-choice.R
+\end{minted}
 
 \section*{Analysis}
 \addcontentsline{toc}{section}{Analysis}
+
+\subsection*{Hierarchical}
+\addcontentsline{toc}{subsection}{Hierarchical}
+
+\begin{minted}{R}
+pids.wellbeing.weather::question_1_023_analysis_hierarchical()
+pids.wellbeing.weather::question_1_024_analysis_charts_dendrogram()
+pids.wellbeing.weather::question_1_025_analysis_attach_pruned_cluster_values()
+\end{minted}
+
+Within the \emph{pids.wellbeing.weather} package the functions described above can be found at the following address:
+
+\begin{minted}{Bash}
+./R/question-1-023-analysis-hierarchical.R
+./R/question-1-024-analysis-charts-dendrogram.R
+./R/question-1-025-analysis-attach-pruned-cluster-values.R
+\end{minted}
 
 \subsection*{k-means}
 \addcontentsline{toc}{subsection}{K-means}
 
 \begin{minted}{R}
-pids.wellbeing.weather::question_1_021_k_means()
-pids.wellbeing.weather::question-1-022-charts-sum-squares()
+pids.wellbeing.weather::question_1_026_analysis_kmeans()
+pids.wellbeing.weather::question_1_027_analysis_charts_sum_squares()
 \end{minted}
 
-\begin{minted}{R}
-pids.wellbeing.weather::question_1_021_k_means()
-pids.wellbeing.weather::question-1-022-charts-sum-squares()
-\end{minted}
+Within the \emph{pids.wellbeing.weather} package the functions described above can be found at the following address:
 
-1_23 to 1_26
-\subsection*{Model based}
-\addcontentsline{toc}{subsection}{Model based}
+\begin{minted}{Bash}
+./R/question-1-026-analysis-kmeans.R
+./R/question-1-027-analysis-charts-sum-squares.R
+\end{minted}
 
 \section*{Evaluation}
 \addcontentsline{toc}{section}{Evaluation}
 
+\subsection*{Hierarchical}
+\addcontentsline{toc}{subsection}{Hierarchical}
+
+\begin{minted}{R}
+pids.wellbeing.weather::question_1_032_eval_charts_hierarchical_latitude()
+pids.wellbeing.weather::question_1_033_eval_charts_hier_latitude_longitude_hours_sun()
+pids.wellbeing.weather::question_1_034_eval_charts_hier_latitude_longitude_rain_mm()
+pids.wellbeing.weather::question_1_035_eval_charts_hier_latitude_longitude_max_temp()
+pids.wellbeing.weather::question_1_036_eval_charts_hier_latitude_longitude_min_temp()
+\end{minted}
+
+Within the \emph{pids.wellbeing.weather} package the functions described above can be found at the following address:
+
+\begin{minted}{Bash}
+./R/question-1-032-eval-charts-hier-latitude.R
+./R/question-1-033-eval-charts-hier-latitude-longitude-hours-sun.R
+./R/question-1-034-eval-charts-hier-latitude-longitude-rain-mm.R
+./R/question-1-035-eval-charts-hier-latitude-longitude-max-temp.R
+./R/question-1-036-eval-charts-hier-latitude-longitude-min-temp.R
+\end{minted}
 
 \section*{Deployment}
 \addcontentsline{toc}{section}{Deployment}

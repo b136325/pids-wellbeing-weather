@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+./R/question\PYGZhy{}1\PYGZhy{}032\PYGZhy{}eval\PYGZhy{}charts\PYGZhy{}hier\PYGZhy{}latitude.R
+./R/question\PYGZhy{}1\PYGZhy{}033\PYGZhy{}eval\PYGZhy{}charts\PYGZhy{}hier\PYGZhy{}latitude\PYGZhy{}longitude\PYGZhy{}hours\PYGZhy{}sun.R
+./R/question\PYGZhy{}1\PYGZhy{}034\PYGZhy{}eval\PYGZhy{}charts\PYGZhy{}hier\PYGZhy{}latitude\PYGZhy{}longitude\PYGZhy{}rain\PYGZhy{}mm.R
+./R/question\PYGZhy{}1\PYGZhy{}035\PYGZhy{}eval\PYGZhy{}charts\PYGZhy{}hier\PYGZhy{}latitude\PYGZhy{}longitude\PYGZhy{}max\PYGZhy{}temp.R
+./R/question\PYGZhy{}1\PYGZhy{}036\PYGZhy{}eval\PYGZhy{}charts\PYGZhy{}hier\PYGZhy{}latitude\PYGZhy{}longitude\PYGZhy{}min\PYGZhy{}temp.R
+\end{Verbatim}

@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{pids.wellbeing.weather}\PYG{o}{::}\PYG{n+nf}{question\PYGZus{}1\PYGZus{}023\PYGZus{}analysis\PYGZus{}hierarchical}\PYG{p}{()}
+\PYG{n}{pids.wellbeing.weather}\PYG{o}{::}\PYG{n+nf}{question\PYGZus{}1\PYGZus{}024\PYGZus{}analysis\PYGZus{}charts\PYGZus{}dendrogram}\PYG{p}{()}
+\PYG{n}{pids.wellbeing.weather}\PYG{o}{::}\PYG{n+nf}{question\PYGZus{}1\PYGZus{}025\PYGZus{}analysis\PYGZus{}attach\PYGZus{}pruned\PYGZus{}cluster\PYGZus{}values}\PYG{p}{()}
+\end{Verbatim}
