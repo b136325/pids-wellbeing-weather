@@ -9,17 +9,18 @@
 \contentsline {subsubsection}{Technically correct: weather .txt data}{2}
 \contentsline {subsubsection}{Technically correct: weather .dsv data}{3}
 \contentsline {subsubsection}{Technically correct: weather data frames}{3}
-\contentsline {subsubsection}{Technically correct: weather data frames correct}{3}
+\contentsline {subsubsection}{Technically correct: weather data frames completet}{3}
 \contentsline {subsubsection}{Technically correct: weather single data frame}{4}
+\contentsline {subsubsection}{Consistently correct}{4}
 \contentsline {subsection}{Exploratory data analysis (EDS)}{4}
-\contentsline {subsubsection}{Summary}{4}
 \contentsline {subsubsection}{Box and whisker}{4}
 \contentsline {subsubsection}{Remove outliers}{4}
-\contentsline {subsubsection}{Weather variables by latitude}{4}
+\contentsline {subsubsection}{Weather variables by latitude}{5}
 \contentsline {subsection}{Cluster tendency}{5}
+\contentsline {subsubsection}{VAT}{5}
 \contentsline {subsection}{Algorithm choice}{5}
-\contentsline {section}{Data preparation}{5}
-\contentsline {subsection}{Determining K}{5}
+\contentsline {section}{Data preparation}{6}
+\contentsline {subsection}{Determining K}{6}
 \contentsline {subsection}{Distance metric}{6}
 \contentsline {subsection}{Feature selection}{6}
 \contentsline {section}{Analysis}{6}

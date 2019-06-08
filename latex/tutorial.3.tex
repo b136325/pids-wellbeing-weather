@@ -1,4 +1,4 @@
-\documentclass[12pt, oneside, openany]{book}
+www\documentclass[12pt, oneside, openany]{book}
 
 \usepackage[left=1.6in,top=1.1in,right=1.1in,bottom=1.5in]{geometry}
 
@@ -137,7 +137,7 @@ install_github("b136325/pids.wellbeing.weather")
 This process downloads the required files into the \emph{pids-wellbeing-weather} and stores them within the data-raw/weather and the data-raw/wellbeing directories, respectively. The web address from which the data are downloaded are constructed dynamically using constants defined within `constants-weather-station-names.R' and `contants-wellbeing'. The function associated with this process has been exported from the pids.wellbeing.weather package. When run it returns a list of files that have been downloaded successfully, along with any that have failed, as illustrated in Figure \ref{fig:question_1_001}. The function can be run using the command below:
 
 \begin{minted}{R}
-pids.wellbeing.weather::question_1_001_raw_data()
+pids.wellbeing.weather::question_1_001_svc_raw_data()
 \end{minted}
 
 \subsubsection*{Technically correct: weather .txt data}
@@ -146,7 +146,7 @@ pids.wellbeing.weather::question_1_001_raw_data()
 In order to ensure a strong data related 'separation of concerns', such that, no amendments should be made to the data stored within the `data-raw` directory, this process moves the raw weather data from `data-raw` into `data`. In addition, it adds a closing new line character to each file, facilitating subsequent processing. More specifically, the weather data is moved into a directory representing the first stage of the 'technically correct' Statistical Value Chain process, which can be found at `data/weather/stage-010-technically-correct-text`. The function associated with this process has been exported from the package and it can be run using the command below. The function returns a list containing the destination paths of the successfully moved files.
 
 \begin{minted}{R}
-pids.wellbeing.weather::question_1_002_tech_correct_weather_txt()
+pids.wellbeing.weather::question_1_002_svc_tech_weather_txt()
 \end{minted}
 
 \subsubsection*{Technically correct: weather .dsv data}
@@ -155,7 +155,7 @@ pids.wellbeing.weather::question_1_002_tech_correct_weather_txt()
 The next stage of technically correct data processing transforms the .txt files into a .dsv white space delimited file format. This processes involves the removal of non column related header items from the .txt files. It also involves ensuring that the all of the files have a standard number of columns, which enables them to be reliably converted into a delimited file format. In addition, invalid data items, such as "---" are converted into a common data strandard, such as "NA". The function associated with this process has been exported from the package and it can be run using the command below. The function returns a list containing the destination paths of the successfully moved files, along with any errors.
 
 \begin{minted}{R}
-pids.wellbeing.weather::question_1_003_tech_correct_weather_dsv()
+pids.wellbeing.weather::question_1_003_svc_tech_weather_dsv()
 \end{minted}
 
 \subsubsection*{Technically correct: weather data frames}
@@ -164,16 +164,16 @@ pids.wellbeing.weather::question_1_003_tech_correct_weather_dsv()
 The stage of technically correct data processing transforms the .dsv files into data frames, saved in .Rds formats within the data/weather/stage-012-technically-correct-dataframe. The function associated with this process has been exported from the package and it can be run using the command below. The function returns a list containing the destination paths of the successfully saved files, along with any errors.
 
 \begin{minted}{R}
-pids.wellbeing.weather::question_1_004_tech_correct_weather_df()
+pids.wellbeing.weather::question_1_004_svc_tech_weather_df()
 \end{minted}
 
-\subsubsection*{Technically correct: weather data frames correct}
-\addcontentsline{toc}{subsubsection}{Technically correct: weather data frames correct}
+\subsubsection*{Technically correct: weather data frames completet}
+\addcontentsline{toc}{subsubsection}{Technically correct: weather data frames completet}
 
 The stage of technically correct data processing transforms the .Rds files from the data/weather/stage-012-technically-correct-dataframe directory. It ensures that the data frames have common lower case column names, along with appropriate data types. The transformed data frames are stored within the `stage-013-technically-correct-complete` directory. The function associated with this process has been exported from the package and it can be run using the command below. The function returns a list containing the destination paths of the successfully saved files, along with any errors.
 
 \begin{minted}{R}
-pids.wellbeing.weather::question_1_005_tech_corr_weather_complete()
+pids.wellbeing.weather::question_1_005_svc_tech_weather_complete()
 \end{minted}
 
 \subsubsection*{Technically correct: weather single data frame}
@@ -182,45 +182,46 @@ pids.wellbeing.weather::question_1_005_tech_corr_weather_complete()
 The stage of technically correct data processing transforms the .Rds files from the `stage-013-technically-correct-complete` directory into a single data frame, which is stored within `stage-014-technically-complete-single-dataframe`. The function associated with this process has been exported from the package and it can be run using the command below. The function returns the destination path of the successfully saved file, along with any errors.
 
 \begin{minted}{R}
-pids.wellbeing.weather::question_1_006_tech_corr_weather_single_df()
+pids.wellbeing.weather::question_1_006_svc_tech_weather_single_df()
+\end{minted}
+
+\subsubsection*{Consistently correct}
+\addcontentsline{toc}{subsubsection}{Consistently correct}
+
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{ |l|c|c|c|c| }
+		\hline
+		Summary Type & Sunshine (hours) & Rain (mm) & Temp max (c) & Temp min (c)\\
+		\hline
+		\hline
+		Mean & 119.119  & 75.032  & 12.816 & 5.998 \\
+		Min & 89.526  & 45.803  & 9.496   & 2.734 \\
+		Max & 155.310 & 151.117  & 14.968  & 8.386 \\
+		SD & 16.196  & 26.958   & 1.343  & 1.194 \\
+		\hline
+	\end{tabular}
+	\caption{Mean, min, max and SD for the weather features (3sf)}
+	\label{table:question_1_008_grouped_data_summary_non_scaled}
+\end{table}
+
+\begin{minted}{R}
+pids.wellbeing.weather::question_1_007_svc_cons_summary()
+pids.wellbeing.weather::question_1_008_svc_cons_grouped_data
+pids.wellbeing.weather::question_1_009_svc_cons_grouped_data_summary()
 \end{minted}
 
 \subsection*{Exploratory data analysis (EDA)}
 \addcontentsline{toc}{subsection}{Exploratory data analysis (EDS)}
 
-\subsubsection*{Summary}
-\addcontentsline{toc}{subsubsection}{Summary}
-
-\begin{table}[h!]
-\centering
-\begin{tabular}{ |l|c|c|c|c| }
- 	\hline
- 		Summary Type & Sunshine (hours) & Rain (mm) & Temp max (c) & Temp min (c)\\
- 	\hline
- 	\hline
-    		Mean & 119.119  & 75.032  & 12.816 & 5.998 \\
-    		Min & 89.526  & 45.803  & 9.496   & 2.734 \\
-    		Max & 155.310 & 151.117  & 14.968  & 8.386 \\
-    		SD & 16.196  & 26.958   & 1.343  & 1.194 \\
-     \hline
- \end{tabular}
- \caption{Mean, min, max and SD for the weather features (3sf)}
- \label{table:question_1_008_grouped_data_summary_non_scaled}
-\end{table}
-
-\begin{minted}{R}
-pids.wellbeing.weather::question_1_007_grouped_data()
-pids.wellbeing.weather::question_1_008_grouped_data_summary()
-\end{minted}
-
 \subsubsection*{Box and whisker}
 \addcontentsline{toc}{subsubsection}{Box and whisker}
 
 \begin{minted}{R}
-pids.wellbeing.weather::question_1_009_eda_charts_box_whisker_hours_sun()
-pids.wellbeing.weather::question_1_009_eda_charts_box_whisker_hours_rain()
-pids.wellbeing.weather::question_1_009_eda_charts_box_whisker_max_temp()
-pids.wellbeing.weather::question_1_009_eda_charts_box_whisker_min_temp()
+pids.wellbeing.weather::question_1_010_eda_charts_box_whisker_hours_sun()
+pids.wellbeing.weather::question_1_010_eda_charts_box_whisker_hours_rain()
+pids.wellbeing.weather::question_1_010_eda_charts_box_whisker_max_temp()
+pids.wellbeing.weather::question_1_010_eda_charts_box_whisker_min_temp()
 \end{minted}
 
 \subsubsection*{Remove outliers}
@@ -244,22 +245,22 @@ pids.wellbeing.weather::question_1_009_eda_charts_box_whisker_min_temp()
 \end{table}
 
 \begin{minted}{R}
-pids.wellbeing.weather::question_1_010_remove_outliers()
-pids.wellbeing.weather::question_1_011_remove_outliers_summary()
+pids.wellbeing.weather::question_1_011_eda_remove_outliers()
+pids.wellbeing.weather::question_1_012_eda_remove_outliers_summary()
 \end{minted}
 
 \subsubsection*{Weather variables by latitude}
 \addcontentsline{toc}{subsubsection}{Weather variables by latitude}
 
 \begin{minted}{R}
-pids.wellbeing.weather::question_1_012_eda_charts_latitude()
+pids.wellbeing.weather::question_1_013_eda_charts_latitude()
 \end{minted}
 
 \begin{minted}{R}
-pids.wellbeing.weather::question_1_013_eda_charts_hours_sun()
-pids.wellbeing.weather::question_1_014_eda_charts_rain()
-pids.wellbeing.weather::question_1_015_eda_charts_max_temp()
-pids.wellbeing.weather::question_1_016_eda_charts_min_temp()
+pids.wellbeing.weather::question_1_014_eda_charts_latitude_longitude_hours_sun()
+pids.wellbeing.weather::question_1_015_eda_charts_latitude_longitude_rain_mm()
+pids.wellbeing.weather::question_1_016_eda_charts_latitude_longitude_max_temp()
+pids.wellbeing.weather::question_1_017_eda_charts_latitude_longitude_min_temp()
 \end{minted}
 
 \subsection*{Cluster tendency}
@@ -274,8 +275,15 @@ The clustering tendency of the data has been calculated using the Hopkins statis
 
 The function used to generate this statistic can be run using the command below:
 \begin{minted}{R}
-pids.wellbeing.weather::question_1_017_cluster_tendency()
-pids.wellbeing.weather::question_1_017_cluster_tendency(show_chart = TRUE)
+pids.wellbeing.weather::question_1_018_prep_cluster_tendency()
+pids.wellbeing.weather::question_1_018_prep_cluster_tendency(show_chart = TRUE)
+\end{minted}
+
+\subsubsection*{VAT}
+\addcontentsline{toc}{subsubsection}{VAT}
+
+\begin{minted}{R}
+pids.wellbeing.weather::question_1_019_prep_charts_vat()
 \end{minted}
 
 \subsection*{Algorithm choice}

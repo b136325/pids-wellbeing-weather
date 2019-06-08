@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  7 JUN 2019 04:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  8 JUN 2019 02:07
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -6,6 +6,21 @@ entering extended mode
 (./tutorial.3.tex
 LaTeX2e <2018-04-01> patch level 2
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 w
+     ww\documentclass[12pt, oneside, openany]{book}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no w in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no w in font nullfont!
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/bk12.clo
@@ -18,12 +33,17 @@ File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \c@subsubsection=\count84
 \c@paragraph=\count85
 \c@subparagraph=\count86
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--314
+[]
+ []
+
 \c@figure=\count87
 \c@table=\count88
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-)
+[1{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
 (/usr/local/texlive/2018/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2018/03/24 v5.7 Page Geometry
 
@@ -1195,8 +1215,7 @@ ABD: EveryShipout initializing macros [1
 
 
 
-{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./tuto
-rial.3.toc
+] (./tutorial.3.toc
 LaTeX Font Info:    Try loading font information for U+msa on input line 2.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -1234,49 +1253,81 @@ LaTeX Warning: Reference `fig:question_1_001' on page 2 undefined on input line
 
 \openout3 = `tutorial.3.pyg'.
 
+runsystem(pygmentize -l R -f latex -P commandprefix=PYG -F tokenmerge -o _minte
+d-tutorial.3/CBD068EB96D365B82635421E356C1B927B9A0CCEF41BCBC2BC2038A82AFC5A75.p
+ygtex tutorial.3.pyg)...executed.
 
-(./_minted-tutorial.3/5C61A2FC9106D1E7223574042EE4F3527B9A0CCEF41BCBC2BC2038A82
+
+(./_minted-tutorial.3/CBD068EB96D365B82635421E356C1B927B9A0CCEF41BCBC2BC2038A82
 AFC5A75.pygtex)
 \openout3 = `tutorial.3.pyg'.
 
+runsystem(pygmentize -l R -f latex -P commandprefix=PYG -F tokenmerge -o _minte
+d-tutorial.3/A605AB690859691D55334F625FA3EB837B9A0CCEF41BCBC2BC2038A82AFC5A75.p
+ygtex tutorial.3.pyg)...executed.
 
-(./_minted-tutorial.3/6A4E8BF40D53BB7231F1C51FF6997BE77B9A0CCEF41BCBC2BC2038A82
+
+(./_minted-tutorial.3/A605AB690859691D55334F625FA3EB837B9A0CCEF41BCBC2BC2038A82
 AFC5A75.pygtex [2])
 \openout3 = `tutorial.3.pyg'.
 
+runsystem(pygmentize -l R -f latex -P commandprefix=PYG -F tokenmerge -o _minte
+d-tutorial.3/F4B721C651E1845F80D6D8731F953BDE7B9A0CCEF41BCBC2BC2038A82AFC5A75.p
+ygtex tutorial.3.pyg)...executed.
 
-(./_minted-tutorial.3/CB51DA8FF21AD533CCDF98DA76659CD67B9A0CCEF41BCBC2BC2038A82
+
+(./_minted-tutorial.3/F4B721C651E1845F80D6D8731F953BDE7B9A0CCEF41BCBC2BC2038A82
 AFC5A75.pygtex)
 \openout3 = `tutorial.3.pyg'.
 
+runsystem(pygmentize -l R -f latex -P commandprefix=PYG -F tokenmerge -o _minte
+d-tutorial.3/A255ACE1C287AF84099C7E461DC9F1757B9A0CCEF41BCBC2BC2038A82AFC5A75.p
+ygtex tutorial.3.pyg)...executed.
 
-(./_minted-tutorial.3/859DB8E2F1E716FACC5531F24DAC7F6B7B9A0CCEF41BCBC2BC2038A82
+
+(./_minted-tutorial.3/A255ACE1C287AF84099C7E461DC9F1757B9A0CCEF41BCBC2BC2038A82
 AFC5A75.pygtex)
 \openout3 = `tutorial.3.pyg'.
 
+runsystem(pygmentize -l R -f latex -P commandprefix=PYG -F tokenmerge -o _minte
+d-tutorial.3/F6DF8C3B05CB46B001F0D8CD74DEEBAB7B9A0CCEF41BCBC2BC2038A82AFC5A75.p
+ygtex tutorial.3.pyg)...executed.
 
-(./_minted-tutorial.3/92FC26D7C0A9EE4A072E8B8BA66F26677B9A0CCEF41BCBC2BC2038A82
+
+(./_minted-tutorial.3/F6DF8C3B05CB46B001F0D8CD74DEEBAB7B9A0CCEF41BCBC2BC2038A82
 AFC5A75.pygtex) [3]
 \openout3 = `tutorial.3.pyg'.
 
+runsystem(pygmentize -l R -f latex -P commandprefix=PYG -F tokenmerge -o _minte
+d-tutorial.3/3D5C4216BE23FC8BB3FC1BE3752588C27B9A0CCEF41BCBC2BC2038A82AFC5A75.p
+ygtex tutorial.3.pyg)...executed.
 
-(./_minted-tutorial.3/BB0C6A9F2B4D97B8A8E4063A5A3677427B9A0CCEF41BCBC2BC2038A82
+
+(./_minted-tutorial.3/3D5C4216BE23FC8BB3FC1BE3752588C27B9A0CCEF41BCBC2BC2038A82
 AFC5A75.pygtex)
-Overfull \hbox (8.31024pt too wide) in paragraph at lines 196--207
+Overfull \hbox (8.31024pt too wide) in paragraph at lines 193--204
  [][] 
  []
 
 \openout3 = `tutorial.3.pyg'.
 
+runsystem(pygmentize -l R -f latex -P commandprefix=PYG -F tokenmerge -o _minte
+d-tutorial.3/73D55C55D0D9D9E1C1D6F0FE1CA47CF67B9A0CCEF41BCBC2BC2038A82AFC5A75.p
+ygtex tutorial.3.pyg)...executed.
 
-(./_minted-tutorial.3/0DAC15857FBE7342A996F6C74BE61BAD7B9A0CCEF41BCBC2BC2038A82
+
+(./_minted-tutorial.3/73D55C55D0D9D9E1C1D6F0FE1CA47CF67B9A0CCEF41BCBC2BC2038A82
 AFC5A75.pygtex)
 \openout3 = `tutorial.3.pyg'.
 
+runsystem(pygmentize -l R -f latex -P commandprefix=PYG -F tokenmerge -o _minte
+d-tutorial.3/72458824A4FF3AAC36847FA7B10B2B1E7B9A0CCEF41BCBC2BC2038A82AFC5A75.p
+ygtex tutorial.3.pyg)...executed.
 
-(./_minted-tutorial.3/3614027297DB3FBC3C516E193083A8F67B9A0CCEF41BCBC2BC2038A82
+
+(./_minted-tutorial.3/72458824A4FF3AAC36847FA7B10B2B1E7B9A0CCEF41BCBC2BC2038A82
 AFC5A75.pygtex)
-Overfull \hbox (8.31024pt too wide) in paragraph at lines 231--242
+Overfull \hbox (8.31024pt too wide) in paragraph at lines 232--243
  [][] 
  []
 
@@ -1285,23 +1336,48 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 \openout3 = `tutorial.3.pyg'.
 
+runsystem(pygmentize -l R -f latex -P commandprefix=PYG -F tokenmerge -o _minte
+d-tutorial.3/EF8C2979ED11990D54822985834DEE0B7B9A0CCEF41BCBC2BC2038A82AFC5A75.p
+ygtex tutorial.3.pyg)...executed.
 
-(./_minted-tutorial.3/10954721092F0F8592295EB65E90B4317B9A0CCEF41BCBC2BC2038A82
+
+(./_minted-tutorial.3/EF8C2979ED11990D54822985834DEE0B7B9A0CCEF41BCBC2BC2038A82
 AFC5A75.pygtex)
 \openout3 = `tutorial.3.pyg'.
 
+runsystem(pygmentize -l R -f latex -P commandprefix=PYG -F tokenmerge -o _minte
+d-tutorial.3/15D907AC86B6497E02F00500F0EC202C7B9A0CCEF41BCBC2BC2038A82AFC5A75.p
+ygtex tutorial.3.pyg)...executed.
 
-(./_minted-tutorial.3/869C786DE1C1BC0D755EC972868A46327B9A0CCEF41BCBC2BC2038A82
+
+(./_minted-tutorial.3/15D907AC86B6497E02F00500F0EC202C7B9A0CCEF41BCBC2BC2038A82
 AFC5A75.pygtex)
 \openout3 = `tutorial.3.pyg'.
 
+runsystem(pygmentize -l R -f latex -P commandprefix=PYG -F tokenmerge -o _minte
+d-tutorial.3/310D0B9DAEBA72CDED4B2B37FCBE01CD7B9A0CCEF41BCBC2BC2038A82AFC5A75.p
+ygtex tutorial.3.pyg)...executed.
 
-(./_minted-tutorial.3/FCE29CB942BC8008F4B83442ACFF6CC27B9A0CCEF41BCBC2BC2038A82
+
+(./_minted-tutorial.3/310D0B9DAEBA72CDED4B2B37FCBE01CD7B9A0CCEF41BCBC2BC2038A82
 AFC5A75.pygtex [4])
 \openout3 = `tutorial.3.pyg'.
 
+runsystem(pygmentize -l R -f latex -P commandprefix=PYG -F tokenmerge -o _minte
+d-tutorial.3/FB6995DAEFC7059EB2E2F6C85CFBA1F97B9A0CCEF41BCBC2BC2038A82AFC5A75.p
+ygtex tutorial.3.pyg)...executed.
 
-(./_minted-tutorial.3/68CAB17059BC50ADAA5AC01438E00E567B9A0CCEF41BCBC2BC2038A82
+
+(./_minted-tutorial.3/FB6995DAEFC7059EB2E2F6C85CFBA1F97B9A0CCEF41BCBC2BC2038A82
+AFC5A75.pygtex)
+\openout3 = `tutorial.3.pyg'.
+
+runsystem(pygmentize -l R -f latex -P commandprefix=PYG -F tokenmerge -o _minte
+d-tutorial.3/38AD969FFA9CC73BA6EBAB96F235D4F87B9A0CCEF41BCBC2BC2038A82AFC5A75.p
+ygtex tutorial.3.pyg)...executed.
+
+
+(./_minted-tutorial.3/38AD969FFA9CC73BA6EBAB96F235D4F87B9A0CCEF41BCBC2BC2038A82
 AFC5A75.pygtex)
 \openout3 = `tutorial.3.pyg'.
 
@@ -1329,7 +1405,44 @@ LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
 ] [10
 
-] [11] (./tutorial.3.aux)
+] [11]
+runsystem(rm _minted-tutorial.3/5C61A2FC9106D1E7223574042EE4F3527B9A0CCEF41BCBC
+2BC2038A82AFC5A75.pygtex)...executed.
+
+runsystem(rm _minted-tutorial.3/6A4E8BF40D53BB7231F1C51FF6997BE77B9A0CCEF41BCBC
+2BC2038A82AFC5A75.pygtex)...executed.
+
+runsystem(rm _minted-tutorial.3/CB51DA8FF21AD533CCDF98DA76659CD67B9A0CCEF41BCBC
+2BC2038A82AFC5A75.pygtex)...executed.
+
+runsystem(rm _minted-tutorial.3/859DB8E2F1E716FACC5531F24DAC7F6B7B9A0CCEF41BCBC
+2BC2038A82AFC5A75.pygtex)...executed.
+
+runsystem(rm _minted-tutorial.3/92FC26D7C0A9EE4A072E8B8BA66F26677B9A0CCEF41BCBC
+2BC2038A82AFC5A75.pygtex)...executed.
+
+runsystem(rm _minted-tutorial.3/BB0C6A9F2B4D97B8A8E4063A5A3677427B9A0CCEF41BCBC
+2BC2038A82AFC5A75.pygtex)...executed.
+
+runsystem(rm _minted-tutorial.3/0DAC15857FBE7342A996F6C74BE61BAD7B9A0CCEF41BCBC
+2BC2038A82AFC5A75.pygtex)...executed.
+
+runsystem(rm _minted-tutorial.3/3614027297DB3FBC3C516E193083A8F67B9A0CCEF41BCBC
+2BC2038A82AFC5A75.pygtex)...executed.
+
+runsystem(rm _minted-tutorial.3/10954721092F0F8592295EB65E90B4317B9A0CCEF41BCBC
+2BC2038A82AFC5A75.pygtex)...executed.
+
+runsystem(rm _minted-tutorial.3/869C786DE1C1BC0D755EC972868A46327B9A0CCEF41BCBC
+2BC2038A82AFC5A75.pygtex)...executed.
+
+runsystem(rm _minted-tutorial.3/FCE29CB942BC8008F4B83442ACFF6CC27B9A0CCEF41BCBC
+2BC2038A82AFC5A75.pygtex)...executed.
+
+runsystem(rm _minted-tutorial.3/68CAB17059BC50ADAA5AC01438E00E567B9A0CCEF41BCBC
+2BC2038A82AFC5A75.pygtex)...executed.
+
+ (./tutorial.3.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1340,21 +1453,21 @@ runsystem(rm tutorial.3.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 27507 strings out of 492649
- 534152 string characters out of 6129622
- 592343 words of memory out of 5000000
- 30943 multiletter control sequences out of 15000+600000
- 537557 words of font info for 49 fonts, out of 8000000 for 9000
+ 27525 strings out of 492649
+ 535272 string characters out of 6129622
+ 592333 words of memory out of 5000000
+ 30945 multiletter control sequences out of 15000+600000
+ 537909 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,8n,54p,10379b,350s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,8n,54p,10379b,346s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
 /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></
 usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on tutorial.3.pdf (14 pages, 71408 bytes).
+Output written on tutorial.3.pdf (15 pages, 71805 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
- 48 compressed objects within 1 object stream
+ 72 PDF objects out of 1000 (max. 8388607)
+ 50 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
