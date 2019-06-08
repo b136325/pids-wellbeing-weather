@@ -89,31 +89,59 @@
 
 \section*{Introduction}
 \addcontentsline{toc}{section}{Introduction}
-The demonstration will be structured with regard to the CRISP-DM data science project methodology, which describes such projects in terms of the following six sequential phases: Business Understanding, Data Understanding, Data Preparation, Analysis, Evaluation and Deployment. The first of those phases, Business Understanding, will be presented immediately below.
+The demonstration will be structured with regard to the CRISP-DM\cite{crispDm1.0} data science project methodology, which describes such projects in terms of the following six sequential phases: Business Understanding, Data Understanding, Data Preparation, Analysis, Evaluation and Deployment. In addition, the CRISP-DM Data Understanding phase will contain the data cleaning components of the Statistical Value Chain, namely, Technically Correct and Consistently Correct data. Nevertheless, the first of the CRISP-DM phases, Business Understanding, will be presented immediately below.
 
-\section*{Business Understanding}
+\section*{Business understanding}
 \addcontentsline{toc}{section}{Business Understanding}
+The goal of this question will be to demonstrate that weather data can be clustered into two or more groups with each containing 'similar' weather conditions. The data contains results from thirty six monitoring stations across the UK (as made available online by the Met Office). While the process of retrieving and then cleaning the data will be described within the Data Understanding stage further below, it is worth noting that all of the process described within this answer have been implemented as an R package called \textbf{pids.wellbeing.weather}. The package's name begins with an abbreviation of the Practical Introduction to Data Science course, namely \textbf{pids}, followed by the names of the two primary datasets within the package: \textbf{wellbeing.weather}. Further information about the package will be provided immediately below.
 
-The goal of this question will be to demonstrate that weather data can be clustered into two or more groups of 'similar' weather conditions, using a machine learning clustering algorithm. The weather data will contain the results from thirty six weather stations across the UK (as made available online by the Met Office). While the process of retrieving and then cleaning the data will be described within the Data Understanding stage further below, it is worth noting that all of the process described within this answer have been implemented as an R package called \emph{pids-wellbeing-weather}. Moreover, all of the processes have been exported from the package as named functions.
+\subsection*{pids.wellbeing.weather}
+\addcontentsline{toc}{subsection}{Pids.wellbeing.weather}
 
-\subsection*{GitHub}
-\addcontentsline{toc}{subsection}{GitHub}
-The \emph{pids-wellbeing-weather} package has been made available on GitHub, using this student's exam number, b136325, as the GitHub account name. In addition, the package makes use of Packrat dependency management. This mean that the packages contains all of its dependencies. This approach increases the size of the package. Importantly, however, it ensures portability. The package can be cloned from GitHub using the following command: 
-
+\subsubsection*{GitHub}
+\addcontentsline{toc}{subsubsection}{GitHub}
+The \textbf{pids-wellbeing-weather} package has been made available on GitHub\cite{pids.wellbeing.weather}, using this student's exam number, \textbf{b136325}, as the account name. In addition, the package makes use of Packrat\cite{packrat} dependency management. This means that the package contains all of its dependencies. This approach increases the package's size. Importantly, however, it ensures portability, and the package can be cloned (and used immediately) from GitHub with the following command.
 
 \begin{minted}{bash}
 git clone https://github.com/b136325/pids.wellbeing.weather.git
 \end{minted}
 
-\subsection*{RStudio}
-\addcontentsline{toc}{subsection}{RStudio}
-Alternatively, the package can be installed into RStudio using the commands below: 
+\subsubsection*{RStudio}
+\addcontentsline{toc}{subsubsection}{RStudio}
+Alternatively, the package can be installed into RStudio using the commands below.
 
 \begin{minted}{R}
 install.packages("devtools")
 library(devtools)
 install_github("b136325/pids.wellbeing.weather")
 \end{minted}
+
+\subsubsection*{Structure}
+\addcontentsline{toc}{subsubsection}{Structure}
+The \textbf{pids-wellbeing-weather} package has been structured in accordance with R best practice\cite{rPackages}. For example, raw data can be found within the \textbf{./data-raw/} directory. In addition, both \emph{technically} and \emph{consistently correct} data can be found within the \textbf{./data/} directory. The code, which was linted using Lintr\cite{lintr}, and which was semantically versioned\cite{semvar} using Git\cite{git}, can be found within the \textbf{./R/} directory.
+
+\subsubsection*{Files and exported function names}
+\addcontentsline{toc}{subsubsection}{File and exported function names}
+Broadly, each code file exports only one function, and the name of the exported function accords with the associated file name. For example, the first code file relating to question 1, which downloads raw data, and whose address can be found directly below, exports a function called \emph{question\_1\_001\_svc\_raw-data}. In almost all cases, the names of exported functions match their associated files. This approach was adopted to ensure that exported functions could be found quickly within the code.
+
+\begin{minted}{bash}
+./R/question-1-001-svc-raw-data.R
+\end{minted}
+
+\subsubsection*{Exported function names and questions}
+\addcontentsline{toc}{subsubsection}{Exported function names and questions}
+In addition, the name of each export function begins with the related question number. For example, the exported function \emph{\textbf{question\_1}\_001\_svc\_raw-data}, as described above, relates to question 1. In contrast, the exported function \emph{\textbf{question\_2}\_007\_analysis\_knn}, which provides K Nearest Neighbours analysis, relates to question 2. This approach has been adopted for all exported functions, and it provides a structure for the code in relation to the questions.
+
+\subsubsection*{Function sequence number}
+\addcontentsline{toc}{subsubsection}{Function question sequence number}
+The name of each exported function (and the name of each associated code file) also contains a three digit number. This is the \textbf{function sequence number}. It can be found immediately after the question number, and it represents the function's sequence of use in relation to a specific question. For example, the exported function \emph{question\_1\_\textbf{001}\_svc\_raw-data}, as, described above, is the first function relating to question 1. In contrast, \emph{question\_1\_\textbf{036}\_eva\_charts\_hier\_latitude\_longitude\_min\_temp} is the 36th exported function relation to the same question.
+
+\subsubsection*{Function names and question phases}
+\addcontentsline{toc}{subsubsection}{Function name sequence number}
+Lastly, each exported function name contains a \textbf{question phase} description. This can be found immeditaley after the \textbf{function sequence number}, and it describes the phase (or part) of a question to which the function is related. For example, the exported function \emph{question\_1\_023\_\textbf{analysis}\_hierarchical}, which resturns a hierarchical cluster, is a part of the analysis phase for question 1. In contrast, \emph{question\_2\_003\_\textbf{eda}\_charts\_weather\_features} is an exported function, which returns a chart of weather features, and which is related to the Exploratory Data Analysis (EDA) phase of question 2.
+
+\subsubsection*{Summary}
+\addcontentsline{toc}{subsubsection}{Summary}
 
 \section*{Data understanding}
 \addcontentsline{toc}{section}{Data understanding}

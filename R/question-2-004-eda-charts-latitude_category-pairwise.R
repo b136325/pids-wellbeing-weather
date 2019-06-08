@@ -10,13 +10,14 @@ library(GGally)
 #' question_2_004_eda_charts_latitude_category_pairwise
 #' @export
 question_2_004_eda_charts_latitude_category_pairwise <- function(
-  df = data_frame <- question_2_001_bu_append_latitude_categories()
+  df = question_2_001_bu_append_latitude_categories()
 ) {
-  df_chart <- derive_chart_data_frame(df)
-  ggpairs(
-    df_chart,
-    mapping = aes(color = latitude_category)
-  )
+  df_charts <- derive_chart_data_frame(df)
+  print(df_charts)
+  print(df$latitude_category)
+  stop()
+  #plot(df_charts)
+  cors(df_charts)
 }
 ####################################################
 #                                                  #
@@ -26,7 +27,6 @@ question_2_004_eda_charts_latitude_category_pairwise <- function(
 derive_chart_data_frame <- function(df) {
   df %>%
     select(
-      latitude_category,
       hours_sun,
       latitude,
       longitude,

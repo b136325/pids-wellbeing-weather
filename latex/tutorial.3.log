@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  8 JUN 2019 17:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  8 JUN 2019 23:47
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1213,25 +1213,37 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout7 = `tutorial.3.toc'.
 
  [2]
+[1
+
+
+]
 \openout3 = `tutorial.3.pyg'.
 
-
-(./_minted-tutorial.3/default-pyg-prefix.pygstyle)
+ (./_minted-tutorial.3/default-pyg-prefix.pygstyle)
 (./_minted-tutorial.3/vs.pygstyle)
 (./_minted-tutorial.3/AE4A6A9D0487DA021DBE79A89A201315F83FF74285D3F684BC0C6235A
-D2194DF.pygtex [1
-
-
-])
+D2194DF.pygtex)
 \openout3 = `tutorial.3.pyg'.
 
 
 (./_minted-tutorial.3/8387DFB6FAFF458181AF40AC6706BD0B7B9A0CCEF41BCBC2BC2038A82
 AFC5A75.pygtex)
+\openout3 = `tutorial.3.pyg'.
 
-LaTeX Warning: Reference `fig:question_1_001' on page 2 undefined on input line
- 137.
 
+(./_minted-tutorial.3/15A0E0D97EECFA838E06FE0042E10E93F83FF74285D3F684BC0C6235A
+D2194DF.pygtex) [2]
+Overfull \hbox (6.1859pt too wide) in paragraph at lines 137--138
+\OT1/cmr/m/n/12 ques-tion 1. In con-trast, \OT1/cmr/m/it/12 ques-tion[]1[]\OT1/
+cmr/bx/it/12 036[]\OT1/cmr/m/it/12 eva[]charts[]hier[]latitude[]longitude[]min[
+]temp
+ []
+
+
+LaTeX Warning: Reference `fig:question_1_001' on page 3 undefined on input line
+ 165.
+
+[3]
 \openout3 = `tutorial.3.pyg'.
 
 
@@ -1241,7 +1253,7 @@ AFC5A75.pygtex)
 
 
 (./_minted-tutorial.3/15A0E0D97EECFA838E06FE0042E10E93E1A99BB315655138CA0560A60
-95C1B63.pygtex) [2]
+95C1B63.pygtex)
 \openout3 = `tutorial.3.pyg'.
 
 
@@ -1251,7 +1263,7 @@ AFC5A75.pygtex)
 
 
 (./_minted-tutorial.3/325C1490C17278B8F1F21C6E24AC376FE1A99BB315655138CA0560A60
-95C1B63.pygtex)
+95C1B63.pygtex) [4]
 \openout3 = `tutorial.3.pyg'.
 
 
@@ -1266,7 +1278,7 @@ AFC5A75.pygtex)
 
 
 (./_minted-tutorial.3/A255ACE1C287AF84099C7E461DC9F1757B9A0CCEF41BCBC2BC2038A82
-AFC5A75.pygtex [3])
+AFC5A75.pygtex)
 \openout3 = `tutorial.3.pyg'.
 
 
@@ -1281,7 +1293,7 @@ AFC5A75.pygtex)
 
 
 (./_minted-tutorial.3/8BB364CCA5257B6C2FD8EEE67CB1BECDE1A99BB315655138CA0560A60
-95C1B63.pygtex)
+95C1B63.pygtex) [5]
 \openout3 = `tutorial.3.pyg'.
 
 
@@ -1292,18 +1304,15 @@ AFC5A75.pygtex)
 
 (./_minted-tutorial.3/6EFD98EA51E09A9A33490001051B5957E1A99BB315655138CA0560A60
 95C1B63.pygtex)
-Overfull \hbox (8.31024pt too wide) in paragraph at lines 227--238
+Overfull \hbox (8.31024pt too wide) in paragraph at lines 255--266
  [][] 
  []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 \openout3 = `tutorial.3.pyg'.
 
 
 (./_minted-tutorial.3/CC80420A4CE7089F0CE079FBAB6C964F7B9A0CCEF41BCBC2BC2038A82
-AFC5A75.pygtex [4])
+AFC5A75.pygtex)
 \openout3 = `tutorial.3.pyg'.
 
 
@@ -1313,18 +1322,15 @@ AFC5A75.pygtex [4])
 
 
 (./_minted-tutorial.3/72458824A4FF3AAC36847FA7B10B2B1E7B9A0CCEF41BCBC2BC2038A82
-AFC5A75.pygtex)
+AFC5A75.pygtex) [6]
 \openout3 = `tutorial.3.pyg'.
 
 
 (./_minted-tutorial.3/345BBECE8E9A845CDAB87ABF69F2D3B6E1A99BB315655138CA0560A60
 95C1B63.pygtex)
-Overfull \hbox (8.31024pt too wide) in paragraph at lines 283--294
+Overfull \hbox (8.31024pt too wide) in paragraph at lines 311--322
  [][] 
  []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 \openout3 = `tutorial.3.pyg'.
 
@@ -1335,7 +1341,7 @@ AFC5A75.pygtex)
 
 
 (./_minted-tutorial.3/967332718BCE2A9379F88B1E027E4025E1A99BB315655138CA0560A60
-95C1B63.pygtex [5])
+95C1B63.pygtex)
 \openout3 = `tutorial.3.pyg'.
 
 
@@ -1350,12 +1356,12 @@ AFC5A75.pygtex)
 
 
 (./_minted-tutorial.3/DF5446313AD7CB3C4A5B6D60BC486F737B9A0CCEF41BCBC2BC2038A82
-AFC5A75.pygtex)
+AFC5A75.pygtex [7])
 \openout3 = `tutorial.3.pyg'.
 
 
 (./_minted-tutorial.3/763EA8C773FFB45942FFDAF9762E5E3AE1A99BB315655138CA0560A60
-95C1B63.pygtex) [6]
+95C1B63.pygtex)
 \openout3 = `tutorial.3.pyg'.
 
 
@@ -1380,18 +1386,15 @@ AFC5A75.pygtex)
 
 
 (./_minted-tutorial.3/7431AF8C2D31F03C5C63860F9BE046627B9A0CCEF41BCBC2BC2038A82
-AFC5A75.pygtex)
+AFC5A75.pygtex [8])
 \openout3 = `tutorial.3.pyg'.
 
 
 (./_minted-tutorial.3/193A825A61D638972CBE797C95BFDA29E1A99BB315655138CA0560A60
 95C1B63.pygtex)
-Overfull \hbox (25.92256pt too wide) in paragraph at lines 398--409
+Overfull \hbox (25.92256pt too wide) in paragraph at lines 426--437
  [][] 
  []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 \openout3 = `tutorial.3.pyg'.
 
@@ -1407,7 +1410,7 @@ AFC5A75.pygtex)
 
 
 (./_minted-tutorial.3/392DBC11D5428602ACA30444AECB2A3F7B9A0CCEF41BCBC2BC2038A82
-AFC5A75.pygtex) [7]
+AFC5A75.pygtex)
 \openout3 = `tutorial.3.pyg'.
 
 
@@ -1422,7 +1425,7 @@ AFC5A75.pygtex)
 
 
 (./_minted-tutorial.3/2AF6A3B7B1AF4CEAEF2310518F77B3C2E1A99BB315655138CA0560A60
-95C1B63.pygtex)
+95C1B63.pygtex [9])
 \openout3 = `tutorial.3.pyg'.
 
 
@@ -1437,12 +1440,12 @@ AFC5A75.pygtex)
 
 
 (./_minted-tutorial.3/363207212E0655245DFFFE556BF5D3E07B9A0CCEF41BCBC2BC2038A82
-AFC5A75.pygtex [8])
+AFC5A75.pygtex)
 \openout3 = `tutorial.3.pyg'.
 
 
 (./_minted-tutorial.3/4FECC023AFD6F8427C3DBEDB275765CFE1A99BB315655138CA0560A60
-95C1B63.pygtex) [9]
+95C1B63.pygtex) [10] [11]
 \openout3 = `tutorial.3.pyg'.
 
 
@@ -1477,7 +1480,7 @@ AFC5A75.pygtex)
 
 
 (./_minted-tutorial.3/F0C1D76D7B275239E1282FD9ECE597617B9A0CCEF41BCBC2BC2038A82
-AFC5A75.pygtex [10
+AFC5A75.pygtex [12
 
 ])
 \openout3 = `tutorial.3.pyg'.
@@ -1515,7 +1518,7 @@ AFC5A75.pygtex)
 
 (./_minted-tutorial.3/1D0594D5AA46554D4991C69C5A22D9A8E1A99BB315655138CA0560A60
 95C1B63.pygtex)
-Overfull \hbox (12.44077pt too wide) in paragraph at lines 614--624
+Overfull \hbox (12.44077pt too wide) in paragraph at lines 642--652
  [][] 
  []
 
@@ -1526,12 +1529,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 (./_minted-tutorial.3/9A9A97C5293435A95CE5D238367D5A2E7B9A0CCEF41BCBC2BC2038A82
-AFC5A75.pygtex [11])
+AFC5A75.pygtex [13])
 \openout3 = `tutorial.3.pyg'.
 
 
 (./_minted-tutorial.3/A854FF80EB9C040BEF81AA44A5F5E9C6E1A99BB315655138CA0560A60
-95C1B63.pygtex) [12]
+95C1B63.pygtex) [14]
 \openout3 = `tutorial.3.pyg'.
 
 
@@ -1566,7 +1569,7 @@ AFC5A75.pygtex)
 
 
 (./_minted-tutorial.3/EBB9806DFD718EDFAF0D42B60FB4315E7B9A0CCEF41BCBC2BC2038A82
-AFC5A75.pygtex [13
+AFC5A75.pygtex [15
 
 ])
 \openout3 = `tutorial.3.pyg'.
@@ -1576,10 +1579,6 @@ AFC5A75.pygtex [13
 95C1B63.pygtex)
 \openout3 = `tutorial.3.pyg'.
 
-runsystem(pygmentize -l R -f latex -P commandprefix=PYG -F tokenmerge -o _minte
-d-tutorial.3/BACA5AE7FC018AED022740F5EA3A26247B9A0CCEF41BCBC2BC2038A82AFC5A75.p
-ygtex tutorial.3.pyg)...executed.
-
 
 (./_minted-tutorial.3/BACA5AE7FC018AED022740F5EA3A26247B9A0CCEF41BCBC2BC2038A82
 AFC5A75.pygtex)
@@ -1587,19 +1586,17 @@ AFC5A75.pygtex)
 
 
 (./_minted-tutorial.3/425DED6795516E4177ED600BA798829CE1A99BB315655138CA0560A60
-95C1B63.pygtex) [14] (./tutorial.3.bbl
+95C1B63.pygtex) [16] (./tutorial.3.bbl
+Underfull \hbox (badness 5231) in paragraph at lines 10--13
+[]\OT1/cmr/m/n/12 ``pids.wellbeing.weather.'' $\OT1/cmtt/m/n/12 https : / / git
+hub . com / b136325 / pids . wellbeing .
+ []
 
-LaTeX Warning: Empty `thebibliography' environment on input line 3.
+) [17
 
-) [15
+] [18
 
-] [16
-
-] [17]
-runsystem(rm _minted-tutorial.3/4FA0766324C710958C6D6B67B5704C467B9A0CCEF41BCBC
-2BC2038A82AFC5A75.pygtex)...executed.
-
- (./tutorial.3.aux)
+] [19] (./tutorial.3.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1610,21 +1607,22 @@ runsystem(rm tutorial.3.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 27707 strings out of 492649
- 550528 string characters out of 6129622
- 596118 words of memory out of 5000000
- 30995 multiletter control sequences out of 15000+600000
- 537557 words of font info for 49 fonts, out of 8000000 for 9000
+ 27720 strings out of 492649
+ 550913 string characters out of 6129622
+ 596471 words of memory out of 5000000
+ 31005 multiletter control sequences out of 15000+600000
+ 537916 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,8n,54p,10379b,363s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,8n,54p,10379b,350s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
-/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></
-usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on tutorial.3.pdf (20 pages, 79153 bytes).
+></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pf
+b></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><
+/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on tutorial.3.pdf (22 pages, 97807 bytes).
 PDF statistics:
- 88 PDF objects out of 1000 (max. 8388607)
- 61 compressed objects within 1 object stream
+ 98 PDF objects out of 1000 (max. 8388607)
+ 68 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

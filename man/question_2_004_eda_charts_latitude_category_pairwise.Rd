@@ -5,8 +5,8 @@
 \alias{question_2_004_eda_charts_latitude_category_pairwise}
 \title{question_2_004_eda_charts_latitude_category_pairwise}
 \usage{
-question_2_004_eda_charts_latitude_category_pairwise(df = data_frame <-
-  question_2_001_bu_append_latitude_categories())
+
+  question_2_004_eda_charts_latitude_category_pairwise(df = question_2_001_bu_append_latitude_categories())
 }
 \description{
 question_2_004_eda_charts_latitude_category_pairwise

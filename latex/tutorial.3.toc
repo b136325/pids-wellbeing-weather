@@ -1,58 +1,65 @@
 \contentsline {chapter}{Question 1}{1}
 \contentsline {section}{Introduction}{1}
 \contentsline {section}{Business Understanding}{1}
-\contentsline {subsection}{GitHub}{1}
-\contentsline {subsection}{RStudio}{2}
-\contentsline {section}{Data understanding}{2}
-\contentsline {subsection}{Statistical value chain}{2}
-\contentsline {subsubsection}{Raw data}{2}
-\contentsline {subsubsection}{Technically correct: weather .txt data}{3}
-\contentsline {subsubsection}{Technically correct: weather .dsv data}{3}
-\contentsline {subsubsection}{Technically correct: weather data frames}{3}
-\contentsline {subsubsection}{Technically correct: weather data frames complete}{4}
-\contentsline {subsubsection}{Technically correct: weather single data frame}{4}
-\contentsline {subsubsection}{Consistently correct}{5}
-\contentsline {subsection}{Exploratory data analysis (EDA)}{5}
-\contentsline {subsubsection}{Box and whisker}{5}
-\contentsline {subsubsection}{Remove outliers}{5}
-\contentsline {subsubsection}{Weather variables by latitude}{6}
-\contentsline {subsubsection}{Weather variables by latitude and longitude}{6}
-\contentsline {subsection}{Cluster tendency}{6}
-\contentsline {subsection}{VAT}{7}
-\contentsline {section}{Data preparation}{7}
-\contentsline {subsection}{K choice}{7}
-\contentsline {subsection}{Algorithm choice}{7}
-\contentsline {subsection}{Linkage choice}{8}
-\contentsline {section}{Analysis}{8}
-\contentsline {subsection}{Hierarchical}{8}
-\contentsline {subsection}{K-means}{8}
-\contentsline {section}{Evaluation}{9}
-\contentsline {subsection}{Hierarchical}{9}
-\contentsline {section}{Deployment}{9}
-\contentsline {chapter}{Question 2}{10}
-\contentsline {section}{Business Understanding}{10}
-\contentsline {section}{Data Understanding}{10}
-\contentsline {subsection}{Append latitude categories}{10}
-\contentsline {subsection}{Exploratory data analysis (EDA)}{10}
-\contentsline {subsubsection}{Number of weather stations per latitude category}{10}
-\contentsline {subsubsection}{Weather stations per latitude category}{10}
-\contentsline {subsubsection}{Mean weather features per latitude category}{11}
-\contentsline {subsubsection}{Latitude category pairwise comparisons}{11}
-\contentsline {subsubsection}{Latitude and longitude per latitude category}{11}
-\contentsline {section}{Data Preparation}{11}
-\contentsline {subsubsection}{Training and test data split}{11}
-\contentsline {subsection}{Algorithm choice}{12}
-\contentsline {section}{Analysis}{12}
-\contentsline {subsubsection}{K Nearest Neighbours}{12}
-\contentsline {chapter}{Question 2}{13}
-\contentsline {section}{Business Understanding}{13}
-\contentsline {section}{Data Understanding}{13}
-\contentsline {subsection}{Statistical value chain}{13}
-\contentsline {subsubsection}{Technically correct: well-being}{13}
-\contentsline {subsubsection}{Consistently correct: weather and well-being}{13}
-\contentsline {subsection}{Exploratory data analysis (EDA)}{13}
-\contentsline {section}{Data Preparation}{14}
+\contentsline {subsection}{Pids.wellbeing.weather}{2}
+\contentsline {subsubsection}{GitHub}{2}
+\contentsline {subsubsection}{RStudio}{2}
+\contentsline {subsubsection}{Structure}{2}
+\contentsline {subsubsection}{File and exported function names}{2}
+\contentsline {subsubsection}{Exported function names and questions}{3}
+\contentsline {subsubsection}{Function question sequence number}{3}
+\contentsline {subsubsection}{Function name sequence number}{3}
+\contentsline {subsubsection}{Summary}{3}
+\contentsline {section}{Data understanding}{3}
+\contentsline {subsection}{Statistical value chain}{3}
+\contentsline {subsubsection}{Raw data}{4}
+\contentsline {subsubsection}{Technically correct: weather .txt data}{4}
+\contentsline {subsubsection}{Technically correct: weather .dsv data}{4}
+\contentsline {subsubsection}{Technically correct: weather data frames}{5}
+\contentsline {subsubsection}{Technically correct: weather data frames complete}{5}
+\contentsline {subsubsection}{Technically correct: weather single data frame}{6}
+\contentsline {subsubsection}{Consistently correct}{6}
+\contentsline {subsection}{Exploratory data analysis (EDA)}{7}
+\contentsline {subsubsection}{Box and whisker}{7}
+\contentsline {subsubsection}{Remove outliers}{7}
+\contentsline {subsubsection}{Weather variables by latitude}{7}
+\contentsline {subsubsection}{Weather variables by latitude and longitude}{8}
+\contentsline {subsection}{Cluster tendency}{8}
+\contentsline {subsection}{VAT}{8}
+\contentsline {section}{Data preparation}{9}
+\contentsline {subsection}{K choice}{9}
+\contentsline {subsection}{Algorithm choice}{9}
+\contentsline {subsection}{Linkage choice}{9}
+\contentsline {section}{Analysis}{10}
+\contentsline {subsection}{Hierarchical}{10}
+\contentsline {subsection}{K-means}{10}
+\contentsline {section}{Evaluation}{10}
+\contentsline {subsection}{Hierarchical}{10}
+\contentsline {section}{Deployment}{11}
+\contentsline {chapter}{Question 2}{12}
+\contentsline {section}{Business Understanding}{12}
+\contentsline {section}{Data Understanding}{12}
+\contentsline {subsection}{Append latitude categories}{12}
+\contentsline {subsection}{Exploratory data analysis (EDA)}{12}
+\contentsline {subsubsection}{Number of weather stations per latitude category}{12}
+\contentsline {subsubsection}{Weather stations per latitude category}{12}
+\contentsline {subsubsection}{Mean weather features per latitude category}{13}
+\contentsline {subsubsection}{Latitude category pairwise comparisons}{13}
+\contentsline {subsubsection}{Latitude and longitude per latitude category}{13}
+\contentsline {section}{Data Preparation}{13}
+\contentsline {subsubsection}{Training and test data split}{13}
+\contentsline {subsection}{Algorithm choice}{14}
 \contentsline {section}{Analysis}{14}
-\contentsline {section}{Evaluation}{14}
-\contentsline {chapter}{Appendices}{16}
-\contentsline {section}{Raw data output}{17}
+\contentsline {subsubsection}{K Nearest Neighbours}{14}
+\contentsline {chapter}{Question 2}{15}
+\contentsline {section}{Business Understanding}{15}
+\contentsline {section}{Data Understanding}{15}
+\contentsline {subsection}{Statistical value chain}{15}
+\contentsline {subsubsection}{Technically correct: well-being}{15}
+\contentsline {subsubsection}{Consistently correct: weather and well-being}{15}
+\contentsline {subsection}{Exploratory data analysis (EDA)}{15}
+\contentsline {section}{Data Preparation}{16}
+\contentsline {section}{Analysis}{16}
+\contentsline {section}{Evaluation}{16}
+\contentsline {chapter}{Appendices}{18}
+\contentsline {section}{Raw data output}{19}
