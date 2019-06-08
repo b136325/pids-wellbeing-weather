@@ -4,9 +4,9 @@ library(factoextra)
 # EXPORTED FUNCTION                                #
 #                                                  #
 ####################################################
-#' question_1_024_analysis_charts_sum_squares
+#' question_1_027_analysis_charts_sum_squares
 #' @export
-question_1_024_analysis_charts_sum_squares <- function(
+question_1_027_analysis_charts_sum_squares <- function(
   sum_squares = question_1_023_analysis_kmeans()$sum_squares,
   x_intercept = 3,
   x_intercept_line_type = 2

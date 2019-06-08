@@ -5,9 +5,9 @@ library(dplyr)
 # EXPORTED FUNCTION                                #
 #                                                  #
 ####################################################
-#' question_1_023_analysis_kmeans
+#' question_1_026_analysis_kmeans
 #' @export
-question_1_023_analysis_kmeans <- function(
+question_1_026_analysis_kmeans <- function(
   df = question_1_011_eda_remove_outliers(scale = TRUE),
   k_max = MAX_NUM_K,
   num_iterations = MAX_NUM_ITERATIONS,

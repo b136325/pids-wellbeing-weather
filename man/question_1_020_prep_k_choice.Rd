@@ -6,8 +6,9 @@
 \usage{
 
   question_1_020_prep_k_choice(df = question_1_011_eda_remove_outliers(scale
-  = TRUE), distance = "euclidean", k_min = 2, k_max = 10,
-  method = "complete")
+  = TRUE), distance = "euclidean", k_max = MAX_NUM_K,
+  k_min = MIN_NUM_K, method_clusters = c("centroid", "average",
+  "complete", "kmeans"), method_dist = "euclidean", show_chart = TRUE)
 }
 \description{
 question_1_020_prep_k_choice

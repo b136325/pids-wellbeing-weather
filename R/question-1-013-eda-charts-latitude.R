@@ -59,12 +59,13 @@ generate_latitude_chart <- function(
 generate_latitude_charts <- function(
   data_frame,
   x_variable_names,
-  cluster_variable_name
+  cluster_variable_name,
+  generate_chart = generate_latitude_chart
 ) {
   charts <- list()
   i <- 1
   for (x_variable_name in x_variable_names) {
-    charts[[i]] <- generate_latitude_chart(
+    charts[[i]] <- generate_chart(
       data_frame,
       x_variable_name,
       cluster_variable_name
