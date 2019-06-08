@@ -482,6 +482,131 @@ Within the \emph{pids.wellbeing.weather} package the functions described above c
 \chapter*{Question 2}
 \addcontentsline{toc}{chapter}{Question 2}
 
+\section*{Business Understanding}
+\addcontentsline{toc}{section}{Business Understanding}
+
+\section*{Data Understanding}
+\addcontentsline{toc}{section}{Data Understanding}
+
+\subsection*{Append latitude categories}
+\addcontentsline{toc}{subsection}{Append latitude categories}
+
+\begin{minted}{R}
+pids.wellbeing.weather::question_2_001_bu_append_latitude_categories()
+\end{minted}
+
+Within the \emph{pids.wellbeing.weather} package the functions described above can be found at the following address:
+
+\begin{minted}{Bash}
+./R/question-2-001-bu-append-latitude-categories()
+\end{minted}
+
+\subsection*{Exploratory data analysis (EDA)}
+\addcontentsline{toc}{subsection}{Exploratory data analysis (EDA)}
+
+\subsubsection*{Number of weather stations per latitude category}
+\addcontentsline{toc}{subsubsection}{Number of weather stations per latitude category}
+
+\begin{minted}{R}
+pids.wellbeing.weather::question_2_002_eda_latitude_category_summary()$nrow
+\end{minted}
+
+The function described above can be found within the \emph{pids.wellbeing.weather} package at the following address:
+
+\begin{minted}{Bash}
+./R/question-2-002-eda-latitude-category-summary.R
+\end{minted}
+
+\subsubsection*{Weather stations per latitude category}
+\addcontentsline{toc}{subsubsection}{Weather stations per latitude category}
+
+\begin{minted}{R}
+pids.wellbeing.weather::question_2_002_eda_latitude_category_summary()$weather_stations
+\end{minted}
+
+The function described above can be found within the \emph{pids.wellbeing.weather} package at the following address:
+
+\begin{minted}{Bash}
+./R/question-2-002-eda-latitude-category-summary.R
+\end{minted}
+
+\subsubsection*{Mean weather features per latitude category}
+\addcontentsline{toc}{subsubsection}{Mean weather features per latitude category}
+
+\begin{minted}{R}
+pids.wellbeing.weather::question_2_002_eda_latitude_category_summary()$means
+pids.wellbeing.weather::question_2_003_eda_charts_weather_features()
+\end{minted}
+
+The function described above can be found within the \emph{pids.wellbeing.weather} package at the following address:
+
+\begin{minted}{Bash}
+./R/question-2-002-eda-latitude-category-summary.R
+./R/question-2-003-eda-charts-weather-features.R
+\end{minted}
+
+\subsubsection*{Latitude category pairwise comparisons}
+\addcontentsline{toc}{subsubsection}{Latitude category pairwise comparisons}
+
+\begin{minted}{R}
+pids.wellbeing.weather::question_2_004_eda_charts_latitude_category_pairwise()
+\end{minted}
+
+The function described above can be found within the \emph{pids.wellbeing.weather} package at the following address:
+
+\begin{minted}{Bash}
+./R/question-2-004-eda-charts-latitude_category-pairwise.R
+\end{minted}
+
+\subsubsection*{Latitude and longitude per latitude category}
+\addcontentsline{toc}{subsubsection}{Latitude and longitude per latitude category}
+
+\begin{minted}{R}
+pids.wellbeing.weather::question_2_005_eda_charts_latitude_longitude_hours_sun()
+pids.wellbeing.weather::question_2_005_eda_charts_latitude_longitude_rain()
+pids.wellbeing.weather::question_2_005_eda_charts_latitude_longitude_temp_max
+pids.wellbeing.weather::question_2_005_eda_charts_latitude_longitude_temp_min
+\end{minted}
+
+The functions described above can be found within the \emph{pids.wellbeing.weather} package at the following address:
+
+\begin{minted}{Bash}
+./R/question-2-005-eda-charts-latitude-longitude.R
+\end{minted}
+
+\section*{Data Preparation}
+\addcontentsline{toc}{section}{Data Preparation}
+
+\subsubsection*{Training and test data split}
+\addcontentsline{toc}{subsubsection}{Training and test data split}
+
+\begin{minted}{R}
+pids.wellbeing.weather::question_2_006_prep_split()
+\end{minted}
+
+The function described above can be found within the \emph{pids.wellbeing.weather} package at the following address:
+
+\begin{minted}{Bash}
+./R/question-2-006-prep-split.R
+\end{minted}
+
+\section*{Analysis}
+\addcontentsline{toc}{section}{Analysis}
+
+\subsubsection*{K Nearest Neighbours}
+\addcontentsline{toc}{subsubsection}{K Nearest Neighbours}
+
+
+\begin{minted}{R}
+pids.wellbeing.weather::question_2_007_analysis_knn()
+\end{minted}
+
+The function described above can be found within the \emph{pids.wellbeing.weather} package at the following address:
+
+\begin{minted}{Bash}
+./R/question-2-007-analysis-knn.R
+\end{minted}
+
 \setcounter{equation}{0}
 \chapter*{Question 3}
 \addcontentsline{toc}{chapter}{Question 3}

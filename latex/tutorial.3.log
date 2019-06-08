@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  8 JUN 2019 02:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  8 JUN 2019 04:53
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1435,19 +1435,99 @@ AFC5A75.pygtex)
 
 
 (./_minted-tutorial.3/4FECC023AFD6F8427C3DBEDB275765CFE1A99BB315655138CA0560A60
-95C1B63.pygtex [8]) [9] [10
+95C1B63.pygtex [8]) [9]
+\openout3 = `tutorial.3.pyg'.
 
-] [11
+
+(./_minted-tutorial.3/9A560623EA7943F02BC2709D7B3ECCB17B9A0CCEF41BCBC2BC2038A82
+AFC5A75.pygtex)
+\openout3 = `tutorial.3.pyg'.
+
+
+(./_minted-tutorial.3/506DBFF0A863A6B09DB655C339020DCCE1A99BB315655138CA0560A60
+95C1B63.pygtex)
+\openout3 = `tutorial.3.pyg'.
+
+
+(./_minted-tutorial.3/B89BCB7A8213178396558BF6728028ED7B9A0CCEF41BCBC2BC2038A82
+AFC5A75.pygtex)
+\openout3 = `tutorial.3.pyg'.
+
+
+(./_minted-tutorial.3/69C740F2B84D6D4B155C618B8C81E456E1A99BB315655138CA0560A60
+95C1B63.pygtex)
+\openout3 = `tutorial.3.pyg'.
+
+
+(./_minted-tutorial.3/B38217EFCB62B8CAA133F5FE6679CA907B9A0CCEF41BCBC2BC2038A82
+AFC5A75.pygtex)
+\openout3 = `tutorial.3.pyg'.
+
+
+(./_minted-tutorial.3/69C740F2B84D6D4B155C618B8C81E456E1A99BB315655138CA0560A60
+95C1B63.pygtex)
+\openout3 = `tutorial.3.pyg'.
+
+
+(./_minted-tutorial.3/F0C1D76D7B275239E1282FD9ECE597617B9A0CCEF41BCBC2BC2038A82
+AFC5A75.pygtex [10
+
+])
+\openout3 = `tutorial.3.pyg'.
+
+
+(./_minted-tutorial.3/10557F1023260F3AF1BCA29B1EBE115CE1A99BB315655138CA0560A60
+95C1B63.pygtex)
+\openout3 = `tutorial.3.pyg'.
+
+
+(./_minted-tutorial.3/7F57F3BD20CE03D2D72A50B9F9FFA8A07B9A0CCEF41BCBC2BC2038A82
+AFC5A75.pygtex)
+\openout3 = `tutorial.3.pyg'.
+
+
+(./_minted-tutorial.3/DF223467C8B7F444253530033D87DD78E1A99BB315655138CA0560A60
+95C1B63.pygtex)
+\openout3 = `tutorial.3.pyg'.
+
+
+(./_minted-tutorial.3/E7A8F25067D056B6A9AAB163477FBFAF7B9A0CCEF41BCBC2BC2038A82
+AFC5A75.pygtex)
+\openout3 = `tutorial.3.pyg'.
+
+
+(./_minted-tutorial.3/731C35BF720564FC00F3EBF122CD9302E1A99BB315655138CA0560A60
+95C1B63.pygtex)
+\openout3 = `tutorial.3.pyg'.
+
+
+(./_minted-tutorial.3/A2E8F386111308BE293A9F036DC9E9157B9A0CCEF41BCBC2BC2038A82
+AFC5A75.pygtex)
+\openout3 = `tutorial.3.pyg'.
+
+
+(./_minted-tutorial.3/1D0594D5AA46554D4991C69C5A22D9A8E1A99BB315655138CA0560A60
+95C1B63.pygtex)
+\openout3 = `tutorial.3.pyg'.
+
+
+(./_minted-tutorial.3/9A9A97C5293435A95CE5D238367D5A2E7B9A0CCEF41BCBC2BC2038A82
+AFC5A75.pygtex) [11]
+\openout3 = `tutorial.3.pyg'.
+
+
+(./_minted-tutorial.3/A854FF80EB9C040BEF81AA44A5F5E9C6E1A99BB315655138CA0560A60
+95C1B63.pygtex) [12] [13
 
 ] (./tutorial.3.bbl
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-) [12
+) [14
 
-] [13
+] [15
 
-] [14] (./tutorial.3.aux)
+] [16] (./tutorial.3.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1458,10 +1538,10 @@ runsystem(rm tutorial.3.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 27604 strings out of 492649
- 542007 string characters out of 6129622
- 594022 words of memory out of 5000000
- 30970 multiletter control sequences out of 15000+600000
+ 27666 strings out of 492649
+ 547154 string characters out of 6129622
+ 595190 words of memory out of 5000000
+ 30985 multiletter control sequences out of 15000+600000
  537557 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,8n,54p,10379b,363s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1469,10 +1549,10 @@ Here is how much of TeX's memory you used:
 ></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><
 /usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></
 usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on tutorial.3.pdf (17 pages, 73653 bytes).
+Output written on tutorial.3.pdf (19 pages, 76579 bytes).
 PDF statistics:
- 78 PDF objects out of 1000 (max. 8388607)
- 54 compressed objects within 1 object stream
+ 85 PDF objects out of 1000 (max. 8388607)
+ 59 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

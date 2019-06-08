@@ -30,6 +30,19 @@
 \contentsline {subsection}{Hierarchical}{8}
 \contentsline {section}{Deployment}{9}
 \contentsline {chapter}{Question 2}{10}
-\contentsline {chapter}{Question 3}{11}
-\contentsline {chapter}{Appendices}{13}
-\contentsline {section}{Raw data output}{14}
+\contentsline {section}{Business Understanding}{10}
+\contentsline {section}{Data Understanding}{10}
+\contentsline {subsection}{Append latitude categories}{10}
+\contentsline {subsection}{Exploratory data analysis (EDA)}{10}
+\contentsline {subsubsection}{Number of weather stations per latitude category}{10}
+\contentsline {subsubsection}{Weather stations per latitude category}{10}
+\contentsline {subsubsection}{Mean weather features per latitude category}{11}
+\contentsline {subsubsection}{Latitude category pairwise comparisons}{11}
+\contentsline {subsubsection}{Latitude and longitude per latitude category}{11}
+\contentsline {section}{Data Preparation}{11}
+\contentsline {subsubsection}{Training and test data split}{11}
+\contentsline {section}{Analysis}{12}
+\contentsline {subsubsection}{K Nearest Neighbours}{12}
+\contentsline {chapter}{Question 3}{13}
+\contentsline {chapter}{Appendices}{15}
+\contentsline {section}{Raw data output}{16}

@@ -8,20 +8,13 @@ library(gridExtra)
 # EXPORTED FUNCTIONS (A-Z                          #
 #                                                  #
 ####################################################
-#' question_2a_004_charts_correlation
+#' question_2_003_eda_charts_weather_features
 #' @export
-question_2a_004_charts_correlation <- function(
-  group_by_variable_name = "weather_station_name",
-  scale = TRUE,
-  latitude_category_as_factor = TRUE
+question_2_003_eda_charts_weather_features <- function(
+  df = data_frame <- question_2_001_bu_append_latitude_categories()
 ) {
-  data_frame <- question_2a_001_data(
-    group_by_variable_name,
-    scale,
-    latitude_category_as_factor
-  )
   generate_latitude_category_correlation_charts(
-    data_frame,
+    df,
     c(
       "hours_sun",
       "rain_mm",

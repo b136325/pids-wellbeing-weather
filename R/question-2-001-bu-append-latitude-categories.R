@@ -4,29 +4,22 @@ library(dplyr)
 # EXPORTED FUNCTION                                #
 #                                                  #
 ####################################################
-#' question_2a_001_data
+#' question_2_001_bu_append_latitude_categories
 #' @export
-question_2a_001_data <- function(
-  group_by_variable_name = "weather_station_name",
-  scale = TRUE,
+question_2_001_bu_append_latitude_categories <- function(
+  df = question_1_011_eda_remove_outliers(scale = TRUE),
   latitude_category_as_factor = TRUE
 ) {
-  data_frame <- question_1b_001_data(
-    group_by_variable_name,
-    scale
-  )
-  data_frame_updated <- append_latitude_category(
-    data_frame
-  )
-  if (has_latitude_category_errors(data_frame_updated)) {
+  df_updated <- append_latitude_category(df)
+  if (has_latitude_category_errors(df_updated)) {
     stop("Latitude category errors")
   }
   if (latitude_category_as_factor) {
-    data_frame_updated$latitude_category <- as.factor(
-      data_frame_updated$latitude_category
+    df_updated$latitude_category <- as.factor(
+      df_updated$latitude_category
     )
   }
-  data_frame_updated
+  df_updated
 }
 ####################################################
 #                                                  #
@@ -34,10 +27,10 @@ question_2a_001_data <- function(
 #                                                  #
 ####################################################
 append_latitude_category <- function(
-  data_frame,
+  df,
   derive_category = derive_latitude_category
 ) {
-  data_frame %>%
+  df %>%
     mutate(
       latitude_category = derive_category(
           latitude

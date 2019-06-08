@@ -5,19 +5,12 @@ library(dplyr)
 # EXPORTED FUNCTION                                #
 #                                                  #
 ####################################################
-#' question_2a_005_knn
+#' question_2_007_analysis_knn
 #' @export
-question_2a_005_knn <- function(
-  group_by_variable_name = "weather_station_name",
-  scale = TRUE,
-  num_test_rows = 5,
+question_2_007_analysis_knn <- function(
+  data = question_2_006_prep_split(),
   k_value = 3
 ) {
-  data <- question_2a_003_split(
-    group_by_variable_name,
-    scale,
-    num_test_rows
-  )
   perform_knn(
     data$training,
     data$test,

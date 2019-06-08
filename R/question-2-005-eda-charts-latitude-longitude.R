@@ -6,11 +6,13 @@ library(plotly)
 # EXPORTED FUNCTIONS (A-Z                          #
 #                                                  #
 ####################################################
-#' question_2a_002_charts_latitude_longitude_hours_sun
+#' question_2_005_eda_charts_latitude_longitude_hours_sun
 #' @export
-question_2a_002_charts_latitude_longitude_hours_sun <- function() {
+question_2_005_eda_charts_latitude_longitude_hours_sun <- function(
+  df = question_2_001_bu_append_latitude_categories()
+) {
   plot_ly(
-    question_2a_001_data(),
+    df,
     x = ~hours_sun,
     y = ~longitude,
     z = ~latitude,
@@ -27,11 +29,13 @@ question_2a_002_charts_latitude_longitude_hours_sun <- function() {
     )
 }
 
-#' question_2a_002_charts_latitude_longitude_rain
+#' question_2_005_eda_charts_latitude_longitude_rain_mm
 #' @export
-question_2a_002_charts_latitude_longitude_rain <- function() {
+question_2a_005_eda_charts_latitude_longitude_rain_mm <- function(
+  df = question_2_001_bu_append_latitude_categories()
+) {
   plot_ly(
-    question_2a_001_data(),
+    df,
     x = ~rain_mm,
     y = ~longitude,
     z = ~latitude,
@@ -48,11 +52,13 @@ question_2a_002_charts_latitude_longitude_rain <- function() {
     )
 }
 
-#' question_2a_002_charts_latitude_longitude_temp_max
+#' question_2_005_eda_charts_latitude_longitude_temp_max
 #' @export
-question_2a_002_charts_latitude_longitude_temp_max <- function() {
+question_2_005_eda_charts_latitude_longitude_temp_max <- function(
+  df = question_2_001_bu_append_latitude_categories()
+) {
   plot_ly(
-    question_2a_001_data(),
+    df,
     x = ~temp_max_degrees_c,
     y = ~longitude,
     z = ~latitude,
@@ -69,11 +75,13 @@ question_2a_002_charts_latitude_longitude_temp_max <- function() {
     )
 }
 
-#' question_2a_002_charts_latitude_longitude_temp_min
+#' question_2_005_eda_charts_latitude_longitude_temp_min
 #' @export
-question_2a_002_charts_latitude_longitude_temp_min <- function() {
+question_2_005_eda_charts_latitude_longitude_temp_min <- function(
+  df = question_2_001_bu_append_latitude_categories()
+) {
   plot_ly(
-    question_2a_001_data(),
+    df,
     x = ~temp_min_degrees_c,
     y = ~longitude,
     z = ~latitude,

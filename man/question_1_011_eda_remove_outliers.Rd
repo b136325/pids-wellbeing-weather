@@ -5,8 +5,8 @@
 \title{question_1_011_eda_remove_outliers}
 \usage{
 
-  question_1_011_eda_remove_outliers(group_by_variable_name = "weather_station_name",
-  scale = TRUE)
+  question_1_011_eda_remove_outliers(df = load_technically_correct_data_frame(),
+  group_by_variable_name = "weather_station_name", scale = TRUE)
 }
 \description{
 question_1_011_eda_remove_outliers

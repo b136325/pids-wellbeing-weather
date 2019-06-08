@@ -7,10 +7,11 @@ library(dplyr)
 #' question_1_011_eda_remove_outliers
 #' @export
 question_1_011_eda_remove_outliers <- function(
+  df = load_technically_correct_data_frame(),
   group_by_variable_name = "weather_station_name",
   scale = TRUE
 ) {
-  data_frame <- load_technically_correct_data_frame()
+  data_frame <- df
   data_frame_updated_hours_sun <-
     replace_outliers_with_mean_all_weather_stations(
       data_frame,

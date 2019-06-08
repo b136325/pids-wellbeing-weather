@@ -4,24 +4,19 @@ library(dplyr)
 # EXPORTED FUNCTION                                #
 #                                                  #
 ####################################################
-#' question_2a_004_split
+#' question_2_006_prep_split
 #' @export
-question_2a_004_split <- function(
-  group_by_variable_name = "weather_station_name",
-  scale = TRUE,
+question_2_006_prep_split <- function(
+  df = question_2_001_bu_append_latitude_categories(),
   num_test_rows = 5
 ) {
-  data_frame <- question_2a_001_data(
-    group_by_variable_name,
-    scale
-  )
   data <- list()
   data$training <- derive_training_data_frame(
-    data_frame,
-    num_test_rows
+    df,
+    nrow(df) - num_test_rows
   )
   data$test <- derive_test_data_frame(
-    data_frame,
+    df,
     num_test_rows
   )
   data
@@ -32,21 +27,21 @@ question_2a_004_split <- function(
 #                                                  #
 ####################################################
 derive_training_data_frame <- function(
-  data_frame,
-  num_test_rows
+  df,
+  num_training_rows
 ) {
   data_frame %>%
     top_n(
-      nrow(data_frame) - num_test_rows,
+      num_training_rows,
       weather_station_name
     )
 }
 
 derive_test_data_frame <- function(
-  data_frame,
+  df,
   num_test_rows
 ) {
-  data_frame %>%
+  df %>%
     top_n(
       -num_test_rows,
       weather_station_name

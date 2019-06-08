@@ -7,23 +7,14 @@ library(GGally)
 # EXPORTED FUNCTIONS                               #
 #                                                  #
 ####################################################
-#' question_2a_003_charts_pairwise
+#' question_2_004_eda_charts_latitude_category_pairwise
 #' @export
-question_2a_003_charts_pairwise <- function(
-  group_by_variable_name = "weather_station_name",
-  scale = TRUE,
-  latitude_category_as_factor = TRUE
+question_2_004_eda_charts_latitude_category_pairwise <- function(
+  df = data_frame <- question_2_001_bu_append_latitude_categories()
 ) {
-  data_frame <- question_2a_001_data(
-    group_by_variable_name,
-    scale,
-    latitude_category_as_factor
-  )
-  data_frame_chart <- derive_chart_data_frame(
-    data_frame
-  )
+  df_chart <- derive_chart_data_frame(df)
   ggpairs(
-    data_frame_chart,
+    df_chart,
     mapping = aes(color = latitude_category)
   )
 }
@@ -32,8 +23,8 @@ question_2a_003_charts_pairwise <- function(
 # NON EXPORTED FUNCTIONS (A-Z)                     #
 #                                                  #
 ####################################################
-derive_chart_data_frame <- function(data_frame) {
-  data_frame %>%
+derive_chart_data_frame <- function(df) {
+  df %>%
     select(
       latitude_category,
       hours_sun,
