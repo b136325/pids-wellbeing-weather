@@ -31,4 +31,9 @@ H.~Wickham, ``R pckages.'' \url{http://r-pkgs.had.co.nz/intro.html }.
 ``Git.'' \url{https://git-scm.com/}.
 \newblock [Online].
 
+\bibitem{rTypes}
+``R data types.''
+  \url{https://swcarpentry.github.io/r-novice-inflammation/13-supp-data-structures/}.
+\newblock [Online].
+
 \end{thebibliography}

@@ -1,0 +1,5 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{g+go}{install.packages(\PYGZdq{}devtools\PYGZdq{})}
+\PYG{g+go}{library(devtools)}
+\PYG{g+go}{install\PYGZus{}github(\PYGZdq{}b136325/pids.wellbeing.weather\PYGZdq{})}
+\end{Verbatim}

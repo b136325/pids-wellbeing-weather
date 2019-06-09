@@ -1,3 +1,4 @@
+\babel@toc {english}{}
 \contentsline {chapter}{Question 1}{1}
 \contentsline {section}{Introduction}{1}
 \contentsline {section}{Business Understanding}{1}
@@ -10,31 +11,31 @@
 \contentsline {subsubsection}{Function question sequence number}{3}
 \contentsline {subsubsection}{Function name sequence number}{3}
 \contentsline {subsubsection}{Summary}{3}
-\contentsline {section}{Data understanding}{3}
-\contentsline {subsection}{Statistical value chain}{3}
+\contentsline {section}{Data understanding}{4}
+\contentsline {subsection}{Statistical value chain}{4}
 \contentsline {subsubsection}{Raw data}{4}
-\contentsline {subsubsection}{Technically correct: weather .txt data}{4}
-\contentsline {subsubsection}{Technically correct: weather .dsv data}{4}
-\contentsline {subsubsection}{Technically correct: weather data frames}{5}
-\contentsline {subsubsection}{Technically correct: weather data frames complete}{5}
-\contentsline {subsubsection}{Technically correct: weather single data frame}{6}
-\contentsline {subsubsection}{Consistently correct}{6}
+\contentsline {subsubsection}{Technically correct: weather .txt data}{5}
+\contentsline {subsubsection}{Technically correct: weather .dsv data}{5}
+\contentsline {subsubsection}{Technically correct: weather data frames}{6}
+\contentsline {subsubsection}{Technically correct: weather data frames complete}{6}
+\contentsline {subsubsection}{Technically correct: weather single data frame}{7}
+\contentsline {subsubsection}{Consistently correct}{7}
 \contentsline {subsection}{Exploratory data analysis (EDA)}{7}
 \contentsline {subsubsection}{Box and whisker}{7}
-\contentsline {subsubsection}{Remove outliers}{7}
-\contentsline {subsubsection}{Weather variables by latitude}{7}
+\contentsline {subsubsection}{Remove outliers}{8}
+\contentsline {subsubsection}{Weather variables by latitude}{8}
 \contentsline {subsubsection}{Weather variables by latitude and longitude}{8}
-\contentsline {subsection}{Cluster tendency}{8}
-\contentsline {subsection}{VAT}{8}
+\contentsline {subsection}{Cluster tendency}{9}
+\contentsline {subsection}{VAT}{9}
 \contentsline {section}{Data preparation}{9}
 \contentsline {subsection}{K choice}{9}
-\contentsline {subsection}{Algorithm choice}{9}
-\contentsline {subsection}{Linkage choice}{9}
+\contentsline {subsection}{Algorithm choice}{10}
+\contentsline {subsection}{Linkage choice}{10}
 \contentsline {section}{Analysis}{10}
 \contentsline {subsection}{Hierarchical}{10}
-\contentsline {subsection}{K-means}{10}
-\contentsline {section}{Evaluation}{10}
-\contentsline {subsection}{Hierarchical}{10}
+\contentsline {subsection}{K-means}{11}
+\contentsline {section}{Evaluation}{11}
+\contentsline {subsection}{Hierarchical}{11}
 \contentsline {section}{Deployment}{11}
 \contentsline {chapter}{Question 2}{12}
 \contentsline {section}{Business Understanding}{12}
@@ -62,4 +63,5 @@
 \contentsline {section}{Analysis}{16}
 \contentsline {section}{Evaluation}{16}
 \contentsline {chapter}{Appendices}{18}
-\contentsline {section}{Raw data output}{19}
+\contentsline {section}{Function names and question phase}{19}
+\contentsline {section}{Raw data function output}{20}

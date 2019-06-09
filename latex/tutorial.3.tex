@@ -17,36 +17,16 @@
 \usepackage{tikz}
 \usepackage[toc]{appendix}
 \usepackage{url}
+\usepackage{xcolor}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
 
 \graphicspath{ {./images/} }
-\usemintedstyle{vs}
 
 \setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{3}
  
-\definecolor{codegreen}{rgb}{0,0.6,0}
-\definecolor{codegray}{rgb}{0.5,0.5,0.5}
-\definecolor{codepurple}{rgb}{0.58,0,0.82}
-\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
- 
-\lstdefinestyle{mystyle}{
-    backgroundcolor=\color{backcolour},   
-    commentstyle=\color{codegreen},
-    keywordstyle=\color{magenta},
-    numberstyle=\tiny\color{codegray},
-    stringstyle=\color{codepurple},
-    basicstyle=\footnotesize,
-    breakatwhitespace=false,         
-    breaklines=true,                 
-    captionpos=b,                    
-    keepspaces=true,                 
-    numbers=left,                    
-    numbersep=5pt,                  
-    showspaces=false,                
-    showstringspaces=false,
-    showtabs=false,                  
-    tabsize=2
-}
 \begin{document}
 
     \frontmatter
@@ -91,7 +71,7 @@
 \addcontentsline{toc}{section}{Introduction}
 The demonstration will be structured with regard to the CRISP-DM\cite{crispDm1.0} data science project methodology, which describes such projects in terms of the following six sequential phases: Business Understanding, Data Understanding, Data Preparation, Analysis, Evaluation and Deployment. In addition, the CRISP-DM Data Understanding phase will contain the data cleaning components of the Statistical Value Chain, namely, Technically Correct and Consistently Correct data. Nevertheless, the first of the CRISP-DM phases, Business Understanding, will be presented immediately below.
 
-\section*{Business understanding}
+\section*{Business Understanding}
 \addcontentsline{toc}{section}{Business Understanding}
 The goal of this question will be to demonstrate that weather data can be clustered into two or more groups with each containing 'similar' weather conditions. The data contains results from thirty six monitoring stations across the UK (as made available online by the Met Office). While the process of retrieving and then cleaning the data will be described within the Data Understanding stage further below, it is worth noting that all of the process described within this answer have been implemented as an R package called \textbf{pids.wellbeing.weather}. The package's name begins with an abbreviation of the Practical Introduction to Data Science course, namely \textbf{pids}, followed by the names of the two primary datasets within the package: \textbf{wellbeing.weather}. Further information about the package will be provided immediately below.
 
@@ -100,9 +80,9 @@ The goal of this question will be to demonstrate that weather data can be cluste
 
 \subsubsection*{GitHub}
 \addcontentsline{toc}{subsubsection}{GitHub}
-The \textbf{pids-wellbeing-weather} package has been made available on GitHub\cite{pids.wellbeing.weather}, using this student's exam number, \textbf{b136325}, as the account name. In addition, the package makes use of Packrat\cite{packrat} dependency management. This means that the package contains all of its dependencies. This approach increases the package's size. Importantly, however, it ensures portability, and the package can be cloned (and used immediately) from GitHub with the following command.
+The \textbf{pids-wellbeing-weather} package has been made available on GitHub\cite{pids.wellbeing.weather}, using this student's exam number, \textbf{b136325}, as the associated GitHub account name. In addition, the package makes use of Packrat\cite{packrat} dependency management. This means that the package contains all of its dependencies. This approach increases the package's size. Importantly, however, it ensures portability, and the package can be cloned (and used immediately) from GitHub with the following command.
 
-\begin{minted}{bash}
+\begin{minted}{console}
 git clone https://github.com/b136325/pids.wellbeing.weather.git
 \end{minted}
 
@@ -110,7 +90,7 @@ git clone https://github.com/b136325/pids.wellbeing.weather.git
 \addcontentsline{toc}{subsubsection}{RStudio}
 Alternatively, the package can be installed into RStudio using the commands below.
 
-\begin{minted}{R}
+\begin{minted}{console}
 install.packages("devtools")
 library(devtools)
 install_github("b136325/pids.wellbeing.weather")
@@ -124,7 +104,7 @@ The \textbf{pids-wellbeing-weather} package has been structured in accordance wi
 \addcontentsline{toc}{subsubsection}{File and exported function names}
 Broadly, each code file exports only one function, and the name of the exported function accords with the associated file name. For example, the first code file relating to question 1, which downloads raw data, and whose address can be found directly below, exports a function called \emph{question\_1\_001\_svc\_raw-data}. In almost all cases, the names of exported functions match their associated files. This approach was adopted to ensure that exported functions could be found quickly within the code.
 
-\begin{minted}{bash}
+\begin{minted}{console}
 ./R/question-1-001-svc-raw-data.R
 \end{minted}
 
@@ -138,80 +118,75 @@ The name of each exported function (and the name of each associated code file) a
 
 \subsubsection*{Function names and question phases}
 \addcontentsline{toc}{subsubsection}{Function name sequence number}
-Lastly, each exported function name contains a \textbf{question phase} description. This can be found immeditaley after the \textbf{function sequence number}, and it describes the phase (or part) of a question to which the function is related. For example, the exported function \emph{question\_1\_023\_\textbf{analysis}\_hierarchical}, which resturns a hierarchical cluster, is a part of the analysis phase for question 1. In contrast, \emph{question\_2\_003\_\textbf{eda}\_charts\_weather\_features} is an exported function, which returns a chart of weather features, and which is related to the Exploratory Data Analysis (EDA) phase of question 2.
+Lastly, each exported function name contains a \textbf{question phase} description. This can be found immeditaley after the \textbf{function sequence number}, and it describes the phase (or part) of a question to which the function is related. For example, the exported function \emph{question\_1\_023\_\textbf{analysis}\_hierarchical}, which resturns a hierarchical cluster, is a part of the analysis phase for question 1. In contrast, \emph{question\_2\_003\_\textbf{eda}\_charts\_weather\_features} is an exported function, which returns a chart of weather features, and which is related to the Exploratory Data Analysis (EDA) phase of question 2. A full list of the \textbf{question phases} used within the exported function names can be found in Appendix \ref{appendix:function-names-and-question-phases}.
 
 \subsubsection*{Summary}
 \addcontentsline{toc}{subsubsection}{Summary}
+It is suggested that the function naming conventions describe above would be too brittle for use within an ongoing project. However, the adoption of such conventions should simplify references to functions (within this document) and their use in the \textbf{pids-wellbeing-weather} package. Within the remainde of this document, the code to call an associaetd exported function (or functions) will be listed at the end of each phase (or part) of a question. In each case, file paths will also be proved.
 
-\section*{Data understanding}
+\section*{Data Understanding}
 \addcontentsline{toc}{section}{Data understanding}
-
+The aim of this phase of question 1 is to understand the data. In order to begin such understanding, the raw data must first be retrieved and processed. These tasks will be undertaken with regard to the three data cleaning stages of the Statistical Value Chain, which will be descibed in further detail below.
+  
 \subsection*{Statistical value chain}
 \addcontentsline{toc}{subsection}{Statistical value chain}
-
-1. Package directory structure - raw to data
-
-2. Within data (svc) sub-directories
-
-3. sub directory naming
-
-4. Command naming
-
-5. single exported command per file
+The three data cleaning stages of the Statistical Value Chain provide a sequential structure for understanding the processes involved in transforming raw data into data ready to be analysed. The three stages are as follows: (1) raw data; (2) \emph{technically complete} data; and (3) \emph{consistently complete} data. In this case, the ouput from the first stage would be raw data retrieved from an extenal source. The raw data would then be used as the input to the second stage, \emph{technically complete}. The ouput from the second stage would be data with consistent column (or feature) naming, along with the use of appropriate variable data types per column. From the perspective of the R language\cite{rTypes}, examples of data types (that could be applied to such columns) include (but are not limited to) \emph{character}, \emph{date} and \emph{double}. In addition, \emph{technically complete} data should have addressed \emph{null}, \emph{empty} and similarly problematic values with the data. Such technically complete data would then be passed to the final stage, \emph{consistently complete}, where the internal consistency (and structure) of the data would be addressed. The output from the last of those stages would be data ready for analysis. Having now outlined the three data cleaning stages of the Statistical Value Chain (as adopted within the Data Understanding phase of question 1), the first stage, that of raw data, will now be examined in greater detail.
 
 \subsubsection*{Raw data: weather and well-being}
 \addcontentsline{toc}{subsubsection}{Raw data}
 
-This process downloads the required files into the \emph{pids-wellbeing-weather} and stores them within the data-raw/weather and the data-raw/wellbeing directories, respectively. The web address from which the data are downloaded are constructed dynamically using constants defined within `constants-weather-station-names.R' and `contants-wellbeing'. The function associated with this process has been exported from the pids.wellbeing.weather package. When run it returns a list of files that have been downloaded successfully, along with any that have failed, as illustrated in Figure \ref{fig:question_1_001}. The function can be run using the command below:
+This implementation of the raw data stage of the Statistical Value Chain involved downloading the required \emph{weather} and \emph{wellbeing} files into the \textbf{pids-wellbeing-weather} package, where the files were stored in the \textbf{./data-raw/weather} and \textbf{./data-raw/wellbeing} directories, respectively. The web addresses (from which the files were downloaded) were constructed dynamically using constants defined within the package. The defined constants can be found within the package at \textbf{./R/constants.R}. The function associated with this process (which performs the download) has been exported from the  package, and it can be run using the command below. It returns a list of files that have been downloaded successfully, along with any that have failed, as illustrated in Appendix \ref{appendix:raw-data-output}. 
 
-\begin{minted}{R}
+\begin{minted}{console}
 pids.wellbeing.weather::question_1_001_svc_raw_data()
 \end{minted}
 
-Within the \emph{pids.wellbeing.weather} package the function described above can be found at the following address:
+The function described above can be found at the following address within the \textbf{pids.wellbeing.weather} package. 
 
-\begin{minted}{Bash}
+\begin{minted}{console}
 ./R/question-1-001-svc-raw-data.R
 \end{minted}
 
 \subsubsection*{Technically correct: weather .txt data}
 \addcontentsline{toc}{subsubsection}{Technically correct: weather .txt data}
 
-In order to ensure a strong data related 'separation of concerns', such that, no amendments should be made to the data stored within the `data-raw` directory, this process moves the raw weather data from `data-raw` into `data`. In addition, it adds a closing new line character to each file, facilitating subsequent processing. More specifically, the weather data is moved into a directory representing the first stage of the 'technically correct' Statistical Value Chain process, which can be found at `data/weather/stage-010-technically-correct-text`. The function associated with this process has been exported from the package and it can be run using the command below. The function returns a list containing the destination paths of the successfully moved files.
+This implementation of the second Statistical Value Chain data cleaning stage, that of \emph{technically correct}, has been divided into five parts. This approach ensures that each of those parts perform a relatively small change to the data, making testing easier than might otherwise have been the case. Nevewrtheless, in order to ensure a strong data related \emph{separation of concerns}, such that, no amendments should be made to the data downloaded into the \textbf{./data-raw} directory, this part of the technically correct stage copies the raw weather data into the \textbf{./data} directory. More specifically, the weather data is copied into a directory representing the first stage of the technically correct process: \textbf{./data/weather/stage-010-technically-correct-text} with \textbf{.txt} file extension. In addition, a closing character is added to each file, which facilitates subsequent processing. The function associated with this first part of the \emph{technically complete} stage has been exported from the package. It can be run using the command below, and it returns a list containing the destination paths of successfully moved files.
 
-\begin{minted}{R}
+\begin{minted}{console}
 pids.wellbeing.weather::question_1_002_svc_tech_weather_txt()
 \end{minted}
 
-Within the \emph{pids.wellbeing.weather} package the function described above can be found at the following address:
-\begin{minted}{Bash}
+The function described above can be found at the following address within the \textbf{pids.wellbeing.weather} package.
+
+\begin{minted}{console}
 ./R/question-1-002-svc-tech-weather-txt.R
 \end{minted}
 
 \subsubsection*{Technically correct: weather .dsv data}
 \addcontentsline{toc}{subsubsection}{Technically correct: weather .dsv data}
 
-The next stage of technically correct data processing transforms the .txt files into a .dsv white space delimited file format. This processes involves the removal of non column related header items from the .txt files. It also involves ensuring that the all of the files have a standard number of columns, which enables them to be reliably converted into a delimited file format. In addition, invalid data items, such as "---" are converted into a common data strandard, such as "NA". The function associated with this process has been exported from the package and it can be run using the command below. The function returns a list containing the destination paths of the successfully moved files, along with any errors.
+The second part of \emph{technically correct} stage involved copying and then transforming the \textbf{.txt} files (as described immediately above) into \textbf{.dsv}, white space delimited equivalents. In addition, non column related header items were removed, and all of the files were transformed into containg a standard number of columns: eight. The latter transformation enabled the files to be reliably converted into the aforementioned delimited format. Lastly, simple invalid data items, such as \emph{---} were converted into a common R language data type, namely \textbf{NA}. The delimited files were saved to the following directory \textbf{./data/weather/stage-011-technically-correct-dsv}. The function associated with this part of the \emph{technically correct} stage, and which performs the tasks described immediately above, has been exported from the \textbf{pids-wellbeing-weather} package. It can be run using the command below, and it returns a list containing the destination paths of the successfully copied and transformed files.
 
-\begin{minted}{R}
+\begin{minted}{console}
 pids.wellbeing.weather::question_1_003_svc_tech_weather_dsv()
 \end{minted}
 
-Within the \emph{pids.wellbeing.weather} package the function described above can be found at the following address:
-\begin{minted}{Bash}
+The function described above can be found at the following address within the \textbf{pids.wellbeing.weather} package.
+
+\begin{minted}{console}
 ./R/question-1-003-svc-tech-weather-dsv.R
 \end{minted}
 
 \subsubsection*{Technically correct: weather data frames}
 \addcontentsline{toc}{subsubsection}{Technically correct: weather data frames}
 
-The stage of technically correct data processing transforms the .dsv files into data frames, saved in .Rds formats within the data/weather/stage-012-technically-correct-dataframe. The function associated with this process has been exported from the package and it can be run using the command below. The function returns a list containing the destination paths of the successfully saved files, along with any errors.
+The third part of the \emph{technically correct} stage transformed the .dsv files into R language data frames. The data frames were then saved in \textbf{.Rds} format within the \textbf{data/weather/stage-012-technically-correct-dataframe} directory. The function associated with this process has been exported from the package and it can be run using the command below. It function returns a list containing the destination paths of the successfully saved files.
 
 \begin{minted}{R}
 pids.wellbeing.weather::question_1_004_svc_tech_weather_df()
 \end{minted}
 
-Within the \emph{pids.wellbeing.weather} package the function described above can be found at the following address:
+The function described above can be found at the following address within the \textbf{pids.wellbeing.weather} package.
 
 \begin{minted}{Bash}
 ./R/question-1-004-svc-tech-weather-df.R
@@ -220,13 +195,13 @@ Within the \emph{pids.wellbeing.weather} package the function described above ca
 \subsubsection*{Technically correct: weather data frames completet}
 \addcontentsline{toc}{subsubsection}{Technically correct: weather data frames complete}
 
-The stage of technically correct data processing transforms the .Rds files from the data/weather/stage-012-technically-correct-dataframe directory. It ensures that the data frames have common lower case column names, along with appropriate data types. The transformed data frames are stored within the `stage-013-technically-correct-complete` directory. The function associated with this process has been exported from the package and it can be run using the command below. The function returns a list containing the destination paths of the successfully saved files, along with any errors.
+The fourth part of the \emph{technically correct} stage copied and transformed the \textbf{.Rds} files (described above) . It ensured that the data frames had lower case column names, and underscores replaced hyphens or spaces in such names. It also ensured that appropriate data types were applied to the columns (or features). The transformed data frames were saved within the \textbf{./data/weather/stage-013-technically-correct-complete} directory. The function associated with this process has been exported and it can be run using the command below. It function returns a list containing the destination paths of the successfully saved files.
 
 \begin{minted}{R}
 pids.wellbeing.weather::question_1_005_svc_tech_weather_complete()
 \end{minted}
 
-Within the \emph{pids.wellbeing.weather} package the function described above can be found at the following address:
+The function described above can be found at the following address within the \textbf{pids.wellbeing.weather} package.
 
 \begin{minted}{Bash}
 ./R/question-1-005-svc-tech-weather-complete.R
@@ -235,13 +210,13 @@ Within the \emph{pids.wellbeing.weather} package the function described above ca
 \subsubsection*{Technically correct: weather single data frame}
 \addcontentsline{toc}{subsubsection}{Technically correct: weather single data frame}
 
-The stage of technically correct data processing transforms the .Rds files from the `stage-013-technically-correct-complete` directory into a single data frame, which is stored within `stage-014-technically-complete-single-dataframe`. The function associated with this process has been exported from the package and it can be run using the command below. The function returns the destination path of the successfully saved file, along with any errors.
+The final part of the \emph{technically correct} stage transformed the \textbf{.Rds} files (as described above) into a single data frame stored within \textbf{./data/weather/stage-014-technically-complete-single-dataframe}. The function associated with this process has been exported and it can be run using the command below. It returns the destination path of the successfully saved file.
 
 \begin{minted}{R}
 pids.wellbeing.weather::question_1_006_svc_tech_weather_single_df()
 \end{minted}
 
-Within the \emph{pids.wellbeing.weather} package the function described above can be found at the following address:
+The function described above can be found at the following address within the \textbf{pids.wellbeing.weather} package.
 
 \begin{minted}{Bash}
 ./R/question-1-006-svc-tech-weather-single-df.R
@@ -756,11 +731,20 @@ pids.wellbeing.weather::question_3_010_eval_charts_predicted_happinesst()
 
 \chapter*{Appendices}
 \addcontentsline{toc}{chapter}{Appendices}
-\newpage
 
-\section*{A. Raw data output}
-\addcontentsline{toc}{section}{Raw data output}
+\newpage
+\section*{A. Function names and question phases}
+\addcontentsline{toc}{section}{Function names and question phase}
+\label{appendix:function-names-and-question-phases}
+
+QUESTION PHASES HERE 
+
+\newpage
+\section*{B. Raw data function output}
+\addcontentsline{toc}{section}{Raw data function output}
 \label{appendix:raw-data-output}
+
+IMAGE OF RAW DATA OUTPUT HERE
 
 \backmatter
 \end{document}

@@ -1,6 +1,6 @@
 Package: pids.wellbeing.weather
 Title: Practical Introduction to Data Science: Wellbing Weather
-Version: 0.5.16
+Version: 0.5.17
 Description: An R based project for Assessment 3 from Practical Introduction to Data Science, University of Edinburgh, Scotland.
 Depends: R (>= 3.5.1)
 License: What license is it under?

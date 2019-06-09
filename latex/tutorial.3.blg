@@ -7,36 +7,36 @@ I was expecting a `,' or a `}'---line 49 of file references.bib
  :    number = ""
  :               3",
 I'm skipping whatever remains of this entry
-You've used 7 entries,
+You've used 8 entries,
             1876 wiz_defined-function locations,
-            505 strings with 4025 characters,
-and the built_in function-call counts, 935 in all, are:
-= -- 88
-> -- 32
+            509 strings with 4131 characters,
+and the built_in function-call counts, 1047 in all, are:
+= -- 100
+> -- 33
 < -- 0
-+ -- 15
++ -- 16
 - -- 8
-* -- 41
-:= -- 123
-add.period$ -- 14
-call.type$ -- 7
-change.case$ -- 7
+* -- 44
+:= -- 134
+add.period$ -- 16
+call.type$ -- 8
+change.case$ -- 8
 chr.to.int$ -- 0
-cite$ -- 7
-duplicate$ -- 28
-empty$ -- 127
+cite$ -- 8
+duplicate$ -- 32
+empty$ -- 145
 format.name$ -- 8
-if$ -- 244
+if$ -- 276
 int.to.chr$ -- 0
-int.to.str$ -- 7
+int.to.str$ -- 8
 missing$ -- 0
-newline$ -- 31
+newline$ -- 35
 num.names$ -- 2
-pop$ -- 53
+pop$ -- 61
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 21
+skip$ -- 24
 stack$ -- 0
 substring$ -- 0
 swap$ -- 0
@@ -46,6 +46,6 @@ top$ -- 0
 type$ -- 0
 warning$ -- 0
 while$ -- 2
-width$ -- 8
-write$ -- 61
+width$ -- 9
+write$ -- 69
 (There was 1 error message)
