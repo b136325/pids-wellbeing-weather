@@ -5,7 +5,10 @@
 \alias{question_1_033_eval_charts_hier_latitude_longitude_hours_sun}
 \title{question_1_033_eval_charts_hier_latitude_longitude_hours_sun}
 \usage{
-question_1_033_eval_charts_hier_latitude_longitude_hours_sun()
+
+  question_1_033_eval_charts_hier_latitude_longitude_hours_sun(df = question_1_025_analysis_attach_pruned_cluster_values(),
+  x_axis_title = "Hours sunshine", y_axis_title = "Longitude",
+  z_axis_title = "Latitude")
 }
 \description{
 question_1_033_eval_charts_hier_latitude_longitude_hours_sun

@@ -1,3 +1,4 @@
+library("xtable")
 ####################################################
 #                                                  #
 # EXPORTED FUNCTIONS (A-Z                          #
@@ -19,4 +20,10 @@ question_3_004_svc_cons_weather_wellbeing_summary <- function(
       temp_max_degrees_c,
       temp_min_degrees_c
     )
+}
+
+question_3_004_svc_cons_weather_wellbeing_summary_latex <- function(
+  df = question_3_004_svc_cons_weather_wellbeing_summary()
+) {
+  xtable(df)
 }

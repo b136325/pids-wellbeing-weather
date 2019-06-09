@@ -5,7 +5,7 @@
 \title{question_2_002_eda_latitude_category_summary}
 \usage{
 
-  question_2_002_eda_latitude_category_summary(df = question_2_001_append_latitude_categories())
+  question_2_002_eda_latitude_category_summary(df = question_2_001_bu_append_latitude_categories())
 }
 \description{
 question_2_002_eda_latitude_category_summary

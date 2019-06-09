@@ -5,7 +5,10 @@
 \alias{question_1_034_eval_charts_hier_latitude_longitude_rain_mm}
 \title{question_1_034_eval_charts_hier_latitude_longitude_rain_mm}
 \usage{
-question_1_034_eval_charts_hier_latitude_longitude_rain_mm()
+
+  question_1_034_eval_charts_hier_latitude_longitude_rain_mm(df = question_1_025_analysis_attach_pruned_cluster_values(),
+  x_axis_title = "Rain (mm)", y_axis_title = "Longitude",
+  z_axis_title = "Latitude")
 }
 \description{
 question_1_034_eval_charts_hier_latitude_longitude_rain_mm

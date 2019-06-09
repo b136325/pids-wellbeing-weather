@@ -18,7 +18,7 @@ question_1_025_analysis_attach_pruned_cluster_values <- function(
   )$hc
   df$cluster <- as.factor(
     cutree(
-      hc, 
+      hc,
       k = k_value
     )
   )

@@ -3,11 +3,13 @@
 %   R/question-3-010-eval-charts-predicted-happiness.R
 \name{question_3_010_eval_charts_predicted_happiness}
 \alias{question_3_010_eval_charts_predicted_happiness}
-\title{question_3_010_eval_charts_predicted_happiness}
+\title{question_3_010_eval_charts_predicted_happiness
+TODO Fix error}
 \usage{
 
   question_3_010_eval_charts_predicted_happiness(df = question_3_008_analysis_regression_test())
 }
 \description{
 question_3_010_eval_charts_predicted_happiness
+TODO Fix error
 }

@@ -16,13 +16,13 @@ question_3_001_svc_tech_wellbeing <- function(
   if (!file.exists(source_file_path)) {
     stop("Happiness data-raw file does not exists")
   }
-  data_frame <- load_happiness(
+  df <- load_happiness(
     source_file_path
   )
-  data_frame <- rename_happiness_columns(
-    data_frame
+  df_renamed <- rename_happiness_columns(
+    df
   )
-  data_frame <- data_frame %>%
+  df_complete <- df_renamed %>%
     filter(
       region != "England"
     ) %>%
@@ -37,7 +37,7 @@ question_3_001_svc_tech_wellbeing <- function(
     force
   )
   saveRDS(
-    data_frame,
+    df_complete,
     file = destination_file_path
   )
 }

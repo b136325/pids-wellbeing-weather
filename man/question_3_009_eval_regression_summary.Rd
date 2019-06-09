@@ -4,7 +4,8 @@
 \alias{question_3_009_eval_regression_summary}
 \title{question_3_009_eval_regression_summary}
 \usage{
-question_3_009_eval_regression_summary()
+
+  question_3_009_eval_regression_summary(df = question_3_007_analysis_regression())
 }
 \description{
 question_3_009_eval_regression_summary

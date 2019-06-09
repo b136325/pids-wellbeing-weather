@@ -15,15 +15,17 @@ question_1_020_prep_k_choice <- function(
   k_min = MIN_NUM_K,
   method_clusters = c("centroid", "average", "complete", "kmeans"),
   method_dist = "euclidean",
-  show_chart = TRUE
+  show_chart = TRUE,
+  verbose = FALSE
 ) {
   df_selected <- select_weather_features(
     df,
     weather_features_as_row_names = TRUE
   )
+  clusters <- list()
   k_values <- integer()
   for (method_cluster in method_clusters) {
-    k_value <- derive_k(
+    cluster <- derive_k(
       df_selected,
       k_max,
       k_min,
@@ -32,12 +34,22 @@ question_1_020_prep_k_choice <- function(
     )
     k_values <- append(
       k_values,
-      k_value
+      cluster$k_value
+    )
+    clusters <- append(
+      clusters,
+      cluster
     )
   }
-  ceiling(
-    mean(k_values)
-  )
+  if (!verbose) {
+    return(
+      ceiling(
+        mean(k_values)
+      )
+    )
+  } else {
+    return(clusters)
+  }
 }
 ####################################################
 #                                                  #
@@ -52,7 +64,8 @@ derive_k <- function(
   method_dist
 ) {
   sink("aux");
-  res <- NbClust(
+  result <- list()
+  clust <- NbClust(
     df,
     distance = method_dist,
     min.nc = k_min,
@@ -60,9 +73,12 @@ derive_k <- function(
     method = method_cluster
   )
   sink(NULL);
-  length(
+  k_value <- length(
     unique(
-      res$Best.partition
+      clust$Best.partition
     )
   )
+  result$clust <- clust
+  result$k_value <- k_value
+  result
 }

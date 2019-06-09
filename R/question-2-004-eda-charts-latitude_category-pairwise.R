@@ -8,16 +8,13 @@ library(GGally)
 #                                                  #
 ####################################################
 #' question_2_004_eda_charts_latitude_category_pairwise
+#' TODO - Fix error
 #' @export
 question_2_004_eda_charts_latitude_category_pairwise <- function(
   df = question_2_001_bu_append_latitude_categories()
 ) {
   df_charts <- derive_chart_data_frame(df)
-  print(df_charts)
-  print(df$latitude_category)
-  stop()
-  #plot(df_charts)
-  cors(df_charts)
+  plot(df_charts)
 }
 ####################################################
 #                                                  #

@@ -3,11 +3,13 @@
 %   R/question-2-004-eda-charts-latitude_category-pairwise.R
 \name{question_2_004_eda_charts_latitude_category_pairwise}
 \alias{question_2_004_eda_charts_latitude_category_pairwise}
-\title{question_2_004_eda_charts_latitude_category_pairwise}
+\title{question_2_004_eda_charts_latitude_category_pairwise
+TODO - Fix error}
 \usage{
 
   question_2_004_eda_charts_latitude_category_pairwise(df = question_2_001_bu_append_latitude_categories())
 }
 \description{
 question_2_004_eda_charts_latitude_category_pairwise
+TODO - Fix error
 }

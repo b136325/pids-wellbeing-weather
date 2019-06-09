@@ -6,8 +6,8 @@
 \usage{
 
   question_1_022_linkage_choice(df = question_1_011_eda_remove_outliers(scale
-  = TRUE), method_clusters = c("average", "centroid", "complete",
-  "single", "ward"), method_dist = "euclidean")
+  = TRUE), linkage_types = c("average", "centroid", "complete", "single",
+  "ward.D", "ward.D2"), distance_types = c("euclidean", "manhattan"))
 }
 \description{
 question_1_022_linkage_choice

@@ -5,7 +5,7 @@
 \title{question_3_005_eda_charts_wellbeing_by_region}
 \usage{
 
-  question_3_005_eda_charts_wellbeing_by_region(df = question_3_003_svc_cons_join_weather_wellbeing())
+  question_3_005_eda_charts_wellbeing_by_region(df = question_3_003_svc_cons_weather_wellbeing_join())
 }
 \description{
 question_3_005_eda_charts_wellbeing_by_region

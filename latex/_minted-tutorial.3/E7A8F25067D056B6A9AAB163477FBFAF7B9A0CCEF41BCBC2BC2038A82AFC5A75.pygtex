@@ -1,6 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n}{pids.wellbeing.weather}\PYG{o}{::}\PYG{n+nf}{question\PYGZus{}2\PYGZus{}005\PYGZus{}eda\PYGZus{}charts\PYGZus{}latitude\PYGZus{}longitude\PYGZus{}hours\PYGZus{}sun}\PYG{p}{()}
-\PYG{n}{pids.wellbeing.weather}\PYG{o}{::}\PYG{n+nf}{question\PYGZus{}2\PYGZus{}005\PYGZus{}eda\PYGZus{}charts\PYGZus{}latitude\PYGZus{}longitude\PYGZus{}rain}\PYG{p}{()}
-\PYG{n}{pids.wellbeing.weather}\PYG{o}{::}\PYG{n}{question\PYGZus{}2\PYGZus{}005\PYGZus{}eda\PYGZus{}charts\PYGZus{}latitude\PYGZus{}longitude\PYGZus{}temp\PYGZus{}max}
-\PYG{n}{pids.wellbeing.weather}\PYG{o}{::}\PYG{n}{question\PYGZus{}2\PYGZus{}005\PYGZus{}eda\PYGZus{}charts\PYGZus{}latitude\PYGZus{}longitude\PYGZus{}temp\PYGZus{}min}
-\end{Verbatim}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  9 JUN 2019 02:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.4.16)  9 JUN 2019 23:17
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -54,6 +54,80 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen110
 \Gm@dimlist=\toks15
 )
+(/usr/local/texlive/2018/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2018/04/08 v1.1 Adjusting TeX boxes (trim, clip, ...)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks16
+\XKV@tempa@toks=\toks17
+)
+\XKV@depth=\count92
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2018/04/08 v1.1 Trim and clip general TeX material
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen111
+\Gin@req@width=\dimen112
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box26
+)
+\tc@llx=\dimen113
+\tc@lly=\dimen114
+\tc@urx=\dimen115
+\tc@ury=\dimen116
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2018/04/08 v2.1 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen117
+\adjbox@Height=\dimen118
+\adjbox@Depth=\dimen119
+\adjbox@Totalheight=\dimen120
+\adjbox@pwidth=\dimen121
+\adjbox@pheight=\dimen122
+\adjbox@pdepth=\dimen123
+\adjbox@ptotalheight=\dimen124
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count93
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box27
+\sift@deathcycles=\count94
+\@vwid@loff=\dimen125
+\@vwid@roff=\dimen126
+))
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip43
@@ -64,51 +138,51 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks16
-\ex@=\dimen111
+\@emptytoks=\toks18
+\ex@=\dimen127
 ))
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen112
+\pmbraise@=\dimen128
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count92
+\inf@bad=\count95
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count93
-\leftroot@=\count94
+\uproot@=\count96
+\leftroot@=\count97
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count95
-\DOTSCASE@=\count96
+\classnum@=\count98
+\DOTSCASE@=\count99
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
-\Mathstrutbox@=\box26
-\strutbox@=\box27
-\big@size=\dimen113
+\Mathstrutbox@=\box28
+\strutbox@=\box29
+\big@size=\dimen129
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count97
-\c@MaxMatrixCols=\count98
+\macc@depth=\count100
+\c@MaxMatrixCols=\count101
 \dotsspace@=\muskip10
-\c@parentequation=\count99
-\dspbrk@lvl=\count100
-\tag@help=\toks17
-\row@=\count101
-\column@=\count102
-\maxfields@=\count103
-\andhelp@=\toks18
-\eqnshift@=\dimen114
-\alignsep@=\dimen115
-\tagshift@=\dimen116
-\tagwidth@=\dimen117
-\totwidth@=\dimen118
-\lineht@=\dimen119
-\@envbody=\toks19
+\c@parentequation=\count102
+\dspbrk@lvl=\count103
+\tag@help=\toks19
+\row@=\count104
+\column@=\count105
+\maxfields@=\count106
+\andhelp@=\toks20
+\eqnshift@=\dimen130
+\alignsep@=\dimen131
+\tagshift@=\dimen132
+\tagwidth@=\dimen133
+\totwidth@=\dimen134
+\lineht@=\dimen135
+\@envbody=\toks21
 \multlinegap=\skip44
 \multlinetaggap=\skip45
-\mathdisplay@stack=\toks20
+\mathdisplay@stack=\toks22
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
@@ -128,24 +202,24 @@ Package: expl3 2018/03/05 L3 programming layer (loader)
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/l3kernel/expl3-code.tex
 Package: expl3 2018/03/05 L3 programming layer (code)
-\c_max_int=\count104
-\l_tmpa_int=\count105
-\l_tmpb_int=\count106
-\g_tmpa_int=\count107
-\g_tmpb_int=\count108
-\g__intarray_font_int=\count109
-\g__prg_map_int=\count110
-\c_log_iow=\count111
-\l_iow_line_count_int=\count112
-\l__iow_line_target_int=\count113
-\l__iow_one_indent_int=\count114
-\l__iow_indent_int=\count115
-\c_zero_dim=\dimen120
-\c_max_dim=\dimen121
-\l_tmpa_dim=\dimen122
-\l_tmpb_dim=\dimen123
-\g_tmpa_dim=\dimen124
-\g_tmpb_dim=\dimen125
+\c_max_int=\count107
+\l_tmpa_int=\count108
+\l_tmpb_int=\count109
+\g_tmpa_int=\count110
+\g_tmpb_int=\count111
+\g__intarray_font_int=\count112
+\g__prg_map_int=\count113
+\c_log_iow=\count114
+\l_iow_line_count_int=\count115
+\l__iow_line_target_int=\count116
+\l__iow_one_indent_int=\count117
+\l__iow_indent_int=\count118
+\c_zero_dim=\dimen136
+\c_max_dim=\dimen137
+\l_tmpa_dim=\dimen138
+\l_tmpb_dim=\dimen139
+\g_tmpa_dim=\dimen140
+\g_tmpb_dim=\dimen141
 \c_zero_skip=\skip46
 \c_max_skip=\skip47
 \l_tmpa_skip=\skip48
@@ -158,121 +232,121 @@ Package: expl3 2018/03/05 L3 programming layer (code)
 \l_tmpb_muskip=\muskip14
 \g_tmpa_muskip=\muskip15
 \g_tmpb_muskip=\muskip16
-\l_keys_choice_int=\count116
-\c__fp_leading_shift_int=\count117
-\c__fp_middle_shift_int=\count118
-\c__fp_trailing_shift_int=\count119
-\c__fp_big_leading_shift_int=\count120
-\c__fp_big_middle_shift_int=\count121
-\c__fp_big_trailing_shift_int=\count122
-\c__fp_Bigg_leading_shift_int=\count123
-\c__fp_Bigg_middle_shift_int=\count124
-\c__fp_Bigg_trailing_shift_int=\count125
-\c__fp_rand_size_int=\count126
-\c__fp_rand_four_int=\count127
-\c__fp_rand_eight_int=\count128
-\l__sort_length_int=\count129
-\l__sort_min_int=\count130
-\l__sort_top_int=\count131
-\l__sort_max_int=\count132
-\l__sort_true_max_int=\count133
-\l__sort_block_int=\count134
-\l__sort_begin_int=\count135
-\l__sort_end_int=\count136
-\l__sort_A_int=\count137
-\l__sort_B_int=\count138
-\l__sort_C_int=\count139
-\l__tl_build_start_index_int=\count140
-\l__tl_build_index_int=\count141
-\l__tl_analysis_normal_int=\count142
-\l__tl_analysis_index_int=\count143
-\l__tl_analysis_nesting_int=\count144
-\l__tl_analysis_type_int=\count145
-\l__regex_internal_a_int=\count146
-\l__regex_internal_b_int=\count147
-\l__regex_internal_c_int=\count148
-\l__regex_balance_int=\count149
-\l__regex_group_level_int=\count150
-\l__regex_mode_int=\count151
-\c__regex_cs_in_class_mode_int=\count152
-\c__regex_cs_mode_int=\count153
-\l__regex_catcodes_int=\count154
-\l__regex_default_catcodes_int=\count155
-\c__regex_catcode_D_int=\count156
-\c__regex_catcode_S_int=\count157
-\c__regex_catcode_L_int=\count158
-\c__regex_catcode_O_int=\count159
-\c__regex_catcode_A_int=\count160
-\c__regex_all_catcodes_int=\count161
-\l__regex_show_lines_int=\count162
-\l__regex_min_state_int=\count163
-\l__regex_max_state_int=\count164
-\l__regex_left_state_int=\count165
-\l__regex_right_state_int=\count166
-\l__regex_capturing_group_int=\count167
-\l__regex_min_pos_int=\count168
-\l__regex_max_pos_int=\count169
-\l__regex_curr_pos_int=\count170
-\l__regex_start_pos_int=\count171
-\l__regex_success_pos_int=\count172
-\l__regex_curr_char_int=\count173
-\l__regex_curr_catcode_int=\count174
-\l__regex_last_char_int=\count175
-\l__regex_case_changed_char_int=\count176
-\l__regex_curr_state_int=\count177
-\l__regex_step_int=\count178
-\l__regex_min_active_int=\count179
-\l__regex_max_active_int=\count180
-\l__regex_replacement_csnames_int=\count181
-\l__regex_match_count_int=\count182
-\l__regex_min_submatch_int=\count183
-\l__regex_submatch_int=\count184
-\l__regex_zeroth_submatch_int=\count185
-\g__regex_trace_regex_int=\count186
-\c_empty_box=\box28
-\l_tmpa_box=\box29
-\l_tmpb_box=\box30
-\g_tmpa_box=\box31
-\g_tmpb_box=\box32
-\l__box_top_dim=\dimen126
-\l__box_bottom_dim=\dimen127
-\l__box_left_dim=\dimen128
-\l__box_right_dim=\dimen129
-\l__box_top_new_dim=\dimen130
-\l__box_bottom_new_dim=\dimen131
-\l__box_left_new_dim=\dimen132
-\l__box_right_new_dim=\dimen133
-\l__box_internal_box=\box33
-\l__coffin_internal_box=\box34
-\l__coffin_internal_dim=\dimen134
-\l__coffin_offset_x_dim=\dimen135
-\l__coffin_offset_y_dim=\dimen136
-\l__coffin_x_dim=\dimen137
-\l__coffin_y_dim=\dimen138
-\l__coffin_x_prime_dim=\dimen139
-\l__coffin_y_prime_dim=\dimen140
-\c_empty_coffin=\box35
-\l__coffin_aligned_coffin=\box36
-\l__coffin_aligned_internal_coffin=\box37
-\l_tmpa_coffin=\box38
-\l_tmpb_coffin=\box39
-\l__coffin_display_coffin=\box40
-\l__coffin_display_coord_coffin=\box41
-\l__coffin_display_pole_coffin=\box42
-\l__coffin_display_offset_dim=\dimen141
-\l__coffin_display_x_dim=\dimen142
-\l__coffin_display_y_dim=\dimen143
-\l__coffin_bounding_shift_dim=\dimen144
-\l__coffin_left_corner_dim=\dimen145
-\l__coffin_right_corner_dim=\dimen146
-\l__coffin_bottom_corner_dim=\dimen147
-\l__coffin_top_corner_dim=\dimen148
-\l__coffin_scaled_total_height_dim=\dimen149
-\l__coffin_scaled_width_dim=\dimen150
+\l_keys_choice_int=\count119
+\c__fp_leading_shift_int=\count120
+\c__fp_middle_shift_int=\count121
+\c__fp_trailing_shift_int=\count122
+\c__fp_big_leading_shift_int=\count123
+\c__fp_big_middle_shift_int=\count124
+\c__fp_big_trailing_shift_int=\count125
+\c__fp_Bigg_leading_shift_int=\count126
+\c__fp_Bigg_middle_shift_int=\count127
+\c__fp_Bigg_trailing_shift_int=\count128
+\c__fp_rand_size_int=\count129
+\c__fp_rand_four_int=\count130
+\c__fp_rand_eight_int=\count131
+\l__sort_length_int=\count132
+\l__sort_min_int=\count133
+\l__sort_top_int=\count134
+\l__sort_max_int=\count135
+\l__sort_true_max_int=\count136
+\l__sort_block_int=\count137
+\l__sort_begin_int=\count138
+\l__sort_end_int=\count139
+\l__sort_A_int=\count140
+\l__sort_B_int=\count141
+\l__sort_C_int=\count142
+\l__tl_build_start_index_int=\count143
+\l__tl_build_index_int=\count144
+\l__tl_analysis_normal_int=\count145
+\l__tl_analysis_index_int=\count146
+\l__tl_analysis_nesting_int=\count147
+\l__tl_analysis_type_int=\count148
+\l__regex_internal_a_int=\count149
+\l__regex_internal_b_int=\count150
+\l__regex_internal_c_int=\count151
+\l__regex_balance_int=\count152
+\l__regex_group_level_int=\count153
+\l__regex_mode_int=\count154
+\c__regex_cs_in_class_mode_int=\count155
+\c__regex_cs_mode_int=\count156
+\l__regex_catcodes_int=\count157
+\l__regex_default_catcodes_int=\count158
+\c__regex_catcode_D_int=\count159
+\c__regex_catcode_S_int=\count160
+\c__regex_catcode_L_int=\count161
+\c__regex_catcode_O_int=\count162
+\c__regex_catcode_A_int=\count163
+\c__regex_all_catcodes_int=\count164
+\l__regex_show_lines_int=\count165
+\l__regex_min_state_int=\count166
+\l__regex_max_state_int=\count167
+\l__regex_left_state_int=\count168
+\l__regex_right_state_int=\count169
+\l__regex_capturing_group_int=\count170
+\l__regex_min_pos_int=\count171
+\l__regex_max_pos_int=\count172
+\l__regex_curr_pos_int=\count173
+\l__regex_start_pos_int=\count174
+\l__regex_success_pos_int=\count175
+\l__regex_curr_char_int=\count176
+\l__regex_curr_catcode_int=\count177
+\l__regex_last_char_int=\count178
+\l__regex_case_changed_char_int=\count179
+\l__regex_curr_state_int=\count180
+\l__regex_step_int=\count181
+\l__regex_min_active_int=\count182
+\l__regex_max_active_int=\count183
+\l__regex_replacement_csnames_int=\count184
+\l__regex_match_count_int=\count185
+\l__regex_min_submatch_int=\count186
+\l__regex_submatch_int=\count187
+\l__regex_zeroth_submatch_int=\count188
+\g__regex_trace_regex_int=\count189
+\c_empty_box=\box30
+\l_tmpa_box=\box31
+\l_tmpb_box=\box32
+\g_tmpa_box=\box33
+\g_tmpb_box=\box34
+\l__box_top_dim=\dimen142
+\l__box_bottom_dim=\dimen143
+\l__box_left_dim=\dimen144
+\l__box_right_dim=\dimen145
+\l__box_top_new_dim=\dimen146
+\l__box_bottom_new_dim=\dimen147
+\l__box_left_new_dim=\dimen148
+\l__box_right_new_dim=\dimen149
+\l__box_internal_box=\box35
+\l__coffin_internal_box=\box36
+\l__coffin_internal_dim=\dimen150
+\l__coffin_offset_x_dim=\dimen151
+\l__coffin_offset_y_dim=\dimen152
+\l__coffin_x_dim=\dimen153
+\l__coffin_y_dim=\dimen154
+\l__coffin_x_prime_dim=\dimen155
+\l__coffin_y_prime_dim=\dimen156
+\c_empty_coffin=\box37
+\l__coffin_aligned_coffin=\box38
+\l__coffin_aligned_internal_coffin=\box39
+\l_tmpa_coffin=\box40
+\l_tmpb_coffin=\box41
+\l__coffin_display_coffin=\box42
+\l__coffin_display_coord_coffin=\box43
+\l__coffin_display_pole_coffin=\box44
+\l__coffin_display_offset_dim=\dimen157
+\l__coffin_display_x_dim=\dimen158
+\l__coffin_display_y_dim=\dimen159
+\l__coffin_bounding_shift_dim=\dimen160
+\l__coffin_left_corner_dim=\dimen161
+\l__coffin_right_corner_dim=\dimen162
+\l__coffin_bottom_corner_dim=\dimen163
+\l__coffin_top_corner_dim=\dimen164
+\l__coffin_scaled_total_height_dim=\dimen165
+\l__coffin_scaled_width_dim=\dimen166
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
 File: l3pdfmode.def 2017/03/18 v L3 Experimental driver: PDF mode
-\l__driver_color_stack_int=\count187
+\l__driver_color_stack_int=\count190
 ))
 Package: breqn 2017/01/27 v0.98e Breaking equations
 
@@ -317,77 +391,77 @@ LaTeX Info: Redefining \genfrac on input line 145.
 ))
 (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count188
-\calc@Bcount=\count189
-\calc@Adimen=\dimen151
-\calc@Bdimen=\dimen152
+\calc@Acount=\count191
+\calc@Bcount=\count192
+\calc@Adimen=\dimen167
+\calc@Bdimen=\dimen168
 \calc@Askip=\skip52
 \calc@Bskip=\skip53
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count190
+\calc@Ccount=\count193
 \calc@Cskip=\skip54
 )
-\inf@bad=\count191
-\maxint=\count192
-\listwidth=\dimen153
-\eqnumsep=\dimen154
-\eqmargin=\dimen155
+\inf@bad=\count194
+\maxint=\count195
+\listwidth=\dimen169
+\eqnumsep=\dimen170
+\eqmargin=\dimen171
 \eqlinespacing=\skip55
 \eqlineskip=\skip56
-\eqlineskiplimit=\dimen156
+\eqlineskiplimit=\dimen172
 \eqbinoffset=\muskip17
 \eqdelimoffset=\muskip18
-\eqindentstep=\dimen157
-\eqstyle=\toks21
-\eqbreakdepth=\count193
-\eqinterlinepenalty=\count194
-\intereqpenalty=\count195
+\eqindentstep=\dimen173
+\eqstyle=\toks23
+\eqbreakdepth=\count196
+\eqinterlinepenalty=\count197
+\intereqpenalty=\count198
 \intereqskip=\skip57
-\prerelpenalty=\count196
-\prebinoppenalty=\count197
+\prerelpenalty=\count199
+\prebinoppenalty=\count266
 \Dmedmuskip=\muskip19
 \Dthickmuskip=\muskip20
 \eqleftskip=\skip58
 \eqrightskip=\skip59
 \eq@vspan=\skip60
 \eq@binoffset=\muskip21
-\EQ@box=\box43
-\EQ@copy=\box44
-\EQ@numbox=\box45
-\eq@wdNum=\dimen158
-\GRP@numbox=\box46
-\grp@wdNum=\dimen159
-\eq@lines=\count198
-\eq@curline=\count199
-\eq@badness=\count266
-\EQ@vims=\count267
-\eq@dp=\dimen160
-\eq@wdL=\dimen161
-\eq@wdT=\dimen162
-\eq@wdMin=\dimen163
-\grp@wdL=\dimen164
-\grp@wdR=\dimen165
-\grp@wdT=\dimen166
-\eq@wdRmax=\dimen167
-\eq@firstht=\dimen168
-\eq@wdCond=\dimen169
-\eq@indentstep=\dimen170
-\eq@linewidth=\dimen171
-\grp@linewidth=\dimen172
-\eq@hshift=\dimen173
-\eq@given@sidespace=\dimen174
-\mathindent=\dimen175
-\eq@final@linecount=\count268
-\eq@wdR=\dimen176
-\EQ@continue=\toks22
-\lr@level=\count269
-\GRP@queue=\toks23
-\GRP@box=\box47
-\GRP@wholebox=\box48
+\EQ@box=\box45
+\EQ@copy=\box46
+\EQ@numbox=\box47
+\eq@wdNum=\dimen174
+\GRP@numbox=\box48
+\grp@wdNum=\dimen175
+\eq@lines=\count267
+\eq@curline=\count268
+\eq@badness=\count269
+\EQ@vims=\count270
+\eq@dp=\dimen176
+\eq@wdL=\dimen177
+\eq@wdT=\dimen178
+\eq@wdMin=\dimen179
+\grp@wdL=\dimen180
+\grp@wdR=\dimen181
+\grp@wdT=\dimen182
+\eq@wdRmax=\dimen183
+\eq@firstht=\dimen184
+\eq@wdCond=\dimen185
+\eq@indentstep=\dimen186
+\eq@linewidth=\dimen187
+\grp@linewidth=\dimen188
+\eq@hshift=\dimen189
+\eq@given@sidespace=\dimen190
+\mathindent=\dimen191
+\eq@final@linecount=\count271
+\eq@wdR=\dimen192
+\EQ@continue=\toks24
+\lr@level=\count272
+\GRP@queue=\toks25
+\GRP@box=\box49
+\GRP@wholebox=\box50
 \darraycolsep=\skip61
-\cur@row=\count270
-\cur@col=\count271
+\cur@row=\count273
+\cur@col=\count274
 \conditionsep=\skip62
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/color.sty
@@ -397,25 +471,22 @@ Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
-
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
-))
+)
 (/usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
-\captionmargin=\dimen177
-\captionmargin@=\dimen178
-\captionwidth=\dimen179
-\caption@tempdima=\dimen180
-\caption@indent=\dimen181
-\caption@parindent=\dimen182
-\caption@hangindent=\dimen183
+\captionmargin=\dimen193
+\captionmargin@=\dimen194
+\captionwidth=\dimen195
+\caption@tempdima=\dimen196
+\caption@indent=\dimen197
+\caption@parindent=\dimen198
+\caption@hangindent=\dimen199
 )
-\c@ContinuedFloat=\count272
+\c@ContinuedFloat=\count275
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/cite/cite.sty
 LaTeX Info: Redefining \cite on input line 302.
@@ -424,11 +495,11 @@ Package: cite 2015/02/27  v 5.5
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count273
-\float@exts=\toks24
-\float@box=\box49
-\@float@everytoks=\toks25
-\@floatcapt=\box50
+\c@float@type=\count276
+\float@exts=\toks26
+\float@box=\box51
+\@float@everytoks=\toks27
+\@floatcapt=\box52
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/fncychap/fncychap.sty
 Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
@@ -440,42 +511,25 @@ Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
 \pyy=\skip68
 \pxx=\skip69
 )
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
-
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
-
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
-)
-Package graphics Info: Driver file: pdftex.def on input line 99.
-)
-\Gin@req@height=\dimen184
-\Gin@req@width=\dimen185
-)
 (/usr/local/texlive/2018/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count274
-\lst@gtempboxa=\box51
-\lst@token=\toks26
-\lst@length=\count275
-\lst@currlwidth=\dimen186
-\lst@column=\count276
-\lst@pos=\count277
-\lst@lostspace=\dimen187
-\lst@width=\dimen188
-\lst@newlines=\count278
-\lst@lineno=\count279
-\lst@maxwidth=\dimen189
+\lst@mode=\count277
+\lst@gtempboxa=\box53
+\lst@token=\toks28
+\lst@length=\count278
+\lst@currlwidth=\dimen256
+\lst@column=\count279
+\lst@pos=\count280
+\lst@lostspace=\dimen257
+\lst@width=\dimen258
+\lst@newlines=\count281
+\lst@lineno=\count282
+\lst@maxwidth=\dimen259
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count280
-\lst@skipnumbers=\count281
-\lst@framebox=\box52
+\c@lstnumber=\count283
+\lst@skipnumbers=\count284
+\lst@framebox=\box54
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2015/06/04 1.6 listings configuration
@@ -518,7 +572,7 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count282
+\etb@tempcnta=\count285
 
 
 Package etoolbox Warning: Patching '\end' failed!
@@ -529,11 +583,11 @@ Package: fancyvrb 2008/02/07
 
 Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
 <2008/02/07> (tvz)
-\FV@CodeLineNo=\count283
+\FV@CodeLineNo=\count286
 \FV@InFile=\read1
-\FV@TabBox=\box53
-\c@FancyVerbLine=\count284
-\FV@StepNumber=\count285
+\FV@TabBox=\box55
+\c@FancyVerbLine=\count287
+\FV@StepNumber=\count288
 \FV@OutFile=\write3
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/upquote/upquote.sty
@@ -542,43 +596,43 @@ tim
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count286
-\output=\toks27
-\linenoprevgraf=\count287
-\linenumbersep=\dimen190
-\linenumberwidth=\dimen191
-\c@linenumber=\count288
-\c@pagewiselinenumber=\count289
-\c@LN@truepage=\count290
-\c@internallinenumber=\count291
-\c@internallinenumbers=\count292
-\quotelinenumbersep=\dimen192
-\bframerule=\dimen193
-\bframesep=\dimen194
-\bframebox=\box54
+\linenopenalty=\count289
+\output=\toks29
+\linenoprevgraf=\count290
+\linenumbersep=\dimen260
+\linenumberwidth=\dimen261
+\c@linenumber=\count291
+\c@pagewiselinenumber=\count292
+\c@LN@truepage=\count293
+\c@internallinenumber=\count294
+\c@internallinenumbers=\count295
+\quotelinenumbersep=\dimen262
+\bframerule=\dimen263
+\bframesep=\dimen264
+\bframebox=\box56
 LaTeX Info: Redefining \\ on input line 3056.
 )
-\c@FV@TrueTabGroupLevel=\count293
-\c@FV@TrueTabCounter=\count294
-\FV@TabBox@Group=\box55
+\c@FV@TrueTabGroupLevel=\count296
+\c@FV@TrueTabCounter=\count297
+\FV@TabBox@Group=\box57
 \FV@TmpLength=\skip70
-\c@FV@HighlightLinesStart=\count295
-\c@FV@HighlightLinesStop=\count296
-\FV@LoopCount=\count297
-\FV@NCharsBox=\box56
-\FV@BreakIndent=\dimen195
-\FV@BreakIndentNChars=\count298
-\FV@BreakSymbolSepLeft=\dimen196
-\FV@BreakSymbolSepLeftNChars=\count299
-\FV@BreakSymbolSepRight=\dimen197
-\FV@BreakSymbolSepRightNChars=\count300
-\FV@BreakSymbolIndentLeft=\dimen198
-\FV@BreakSymbolIndentLeftNChars=\count301
-\FV@BreakSymbolIndentRight=\dimen199
-\FV@BreakSymbolIndentRightNChars=\count302
-\c@FancyVerbLineBreakLast=\count303
-\FV@LineBox=\box57
-\FV@LineIndentBox=\box58
+\c@FV@HighlightLinesStart=\count298
+\c@FV@HighlightLinesStop=\count299
+\FV@LoopCount=\count300
+\FV@NCharsBox=\box58
+\FV@BreakIndent=\dimen265
+\FV@BreakIndentNChars=\count301
+\FV@BreakSymbolSepLeft=\dimen266
+\FV@BreakSymbolSepLeftNChars=\count302
+\FV@BreakSymbolSepRight=\dimen267
+\FV@BreakSymbolSepRightNChars=\count303
+\FV@BreakSymbolIndentLeft=\dimen268
+\FV@BreakSymbolIndentLeftNChars=\count304
+\FV@BreakSymbolIndentRight=\dimen269
+\FV@BreakSymbolIndentRightNChars=\count305
+\c@FancyVerbLineBreakLast=\count306
+\FV@LineBox=\box59
+\FV@LineIndentBox=\box60
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/shellesc.sty
 Package: shellesc 2016/06/07 v0.02a unified shell escape interface for LaTeX
@@ -608,47 +662,47 @@ runsystem(rm -- "tutorial.3.w18")...executed.
 (/usr/local/texlive/2018/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/local/texlive/2018/texmf-dist/tex/generic/xstring/xstring.tex
 \@xs@message=\write4
-\integerpart=\count304
-\decimalpart=\count305
+\integerpart=\count307
+\decimalpart=\count308
 )
 Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/framed/framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 \OuterFrameSep=\skip71
-\fb@frw=\dimen256
-\fb@frh=\dimen257
-\FrameRule=\dimen258
-\FrameSep=\dimen259
+\fb@frw=\dimen270
+\fb@frh=\dimen271
+\FrameRule=\dimen272
+\FrameSep=\dimen273
 )
 \minted@appexistsfile=\read2
-\minted@bgbox=\box59
+\minted@bgbox=\box61
 \minted@code=\write5
-\c@minted@FancyVerbLineTemp=\count306
-\c@minted@pygmentizecounter=\count307
-\@float@every@listing=\toks28
-\c@listing=\count308
+\c@minted@FancyVerbLineTemp=\count309
+\c@minted@pygmentizecounter=\count310
+\@float@every@listing=\toks30
+\c@listing=\count311
 )
 runsystem(mkdir -p _minted-tutorial.3)...executed.
 
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/dvips/rotate.sty
-\@rotdimen=\dimen260
-\@rotbox=\box60
+\@rotdimen=\dimen274
+\@rotbox=\box62
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
 x
-\pgfutil@everybye=\toks29
-\pgfutil@tempdima=\dimen261
-\pgfutil@tempdimb=\dimen262
+\pgfutil@everybye=\toks31
+\pgfutil@tempdima=\dimen275
+\pgfutil@tempdimb=\dimen276
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-li
 sts.tex))
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box61
+\pgfutil@abb=\box63
 (/usr/local/texlive/2018/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
@@ -661,30 +715,30 @@ Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks30
-\pgfkeys@temptoks=\toks31
+\pgfkeys@pathtoks=\toks32
+\pgfkeys@temptoks=\toks33
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.c
 ode.tex
-\pgfkeys@tmptoks=\toks32
+\pgfkeys@tmptoks=\toks34
 ))
-\pgf@x=\dimen263
-\pgf@y=\dimen264
-\pgf@xa=\dimen265
-\pgf@ya=\dimen266
-\pgf@xb=\dimen267
-\pgf@yb=\dimen268
-\pgf@xc=\dimen269
-\pgf@yc=\dimen270
+\pgf@x=\dimen277
+\pgf@y=\dimen278
+\pgf@xa=\dimen279
+\pgf@ya=\dimen280
+\pgf@xb=\dimen281
+\pgf@yb=\dimen282
+\pgf@xc=\dimen283
+\pgf@yc=\dimen284
 \w@pgf@writea=\write6
 \r@pgf@reada=\read3
-\c@pgf@counta=\count309
-\c@pgf@countb=\count310
-\c@pgf@countc=\count311
-\c@pgf@countd=\count312
-\t@pgf@toka=\toks33
-\t@pgf@tokb=\toks34
-\t@pgf@tokc=\toks35
+\c@pgf@counta=\count312
+\c@pgf@countb=\count313
+\c@pgf@countc=\count314
+\c@pgf@countd=\count315
+\t@pgf@toka=\toks35
+\t@pgf@tokb=\toks36
+\t@pgf@tokc=\toks37
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
@@ -702,8 +756,8 @@ File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
 code.tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count313
-\pgfsyssoftpath@bigbuffer@items=\count314
+\pgfsyssoftpath@smallbuffer@items=\count316
+\pgfsyssoftpath@bigbuffer@items=\count317
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
 code.tex
@@ -732,12 +786,12 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen271
-\pgfmath@count=\count315
-\pgfmath@box=\box62
-\pgfmath@toks=\toks36
-\pgfmath@stack@operand=\toks37
-\pgfmath@stack@operation=\toks38
+\pgfmath@dimen=\dimen285
+\pgfmath@count=\count318
+\pgfmath@box=\box64
+\pgfmath@toks=\toks38
+\pgfmath@stack@operand=\toks39
+\pgfmath@stack@operation=\toks40
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
 tex
@@ -758,57 +812,57 @@ code.tex)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
 erarithmetics.code.tex)))
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count316
+\c@pgfmathroundto@lastzeros=\count319
 ))
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
 de.tex
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen272
-\pgf@picmaxx=\dimen273
-\pgf@picminy=\dimen274
-\pgf@picmaxy=\dimen275
-\pgf@pathminx=\dimen276
-\pgf@pathmaxx=\dimen277
-\pgf@pathminy=\dimen278
-\pgf@pathmaxy=\dimen279
-\pgf@xx=\dimen280
-\pgf@xy=\dimen281
-\pgf@yx=\dimen282
-\pgf@yy=\dimen283
-\pgf@zx=\dimen284
-\pgf@zy=\dimen285
+\pgf@picminx=\dimen286
+\pgf@picmaxx=\dimen287
+\pgf@picminy=\dimen288
+\pgf@picmaxy=\dimen289
+\pgf@pathminx=\dimen290
+\pgf@pathmaxx=\dimen291
+\pgf@pathminy=\dimen292
+\pgf@pathmaxy=\dimen293
+\pgf@xx=\dimen294
+\pgf@xy=\dimen295
+\pgf@yx=\dimen296
+\pgf@yy=\dimen297
+\pgf@zx=\dimen298
+\pgf@zy=\dimen299
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
 ruct.code.tex
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen286
-\pgf@path@lasty=\dimen287
+\pgf@path@lastx=\dimen300
+\pgf@path@lasty=\dimen301
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
 .code.tex
 File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
-\pgf@shorten@end@additional=\dimen288
-\pgf@shorten@start@additional=\dimen289
+\pgf@shorten@end@additional=\dimen302
+\pgf@shorten@start@additional=\dimen303
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
 de.tex
 File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
-\pgfpic=\box63
-\pgf@hbox=\box64
-\pgf@layerbox@main=\box65
-\pgf@picture@serial@count=\count317
+\pgfpic=\box65
+\pgf@hbox=\box66
+\pgf@layerbox@main=\box67
+\pgf@picture@serial@count=\count320
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
 ate.code.tex
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
-\pgflinewidth=\dimen290
+\pgflinewidth=\dimen304
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
 ations.code.tex
 File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
-\pgf@pt@x=\dimen291
-\pgf@pt@y=\dimen292
-\pgf@pt@temp=\dimen293
+\pgf@pt@x=\dimen305
+\pgf@pt@y=\dimen306
+\pgf@pt@temp=\dimen307
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
 e.tex
@@ -825,13 +879,13 @@ File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
 de.tex
 File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
-\pgfarrowsep=\dimen294
+\pgfarrowsep=\dimen308
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
 e.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen295
-\pgf@sys@shading@range@num=\count318
+\pgf@max=\dimen309
+\pgf@sys@shading@range@num=\count321
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
 e.tex
@@ -840,7 +894,7 @@ File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.
 code.tex
 File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
-\pgfexternal@startupbox=\box66
+\pgfexternal@startupbox=\box68
 ))
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
 de.tex
@@ -857,7 +911,7 @@ File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
 e.tex
 File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
-\pgfnodeparttextbox=\box67
+\pgfnodeparttextbox=\box69
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
 tex
@@ -866,8 +920,8 @@ File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 (/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
 -0-65.sty
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen296
-\pgf@nodesepend=\dimen297
+\pgf@nodesepstart=\dimen310
+\pgf@nodesepend=\dimen311
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
 -1-18.sty
@@ -882,10 +936,10 @@ Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
 Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen298
-\pgffor@skip=\dimen299
-\pgffor@stack=\toks39
-\pgffor@toks=\toks40
+\pgffor@iter=\dimen312
+\pgffor@skip=\dimen313
+\pgffor@stack=\toks41
+\pgffor@toks=\toks42
 ))
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
 e.tex
@@ -894,32 +948,32 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
 dlers.code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count319
-\pgfplotmarksize=\dimen300
+\pgf@plot@mark@count=\count322
+\pgfplotmarksize=\dimen314
 )
-\tikz@lastx=\dimen301
-\tikz@lasty=\dimen302
-\tikz@lastxsaved=\dimen303
-\tikz@lastysaved=\dimen304
-\tikzleveldistance=\dimen305
-\tikzsiblingdistance=\dimen306
-\tikz@figbox=\box68
-\tikz@figbox@bg=\box69
-\tikz@tempbox=\box70
-\tikz@tempbox@bg=\box71
-\tikztreelevel=\count320
-\tikznumberofchildren=\count321
-\tikznumberofcurrentchild=\count322
-\tikz@fig@count=\count323
+\tikz@lastx=\dimen315
+\tikz@lasty=\dimen316
+\tikz@lastxsaved=\dimen317
+\tikz@lastysaved=\dimen318
+\tikzleveldistance=\dimen319
+\tikzsiblingdistance=\dimen320
+\tikz@figbox=\box70
+\tikz@figbox@bg=\box71
+\tikz@tempbox=\box72
+\tikz@tempbox@bg=\box73
+\tikztreelevel=\count323
+\tikznumberofchildren=\count324
+\tikznumberofcurrentchild=\count325
+\tikz@fig@count=\count326
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
 e.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count324
-\pgfmatrixcurrentcolumn=\count325
-\pgf@matrix@numberofcolumns=\count326
+\pgfmatrixcurrentrow=\count327
+\pgfmatrixcurrentcolumn=\count328
+\pgf@matrix@numberofcolumns=\count329
 )
-\tikz@expandcount=\count327
+\tikz@expandcount=\count330
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarytopaths.code.tex
@@ -927,9 +981,9 @@ File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 )))
 (/usr/local/texlive/2018/texmf-dist/tex/latex/appendix/appendix.sty
 Package: appendix 2009/09/02 v1.2b extra appendix facilities
-\c@@pps=\count328
-\c@@ppsavesec=\count329
-\c@@ppsaveapp=\count330
+\c@@pps=\count331
+\c@@ppsavesec=\count332
+\c@@ppsaveapp=\count333
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip22
@@ -937,8 +991,8 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2018/04/06 v1.3b Input encoding file
-\inpenc@prehook=\toks41
-\inpenc@posthook=\toks42
+\inpenc@prehook=\toks43
+\inpenc@posthook=\toks44
 )
 (/usr/local/texlive/2018/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2018/02/14 3.18 The Babel package
@@ -951,41 +1005,39 @@ Language: english 2017/06/06 v3.3r English support from the babel system
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2018/02/14 3.18 Babel common definitions
-\babel@savecnt=\count331
-\U@D=\dimen307
+\babel@savecnt=\count334
+\U@D=\dimen321
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/babel/txtbabel.def)
-\bbl@dirlevel=\count332
+\bbl@dirlevel=\count335
 )
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
 ))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
 runsystem(which pygmentize && touch tutorial.3.aex)...executed.
 
 runsystem(rm tutorial.3.aex)...executed.
 
 
-(./tutorial.3.aux
-
-LaTeX Warning: Label `table:question_1_008_grouped_data_summary_non_scaled' mul
-tiply defined.
-
-)
+(./tutorial.3.aux)
 \openout1 = `tutorial.3.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
-LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1023,17 +1075,17 @@ LaTeX Font Info:    ... okay on input line 30.
 
 (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count333
-\scratchdimen=\dimen308
-\scratchbox=\box72
-\nofMPsegments=\count334
-\nofMParguments=\count335
-\everyMPshowfont=\toks43
-\MPscratchCnt=\count336
-\MPscratchDim=\dimen309
-\MPnumerator=\count337
-\makeMPintoPDFobject=\count338
-\everyMPtoPDFconversion=\toks44
+\scratchcounter=\count336
+\scratchdimen=\dimen322
+\scratchbox=\box74
+\nofMPsegments=\count337
+\nofMParguments=\count338
+\everyMPshowfont=\toks45
+\MPscratchCnt=\count339
+\MPscratchDim=\dimen323
+\MPnumerator=\count340
+\makeMPintoPDFobject=\count341
+\everyMPtoPDFconversion=\toks46
 ) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1216,7 +1268,7 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )
-\c@lstlisting=\count339
+\c@lstlisting=\count342
 
 ABD: EveryShipout initializing macros [1
 
@@ -1240,385 +1292,367 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout7 = `tutorial.3.toc'.
 
  [2]
-[1
+[3] [1
 
+] [2
 
-]
-\openout3 = `tutorial.3.pyg'.
-
- (./_minted-tutorial.3/default-pyg-prefix.pygstyle)
-(./_minted-tutorial.3/default.pygstyle)
-(./_minted-tutorial.3/AE4A6A9D0487DA021DBE79A89A201315016AA8F575331A6F76211A622
-2B41BAD.pygtex)
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/8387DFB6FAFF458181AF40AC6706BD0B016AA8F575331A6F76211A622
-2B41BAD.pygtex)
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/15A0E0D97EECFA838E06FE0042E10E93016AA8F575331A6F76211A622
-2B41BAD.pygtex) [2]
-Overfull \hbox (6.1859pt too wide) in paragraph at lines 117--118
+] [3]
+Overfull \hbox (6.1859pt too wide) in paragraph at lines 165--166
 \OT1/cmr/m/n/12 ques-tion 1. In con-trast, \OT1/cmr/m/it/12 ques-tion[]1[]\OT1/
 cmr/bx/it/12 036[]\OT1/cmr/m/it/12 eva[]charts[]hier[]latitude[]longitude[]min[
 ]temp
  []
 
-[3]
-\openout3 = `tutorial.3.pyg'.
+[4] [5]
+Overfull \hbox (5.24326pt too wide) in paragraph at lines 187--188
+\OT1/cmr/m/n/12 down-load-ing the re-quired \OT1/cmr/m/it/12 weather \OT1/cmr/m
+/n/12 and \OT1/cmr/m/it/12 well-be-ing \OT1/cmr/m/n/12 files into the pids-well
+being-weather
+ []
 
-
-(./_minted-tutorial.3/CBD068EB96D365B82635421E356C1B92016AA8F575331A6F76211A622
-2B41BAD.pygtex)
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/15A0E0D97EECFA838E06FE0042E10E93016AA8F575331A6F76211A622
-2B41BAD.pygtex [4])
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/A605AB690859691D55334F625FA3EB83016AA8F575331A6F76211A622
-2B41BAD.pygtex)
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/325C1490C17278B8F1F21C6E24AC376F016AA8F575331A6F76211A622
-2B41BAD.pygtex)
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/F4B721C651E1845F80D6D8731F953BDE016AA8F575331A6F76211A622
-2B41BAD.pygtex) [5]
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/B00D1EF115807E1ADFD91323321F8608016AA8F575331A6F76211A622
-2B41BAD.pygtex)
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/A255ACE1C287AF84099C7E461DC9F1757B9A0CCEF41BCBC2BC2038A82
-AFC5A75.pygtex)
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/680A154CB99640EC5479E89D851245D7E1A99BB315655138CA0560A60
-95C1B63.pygtex)
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/F6DF8C3B05CB46B001F0D8CD74DEEBAB7B9A0CCEF41BCBC2BC2038A82
-AFC5A75.pygtex)
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/8BB364CCA5257B6C2FD8EEE67CB1BECDE1A99BB315655138CA0560A60
-95C1B63.pygtex)
-Overfull \hbox (2.30063pt too wide) in paragraph at lines 213--214
+[6] [7]
+Overfull \hbox (2.30063pt too wide) in paragraph at lines 239--240
 \OT1/cmr/bx/n/12 014-technically-complete-single-dataframe\OT1/cmr/m/n/12 . The
  func-tion as-so-ci-ated with this
  []
 
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/3D5C4216BE23FC8BB3FC1BE3752588C27B9A0CCEF41BCBC2BC2038A82
-AFC5A75.pygtex [6])
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/6EFD98EA51E09A9A33490001051B5957E1A99BB315655138CA0560A60
-95C1B63.pygtex)
-Overfull \hbox (8.31024pt too wide) in paragraph at lines 230--241
- [][] 
- []
-
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/CC80420A4CE7089F0CE079FBAB6C964F7B9A0CCEF41BCBC2BC2038A82
-AFC5A75.pygtex)
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/A2012BAF488A50B452DA5FD1D478739AE1A99BB315655138CA0560A60
-95C1B63.pygtex)
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/72458824A4FF3AAC36847FA7B10B2B1E7B9A0CCEF41BCBC2BC2038A82
-AFC5A75.pygtex)
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/345BBECE8E9A845CDAB87ABF69F2D3B6E1A99BB315655138CA0560A60
-95C1B63.pygtex [7])
-Overfull \hbox (8.31024pt too wide) in paragraph at lines 286--297
- [][] 
- []
-
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/EF8C2979ED11990D54822985834DEE0B7B9A0CCEF41BCBC2BC2038A82
-AFC5A75.pygtex)
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/967332718BCE2A9379F88B1E027E4025E1A99BB315655138CA0560A60
-95C1B63.pygtex)
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/15D907AC86B6497E02F00500F0EC202C7B9A0CCEF41BCBC2BC2038A82
-AFC5A75.pygtex)
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/6E25B7124697C0D2F59E49197551CD04E1A99BB315655138CA0560A60
-95C1B63.pygtex)
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/DF5446313AD7CB3C4A5B6D60BC486F737B9A0CCEF41BCBC2BC2038A82
-AFC5A75.pygtex)
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/763EA8C773FFB45942FFDAF9762E5E3AE1A99BB315655138CA0560A60
-95C1B63.pygtex [8])
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/FB6995DAEFC7059EB2E2F6C85CFBA1F97B9A0CCEF41BCBC2BC2038A82
-AFC5A75.pygtex
-LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 3.
-)
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/81966604E24B5969FE6A751F5E80AA3CE1A99BB315655138CA0560A60
-95C1B63.pygtex)
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/38AD969FFA9CC73BA6EBAB96F235D4F87B9A0CCEF41BCBC2BC2038A82
-AFC5A75.pygtex)
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/7DF31BB014E8FC53E46C3C00EE67E6C0E1A99BB315655138CA0560A60
-95C1B63.pygtex)
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/7431AF8C2D31F03C5C63860F9BE046627B9A0CCEF41BCBC2BC2038A82
-AFC5A75.pygtex)
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/193A825A61D638972CBE797C95BFDA29E1A99BB315655138CA0560A60
-95C1B63.pygtex)
-Overfull \hbox (25.92256pt too wide) in paragraph at lines 401--412
+[8]
+Overfull \hbox (8.31024pt too wide) in paragraph at lines 275--286
  [][] 
  []
 
 [9]
-\openout3 = `tutorial.3.pyg'.
+<./images/question_1_010_eda_charts_box_whisker_hours_sun.pdf, id=53, 614.295pt
+ x 794.97pt>
+File: ./images/question_1_010_eda_charts_box_whisker_hours_sun.pdf Graphic file
+ (type pdf)
+<use ./images/question_1_010_eda_charts_box_whisker_hours_sun.pdf>
+Package pdftex.def Info: ./images/question_1_010_eda_charts_box_whisker_hours_s
+un.pdf  used on input line 306.
+(pdftex.def)             Requested size: 430.00356pt x 556.4752pt.
 
+Overfull \hbox (10.83842pt too wide) in paragraph at lines 306--307
+ [][] 
+ []
 
-(./_minted-tutorial.3/F9D8187B72CFACEE6FE90F8237B49F867B9A0CCEF41BCBC2BC2038A82
-AFC5A75.pygtex)
-\openout3 = `tutorial.3.pyg'.
+<./images/question_1_010_eda_charts_box_whisker_rain.pdf, id=54, 614.295pt x 79
+4.97pt>
+File: ./images/question_1_010_eda_charts_box_whisker_rain.pdf Graphic file (typ
+e pdf)
+<use ./images/question_1_010_eda_charts_box_whisker_rain.pdf>
+Package pdftex.def Info: ./images/question_1_010_eda_charts_box_whisker_rain.pd
+f  used on input line 314.
+(pdftex.def)             Requested size: 430.00356pt x 556.4752pt.
 
+Overfull \hbox (10.83842pt too wide) in paragraph at lines 314--315
+ [][] 
+ []
 
-(./_minted-tutorial.3/4CF4C22276736383C1390FCE887C5EADE1A99BB315655138CA0560A60
-95C1B63.pygtex)
-\openout3 = `tutorial.3.pyg'.
+<./images/question_1_010_eda_charts_box_whisker_max_temp.pdf, id=55, 614.295pt 
+x 794.97pt>
+File: ./images/question_1_010_eda_charts_box_whisker_max_temp.pdf Graphic file 
+(type pdf)
+<use ./images/question_1_010_eda_charts_box_whisker_max_temp.pdf>
+Package pdftex.def Info: ./images/question_1_010_eda_charts_box_whisker_max_tem
+p.pdf  used on input line 322.
+(pdftex.def)             Requested size: 430.00356pt x 556.4752pt.
 
+Overfull \hbox (10.83842pt too wide) in paragraph at lines 322--323
+ [][] 
+ []
 
-(./_minted-tutorial.3/392DBC11D5428602ACA30444AECB2A3F7B9A0CCEF41BCBC2BC2038A82
-AFC5A75.pygtex)
-\openout3 = `tutorial.3.pyg'.
+<./images/question_1_010_eda_charts_box_whisker_min_temp.pdf, id=56, 614.295pt 
+x 794.97pt>
+File: ./images/question_1_010_eda_charts_box_whisker_min_temp.pdf Graphic file 
+(type pdf)
+<use ./images/question_1_010_eda_charts_box_whisker_min_temp.pdf>
+Package pdftex.def Info: ./images/question_1_010_eda_charts_box_whisker_min_tem
+p.pdf  used on input line 330.
+(pdftex.def)             Requested size: 430.00356pt x 556.4752pt.
 
-
-(./_minted-tutorial.3/EDEEB45A78CB64AD30C7C5D01F732BE3E1A99BB315655138CA0560A60
-95C1B63.pygtex)
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/D264C823D77D995676FF8ED4124E35D07B9A0CCEF41BCBC2BC2038A82
-AFC5A75.pygtex)
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/2AF6A3B7B1AF4CEAEF2310518F77B3C2E1A99BB315655138CA0560A60
-95C1B63.pygtex)
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/724021D76458D59A0EBB53F49B9EDAAA7B9A0CCEF41BCBC2BC2038A82
-AFC5A75.pygtex) [10]
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/57F46722A4DE2070063C7235E4E0987AE1A99BB315655138CA0560A60
-95C1B63.pygtex)
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/363207212E0655245DFFFE556BF5D3E07B9A0CCEF41BCBC2BC2038A82
-AFC5A75.pygtex)
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/4FECC023AFD6F8427C3DBEDB275765CFE1A99BB315655138CA0560A60
-95C1B63.pygtex) [11]
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/9A560623EA7943F02BC2709D7B3ECCB17B9A0CCEF41BCBC2BC2038A82
-AFC5A75.pygtex)
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/506DBFF0A863A6B09DB655C339020DCCE1A99BB315655138CA0560A60
-95C1B63.pygtex)
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/B89BCB7A8213178396558BF6728028ED7B9A0CCEF41BCBC2BC2038A82
-AFC5A75.pygtex)
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/69C740F2B84D6D4B155C618B8C81E456E1A99BB315655138CA0560A60
-95C1B63.pygtex)
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/B38217EFCB62B8CAA133F5FE6679CA907B9A0CCEF41BCBC2BC2038A82
-AFC5A75.pygtex)
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/69C740F2B84D6D4B155C618B8C81E456E1A99BB315655138CA0560A60
-95C1B63.pygtex)
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/F0C1D76D7B275239E1282FD9ECE597617B9A0CCEF41BCBC2BC2038A82
-AFC5A75.pygtex [12
-
-])
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/10557F1023260F3AF1BCA29B1EBE115CE1A99BB315655138CA0560A60
-95C1B63.pygtex)
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/7F57F3BD20CE03D2D72A50B9F9FFA8A07B9A0CCEF41BCBC2BC2038A82
-AFC5A75.pygtex)
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/DF223467C8B7F444253530033D87DD78E1A99BB315655138CA0560A60
-95C1B63.pygtex)
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/E7A8F25067D056B6A9AAB163477FBFAF7B9A0CCEF41BCBC2BC2038A82
-AFC5A75.pygtex)
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/731C35BF720564FC00F3EBF122CD9302E1A99BB315655138CA0560A60
-95C1B63.pygtex)
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/A2E8F386111308BE293A9F036DC9E9157B9A0CCEF41BCBC2BC2038A82
-AFC5A75.pygtex)
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/1D0594D5AA46554D4991C69C5A22D9A8E1A99BB315655138CA0560A60
-95C1B63.pygtex)
-Overfull \hbox (12.44077pt too wide) in paragraph at lines 617--627
+Overfull \hbox (10.83842pt too wide) in paragraph at lines 330--331
  [][] 
  []
 
 
+Overfull \hbox (8.31024pt too wide) in paragraph at lines 358--369
+ [][] 
+ []
+
+[10] [11 <./images/question_1_010_eda_charts_box_whisker_hours_sun.pdf>]
+[12 <./images/question_1_010_eda_charts_box_whisker_rain.pdf>] [13 <./images/qu
+estion_1_010_eda_charts_box_whisker_max_temp.pdf>] [14 <./images/question_1_010
+_eda_charts_box_whisker_min_temp.pdf>]
+<./images/question_1_013_eda_charts_latitude.pdf, id=92, 614.295pt x 794.97pt>
+File: ./images/question_1_013_eda_charts_latitude.pdf Graphic file (type pdf)
+<use ./images/question_1_013_eda_charts_latitude.pdf>
+Package pdftex.def Info: ./images/question_1_013_eda_charts_latitude.pdf  used 
+on input line 380.
+(pdftex.def)             Requested size: 430.00356pt x 556.4752pt.
+
+Overfull \hbox (10.83842pt too wide) in paragraph at lines 380--381
+ [][] 
+ []
+
+<./images/question_1_014_eda_charts_longitude_latitude_hours_sun.png, id=93, 16
+34.105pt x 1401.235pt>
+File: ./images/question_1_014_eda_charts_longitude_latitude_hours_sun.png Graph
+ic file (type png)
+<use ./images/question_1_014_eda_charts_longitude_latitude_hours_sun.png>
+Package pdftex.def Info: ./images/question_1_014_eda_charts_longitude_latitude_
+hours_sun.png  used on input line 398.
+(pdftex.def)             Requested size: 585.34503pt x 560.48409pt.
+
+Overfull \hbox (166.1799pt too wide) in paragraph at lines 398--399
+ [][] 
+ []
+
+<./images/question_1_015_eda_charts_latitude_longitude_rain_mm.png, id=96, 1634
+.105pt x 1401.235pt>
+File: ./images/question_1_015_eda_charts_latitude_longitude_rain_mm.png Graphic
+ file (type png)
+<use ./images/question_1_015_eda_charts_latitude_longitude_rain_mm.png>
+Package pdftex.def Info: ./images/question_1_015_eda_charts_latitude_longitude_
+rain_mm.png  used on input line 406.
+(pdftex.def)             Requested size: 585.34503pt x 560.48409pt.
+
+Overfull \hbox (166.1799pt too wide) in paragraph at lines 406--407
+ [][] 
+ []
+
+<./images/question_1_016_eda_charts_latitude_longitude_max_temp.png, id=98, 163
+4.105pt x 1401.235pt>
+File: ./images/question_1_016_eda_charts_latitude_longitude_max_temp.png Graphi
+c file (type png)
+<use ./images/question_1_016_eda_charts_latitude_longitude_max_temp.png>
+Package pdftex.def Info: ./images/question_1_016_eda_charts_latitude_longitude_
+max_temp.png  used on input line 414.
+(pdftex.def)             Requested size: 585.34503pt x 560.48409pt.
+
+Overfull \hbox (166.1799pt too wide) in paragraph at lines 414--415
+ [][] 
+ []
+
+<./images/question_1_017_eda_charts_longitude_latitude_min_temp.png, id=100, 16
+34.105pt x 1401.235pt>
+File: ./images/question_1_017_eda_charts_longitude_latitude_min_temp.png Graphi
+c file (type png)
+<use ./images/question_1_017_eda_charts_longitude_latitude_min_temp.png>
+Package pdftex.def Info: ./images/question_1_017_eda_charts_longitude_latitude_
+min_temp.png  used on input line 422.
+(pdftex.def)             Requested size: 585.34503pt x 560.48409pt.
+
+Overfull \hbox (166.1799pt too wide) in paragraph at lines 422--423
+ [][] 
+ []
+
+[15] [16 <./images/question_1_013_eda_charts_latitude.pdf>] [17 <./images/quest
+ion_1_014_eda_charts_longitude_latitude_hours_sun.png>] [18 <./images/question_
+1_015_eda_charts_latitude_longitude_rain_mm.png>] [19 <./images/question_1_016_
+eda_charts_latitude_longitude_max_temp.png>] [20 <./images/question_1_017_eda_c
+harts_longitude_latitude_min_temp.png>]
+<./images/question_1_019_prep_charts_vat.pdf, id=134, 614.295pt x 794.97pt>
+File: ./images/question_1_019_prep_charts_vat.pdf Graphic file (type pdf)
+<use ./images/question_1_019_prep_charts_vat.pdf>
+Package pdftex.def Info: ./images/question_1_019_prep_charts_vat.pdf  used on i
+nput line 459.
+(pdftex.def)             Requested size: 245.71364pt x 317.98236pt.
+ [21 <./images/question_1_019_prep_charts_vat.pdf>]
+<./images/question_1_020_prep_k_choice_console_output.png, id=145, 712.6625pt x
+ 608.2725pt>
+File: ./images/question_1_020_prep_k_choice_console_output.png Graphic file (ty
+pe png)
+<use ./images/question_1_020_prep_k_choice_console_output.png>
+Package pdftex.def Info: ./images/question_1_020_prep_k_choice_console_output.p
+ng  used on input line 479.
+(pdftex.def)             Requested size: 356.33038pt x 304.13551pt.
+<./images/question_1_021_prep_algorithm_choice_console_ouput.png, id=146, 334.2
+4875pt x 444.66125pt>
+File: ./images/question_1_021_prep_algorithm_choice_console_ouput.png Graphic f
+ile (type png)
+<use ./images/question_1_021_prep_algorithm_choice_console_ouput.png>
+Package pdftex.def Info: ./images/question_1_021_prep_algorithm_choice_console_
+ouput.png  used on input line 501.
+(pdftex.def)             Requested size: 200.55078pt x 266.7988pt.
+
+
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-\openout3 = `tutorial.3.pyg'.
+[22] [23 <./images/question_1_020_prep_k_choice_console_output.png>]
+Overfull \hbox (17.56938pt too wide) in paragraph at lines 551--553
+\OT1/cmr/m/n/12 clus-ter was pro-duced by ex-ported func-tion \OT1/cmr/m/it/12 
+ques-tion[]1[]024[]analysis[]charts[]dendrogram\OT1/cmr/m/n/12 ,
+ []
+
+[24 <./images/question_1_021_prep_algorithm_choice_console_ouput.png>]
+<./images/question_1_024_analysis_charts_dendrogram.pdf, id=158, 614.295pt x 79
+4.97pt>
+File: ./images/question_1_024_analysis_charts_dendrogram.pdf Graphic file (type
+ pdf)
+<use ./images/question_1_024_analysis_charts_dendrogram.pdf>
+Package pdftex.def Info: ./images/question_1_024_analysis_charts_dendrogram.pdf
+  used on input line 557.
+(pdftex.def)             Requested size: 430.00356pt x 556.4752pt.
+
+Overfull \hbox (10.83842pt too wide) in paragraph at lines 557--558
+ [][] 
+ []
 
 
-(./_minted-tutorial.3/9A9A97C5293435A95CE5D238367D5A2E7B9A0CCEF41BCBC2BC2038A82
-AFC5A75.pygtex [13])
-\openout3 = `tutorial.3.pyg'.
+Overfull \hbox (0.12622pt too wide) in paragraph at lines 574--576
+\OT1/cmr/m/n/12 The ex-ported func-tion \OT1/cmr/m/it/12 ques-tion[]1[]026[]ana
+lysis[]kmeans \OT1/cmr/m/n/12 ran K-means mul-ti-ple times
+ []
+
+<./images/question_1_027_analysis_charts_sum_squares.pdf, id=159, 614.295pt x 7
+94.97pt>
+File: ./images/question_1_027_analysis_charts_sum_squares.pdf Graphic file (typ
+e pdf)
+<use ./images/question_1_027_analysis_charts_sum_squares.pdf>
+Package pdftex.def Info: ./images/question_1_027_analysis_charts_sum_squares.pd
+f  used on input line 580.
+(pdftex.def)             Requested size: 430.00356pt x 556.4752pt.
+
+Overfull \hbox (10.83842pt too wide) in paragraph at lines 580--581
+ [][] 
+ []
+
+<./images/question_1_032_eval_charts_hierarchical_latitude.pdf, id=160, 614.295
+pt x 794.97pt>
+File: ./images/question_1_032_eval_charts_hierarchical_latitude.pdf Graphic fil
+e (type pdf)
+<use ./images/question_1_032_eval_charts_hierarchical_latitude.pdf>
+Package pdftex.def Info: ./images/question_1_032_eval_charts_hierarchical_latit
+ude.pdf  used on input line 604.
+(pdftex.def)             Requested size: 430.00356pt x 556.4752pt.
+
+Overfull \hbox (10.83842pt too wide) in paragraph at lines 604--605
+ [][] 
+ []
+
+[25] [26 <./images/question_1_024_analysis_charts_dendrogram.pdf>] [27 <./image
+s/question_1_027_analysis_charts_sum_squares.pdf>] [28 <./images/question_1_032
+_eval_charts_hierarchical_latitude.pdf>]
+<./images/question_1_033_eval_charts_hier_latitude_longitude_hours_sun.png, id=
+190, 1634.105pt x 1401.235pt>
+File: ./images/question_1_033_eval_charts_hier_latitude_longitude_hours_sun.png
+ Graphic file (type png)
+<use ./images/question_1_033_eval_charts_hier_latitude_longitude_hours_sun.png>
+
+Package pdftex.def Info: ./images/question_1_033_eval_charts_hier_latitude_long
+itude_hours_sun.png  used on input line 620.
+(pdftex.def)             Requested size: 562.58324pt x 560.48409pt.
+
+Overfull \hbox (143.4181pt too wide) in paragraph at lines 620--621
+ [][] 
+ []
+
+<./images/question_1_034_eval_charts_hier_latitude_longitude_rain_mm.png, id=19
+2, 1634.105pt x 1401.235pt>
+File: ./images/question_1_034_eval_charts_hier_latitude_longitude_rain_mm.png G
+raphic file (type png)
+<use ./images/question_1_034_eval_charts_hier_latitude_longitude_rain_mm.png>
+Package pdftex.def Info: ./images/question_1_034_eval_charts_hier_latitude_long
+itude_rain_mm.png  used on input line 628.
+(pdftex.def)             Requested size: 562.58324pt x 560.48409pt.
+
+Overfull \hbox (143.4181pt too wide) in paragraph at lines 628--629
+ [][] 
+ []
+
+<./images/question_1_035_eval_charts_hier_latitude_longitude_max_temp.png, id=1
+94, 1634.105pt x 1401.235pt>
+File: ./images/question_1_035_eval_charts_hier_latitude_longitude_max_temp.png 
+Graphic file (type png)
+<use ./images/question_1_035_eval_charts_hier_latitude_longitude_max_temp.png>
+Package pdftex.def Info: ./images/question_1_035_eval_charts_hier_latitude_long
+itude_max_temp.png  used on input line 636.
+(pdftex.def)             Requested size: 562.58324pt x 560.48409pt.
+
+Overfull \hbox (143.4181pt too wide) in paragraph at lines 636--637
+ [][] 
+ []
+
+<./images/question_1_036_eval_charts_hier_latitude_longitude_min_temp.png, id=1
+96, 1634.105pt x 1401.235pt>
+File: ./images/question_1_036_eval_charts_hier_latitude_longitude_min_temp.png 
+Graphic file (type png)
+<use ./images/question_1_036_eval_charts_hier_latitude_longitude_min_temp.png>
+Package pdftex.def Info: ./images/question_1_036_eval_charts_hier_latitude_long
+itude_min_temp.png  used on input line 644.
+(pdftex.def)             Requested size: 562.58324pt x 560.48409pt.
+
+Overfull \hbox (143.4181pt too wide) in paragraph at lines 644--645
+ [][] 
+ []
+
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 663.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 665.
 
 
-(./_minted-tutorial.3/A854FF80EB9C040BEF81AA44A5F5E9C6E1A99BB315655138CA0560A60
-95C1B63.pygtex) [14]
-\openout3 = `tutorial.3.pyg'.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 665.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 665.
 
 
-(./_minted-tutorial.3/AC446EE3E5BA4593BAF875822FA962A27B9A0CCEF41BCBC2BC2038A82
-AFC5A75.pygtex)
-\openout3 = `tutorial.3.pyg'.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 665.
+ [29] [30 <./images/question_1_033_eval_charts_hier_latitude_longitude_hours_su
+n.png>] [31 <./images/question_1_034_eval_charts_hier_latitude_longitude_rain_m
+m.png>] [32 <./images/question_1_035_eval_charts_hier_latitude_longitude_max_te
+mp.png>] [33 <./images/question_1_036_eval_charts_hier_latitude_longitude_min_t
+emp.png>] [34
+
+]
+<./images/question_2_003_eda_charts_weather_features.pdf, id=228, 614.295pt x 7
+94.97pt>
+File: ./images/question_2_003_eda_charts_weather_features.pdf Graphic file (typ
+e pdf)
+<use ./images/question_2_003_eda_charts_weather_features.pdf>
+Package pdftex.def Info: ./images/question_2_003_eda_charts_weather_features.pd
+f  used on input line 755.
+(pdftex.def)             Requested size: 430.00356pt x 556.4752pt.
+
+Overfull \hbox (10.83842pt too wide) in paragraph at lines 755--756
+ [][] 
+ []
 
 
-(./_minted-tutorial.3/7499F167450BB017BB13DCA79CC25C39E1A99BB315655138CA0560A60
-95C1B63.pygtex)
-\openout3 = `tutorial.3.pyg'.
+Overfull \hbox (44.31473pt too wide) in paragraph at lines 762--771
+ [][] 
+ []
 
+[35] [36 <./images/question_2_003_eda_charts_weather_features.pdf>] [37]
+[38
 
-(./_minted-tutorial.3/39DE256243B2C72110051365687558EE7B9A0CCEF41BCBC2BC2038A82
-AFC5A75.pygtex)
-\openout3 = `tutorial.3.pyg'.
+]
+<./images/question_3_005_eda_charts_wellbeing_by_region.png, id=246, 819.06pt x
+ 702.625pt>
+File: ./images/question_3_005_eda_charts_wellbeing_by_region.png Graphic file (
+type png)
+<use ./images/question_3_005_eda_charts_wellbeing_by_region.png>
+Package pdftex.def Info: ./images/question_3_005_eda_charts_wellbeing_by_region
+.png  used on input line 954.
+(pdftex.def)             Requested size: 450.48439pt x 386.44493pt.
 
+Overfull \hbox (31.31926pt too wide) in paragraph at lines 954--955
+ [][] 
+ []
 
-(./_minted-tutorial.3/432D141D64CD3EF428E5198EF4B1E4BEE1A99BB315655138CA0560A60
-95C1B63.pygtex)
-\openout3 = `tutorial.3.pyg'.
+[39] [40 <./images/question_3_005_eda_charts_wellbeing_by_region.png>] [41]
+[42] [43] [44
 
-
-(./_minted-tutorial.3/3E96F9D4FC92D3DD0F10F5BB71081F377B9A0CCEF41BCBC2BC2038A82
-AFC5A75.pygtex)
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/533C8FCCFB11F5A98B87E597DF2BFE55E1A99BB315655138CA0560A60
-95C1B63.pygtex)
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/EBB9806DFD718EDFAF0D42B60FB4315E7B9A0CCEF41BCBC2BC2038A82
-AFC5A75.pygtex [15
-
-])
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/E82AC3156EABBCA4B54018E4AFE771D0E1A99BB315655138CA0560A60
-95C1B63.pygtex)
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/BACA5AE7FC018AED022740F5EA3A26247B9A0CCEF41BCBC2BC2038A82
-AFC5A75.pygtex)
-\openout3 = `tutorial.3.pyg'.
-
-
-(./_minted-tutorial.3/425DED6795516E4177ED600BA798829CE1A99BB315655138CA0560A60
-95C1B63.pygtex) [16] (./tutorial.3.bbl
+] (./tutorial.3.bbl
 Underfull \hbox (badness 5231) in paragraph at lines 10--13
 []\OT1/cmr/m/n/12 ``pids.wellbeing.weather.'' $\OT1/cmtt/m/n/12 https : / / git
 hub . com / b136325 / pids . wellbeing .
@@ -1630,34 +1664,47 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--38
  github . io /
  []
 
-) [17
+) [45
 
-] [18
+] [46
 
-] [19] [20] (./tutorial.3.aux)
+] [47]
+<./images/question_1_001_results.png, id=278, 983.675pt x 301.125pt>
+File: ./images/question_1_001_results.png Graphic file (type png)
+<use ./images/question_1_001_results.png>
+Package pdftex.def Info: ./images/question_1_001_results.png  used on input lin
+e 1053.
+(pdftex.def)             Requested size: 688.56781pt x 210.78606pt.
 
-LaTeX Warning: There were multiply-defined labels.
+Overfull \hbox (269.40268pt too wide) in paragraph at lines 1053--1054
+ [][] 
+ []
 
-runsystem(rm tutorial.3.pyg)...executed.
-
- ) 
+[48 <./images/question_1_001_results.png>] (./tutorial.3.aux) ) 
 Here is how much of TeX's memory you used:
- 28258 strings out of 492649
- 558678 string characters out of 6129622
- 610503 words of memory out of 5000000
- 31522 multiletter control sequences out of 15000+600000
- 537916 words of font info for 50 fonts, out of 8000000 for 9000
+ 29867 strings out of 492649
+ 571220 string characters out of 6129622
+ 707771 words of memory out of 5000000
+ 33264 multiletter control sequences out of 15000+600000
+ 539950 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,8n,54p,10379b,358s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
-></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pf
-b></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-</usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><
-/usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on tutorial.3.pdf (23 pages, 102522 bytes).
+ 55i,9n,92p,10379b,1748s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texl
+ive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texli
+ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texliv
+e/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/local/texli
+ve/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texliv
+e/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive
+/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2
+018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/201
+8/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2018/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2018/t
+exmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on tutorial.3.pdf (52 pages, 1300871 bytes).
 PDF statistics:
- 101 PDF objects out of 1000 (max. 8388607)
- 70 compressed objects within 1 object stream
+ 319 PDF objects out of 1000 (max. 8388607)
+ 200 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 171 words of extra memory for PDF output out of 10000 (max. 10000000)
 

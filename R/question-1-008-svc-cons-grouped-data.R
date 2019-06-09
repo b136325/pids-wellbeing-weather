@@ -32,14 +32,14 @@ question_1_008_svc_cons_grouped_data <- function(
 #                                                  #
 ####################################################
 group_by_variable <- function(
-  data_frame,
+  df,
   group_by_variable_name
 ) {
-  data_frame %>%
+  df %>%
     group_by(
       !!sym(group_by_variable_name)
     ) %>%
-    summarize(
+    summarise(
       hours_sun = mean(hours_sun),
       latitude = min(latitude),
       longitude = min(longitude),

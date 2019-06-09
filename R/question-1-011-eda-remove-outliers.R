@@ -11,27 +11,26 @@ question_1_011_eda_remove_outliers <- function(
   group_by_variable_name = "weather_station_name",
   scale = TRUE
 ) {
-  data_frame <- df
-  data_frame_updated_hours_sun <-
+  df_updated_hours_sun <-
     replace_outliers_with_mean_all_weather_stations(
-      data_frame,
+      df,
       "hours_sun"
     )
-  data_frame$hours_sun <- data_frame_updated_hours_sun$hours_sun
-  data_frame_updated_rain_mm <-
+  df$hours_sun <- df_updated_hours_sun$hours_sun
+  df_updated_rain_mm <-
     replace_outliers_with_mean_all_weather_stations(
-      data_frame,
+      df,
       "rain_mm"
     )
-  data_frame$rain_mm <- data_frame_updated_rain_mm$rain_mm
-  data_frame <- group_by_variable(
-    data_frame,
+  df$rain_mm <- df_updated_rain_mm$rain_mm
+  df <- group_by_variable(
+    df,
     group_by_variable_name
   )
   if (scale) {
-    data_frame <- rescale_data_frame(data_frame)
+    df <- rescale_data_frame(df)
   }
-  data_frame
+  df
 }
 ####################################################
 #                                                  #
@@ -73,37 +72,37 @@ replace_outliers_with_mean <- function(feature_values) {
 }
 
 replace_outliers_with_mean_all_weather_stations <- function(
-  data_frame,
+  df,
   feature_name
 ) {
   unique_weather_stations <- levels(
     as.factor(
-      data_frame$weather_station_name
+      df$weather_station_name
     )
   )
-  data_frame_updated <- data_frame[FALSE, ]
+  df_updated <- df[FALSE, ]
   for (unique_weather_station in unique_weather_stations) {
-    data_frame_updated <- bind_rows(
+    df_updated <- bind_rows(
       replace_outliers_with_mean_by_weather_station(
-        data_frame,
+        df,
         feature_name,
         unique_weather_station
       ),
-      data_frame_updated
+      df_updated
     )
   }
-  if (nrow(data_frame) != nrow(data_frame_updated)) {
-    stop("Unequal data_frame lengths.")
+  if (nrow(df) != nrow(df_updated)) {
+    stop("Unequal df lengths.")
   }
-  data_frame_updated
+  df_updated
 }
 
 replace_outliers_with_mean_by_weather_station <- function(
-  data_frame,
+  df,
   feature_name,
   unique_weather_station
 ) {
-  data_frame %>%
+  df %>%
     filter(
       weather_station_name == unique_weather_station
     ) %>%

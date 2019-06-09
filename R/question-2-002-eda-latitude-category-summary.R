@@ -1,4 +1,5 @@
 library(dplyr)
+library(xtable)
 ####################################################
 #                                                  #
 # EXPORTED FUNCTION                                #
@@ -7,7 +8,7 @@ library(dplyr)
 #' question_2_002_eda_latitude_category_summary
 #' @export
 question_2_002_eda_latitude_category_summary <- function(
-  df = question_2_001_append_latitude_categories()
+  df = question_2_001_bu_append_latitude_categories()
 ) {
   results <- list()
   results$nrows <- df %>%
@@ -15,7 +16,7 @@ question_2_002_eda_latitude_category_summary <- function(
     tally()
   results$means <- df %>%
     group_by(latitude_category) %>%
-    summarize(
+    summarise(
       hours_sun = mean(hours_sun),
       rain_mm = mean(rain_mm),
       temp_max_degrees_c = mean(temp_max_degrees_c),
@@ -27,4 +28,22 @@ question_2_002_eda_latitude_category_summary <- function(
       weather_station_name
     )
   results
+}
+
+#' question_2_002_eda_latitude_category_summary_latex
+#' @export
+question_2_002_eda_latitude_category_summary_latex <- function(
+  res_list = question_2_002_eda_latitude_category_summary()
+) {
+  res <- list()
+  res$nrows <- xtable(
+    res_list$nrows
+  )
+  res$means <- xtable(
+    res_list$means
+  )
+  res$weather_station <- xtable(
+    res_list$weather_stations
+  )
+  res
 }

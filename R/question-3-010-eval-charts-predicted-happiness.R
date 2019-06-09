@@ -4,11 +4,14 @@
 #                                                  #
 ####################################################
 #' question_3_010_eval_charts_predicted_happiness
+#' TODO Fix error
 #' @export
 question_3_010_eval_charts_predicted_happiness <- function(
   df = question_3_008_analysis_regression_test()
 ) {
-  df <- arrange(df, desc(`slatitude`))
+  # Begin Exclude Linting
+  df <- arrange(df, desc(`latitude`))
+  # End Exclude Linting
   df %>%
     # Begin Exclude Linting
     generate_latitude_charts_with_cluster_colour(

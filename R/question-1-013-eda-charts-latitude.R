@@ -2,6 +2,7 @@ library(dplyr)
 library(ggplot2)
 # Begin Exclude Linting
 library(gridExtra)
+library(Hmisc)
 # End Exclude Linting
 ####################################################
 #                                                  #
@@ -15,11 +16,10 @@ library(gridExtra)
 #' question_1_013_eda_charts_latitude()
 #' @export
 question_1_013_eda_charts_latitude <- function() {
+  df <- question_1_011_eda_remove_outliers(scale = FALSE)
   generate_latitude_charts(
-    question_1_011_eda_remove_outliers(
-      scale = FALSE
-    ),
-    c(
+    df = df,
+    x_variable_names = c(
       "hours_sun",
       "rain_mm",
       "temp_max_degrees_c",
@@ -33,42 +33,46 @@ question_1_013_eda_charts_latitude <- function() {
 # NON EXPORTED FUNCTIONS (A-Z)                     #
 #                                                  #
 ####################################################
-#' generate_latitude_chart
-#' 
-#' Generates a single scatterplot chart from a data_frame, comparing "x_variable_name" with "latitude".
-#' @param data_frame A data_frame with "x_variable_name" and "latitude" features.
-#' @param x_variable_name A string defining the name of the feature to be represent on the x-axis.
-#' @param cluster_variable_name A string defining the clustering feature. Not being used at present.
-#' @examples
-#' generate_latitude_chart(data_frame = my_data_frame, x_variable_name = "x" cluster_variable_name = "region")
-generate_latitude_chart <- function(
-  data_frame,
+generate_latitude_chart_without_grouping <- function(
+  df,
   x_variable_name,
-  cluster_variable_name,
   y_variable_name = "latitude"
 ) {
-  data_frame %>%
-    ggplot(
-      aes(
-        x = !!sym(x_variable_name),
-        y = !!sym(y_variable_name)
-      )
-    ) + geom_point() + ylim(50, 60)
+  x_axis_title <- capitalize(
+    str_replace_all(
+      x_variable_name,
+      "_",
+      " "
+    )
+  )
+  y_axis_title <- capitalize(y_variable_name)
+  ggplot(
+    df,
+    aes(
+      x = !!sym(x_variable_name),
+      y = !!sym(y_variable_name)
+    )
+  ) +
+  geom_point() +
+  ylim(50, 60) +
+  labs(
+    x = x_axis_title,
+    y = y_axis_title
+  )
 }
 
 generate_latitude_charts <- function(
-  data_frame,
+  df,
   x_variable_names,
-  cluster_variable_name,
-  generate_chart = generate_latitude_chart
+  colour_variable_name = "weather_station_name",
+  generate_chart = generate_latitude_chart_without_grouping
 ) {
   charts <- list()
   i <- 1
   for (x_variable_name in x_variable_names) {
     charts[[i]] <- generate_chart(
-      data_frame,
-      x_variable_name,
-      cluster_variable_name
+      df = df,
+      x_variable_name = x_variable_name
     )
     i <- i + 1
   }

@@ -5,7 +5,10 @@
 \alias{question_1_036_eval_charts_hier_latitude_longitude_min_temp}
 \title{question_1_036_eval_charts_hier_latitude_longitude_min_temp}
 \usage{
-question_1_036_eval_charts_hier_latitude_longitude_min_temp()
+
+  question_1_036_eval_charts_hier_latitude_longitude_min_temp(df = question_1_025_analysis_attach_pruned_cluster_values(),
+  x_axis_title = "Min temperature (degrees c)",
+  y_axis_title = "Longitude", z_axis_title = "Latitude")
 }
 \description{
 question_1_036_eval_charts_hier_latitude_longitude_min_temp

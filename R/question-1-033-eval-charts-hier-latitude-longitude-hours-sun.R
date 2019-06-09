@@ -8,24 +8,28 @@ library(plotly)
 ####################################################
 #' question_1_033_eval_charts_hier_latitude_longitude_hours_sun
 #' @export
-question_1_033_eval_charts_hier_latitude_longitude_hours_sun <- function() {
+question_1_033_eval_charts_hier_latitude_longitude_hours_sun <- function(
+  df = question_1_025_analysis_attach_pruned_cluster_values(),
+  x_axis_title = "Hours sunshine",
+  y_axis_title = "Longitude",
+  z_axis_title = "Latitude"
+) {
   plot_ly(
-    question_1_025_analysis_attach_pruned_cluster_values(),
+    df,
     x = ~hours_sun,
     y = ~longitude,
     z = ~latitude,
     marker = list(
-      color = ~hours_sun,
-      colorscale = c("#FFE1A1", "#683531"),
-      showscale = TRUE
+      color = ~cluster,
+      ccolors = ~setNames(cluster, cluster)
     )
   ) %>%
   add_markers() %>%
   layout(
     scene = list(
-      xaxis = list(title = "Hours sunshine"),
-      yaxis = list(title = "Longitude"),
-      zaxis = list(title = "Latitude")
+      xaxis = list(title = x_axis_title),
+      yaxis = list(title = y_axis_title),
+      zaxis = list(title = z_axis_title)
     )
   )
 }
