@@ -2,7 +2,7 @@ Package: pids.wellbeing.weather
 Title: Practical Introduction to Data Science: Wellbing Weather
 Authors@R: person("Joe", "Strachan", email = "s1888637@ed.ac.uk",
                   role = c("aut", "cre"))
-Version: 0.7.0
+Version: 0.7.1
 Description: An R based project for Assessment 3 from Practical Introduction to Data Science, University of Edinburgh, Scotland.
 License: What license is it under?
 Encoding: UTF-8
@@ -25,7 +25,6 @@ Imports:
     magrittr,
     NbClust,
     plotly,
-    plyr,
     readr,
     roxygen2,
     rlang,

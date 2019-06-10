@@ -10,6 +10,3 @@ question_1_014_eda_charts_latitude_longitude_hours_sun()
 \description{
 Generate scatterplot charts comparing hours_sun with both latitude and longitude.
 }
-\examples{
-question_1_014_eda_charts_latitude_longitude_hours_sun()
-}

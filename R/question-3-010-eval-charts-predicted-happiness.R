@@ -1,3 +1,4 @@
+library(magrittr)
 ####################################################
 #                                                  #
 # EXPORTED FUNCTIONS (A-Z                          #
@@ -15,7 +16,7 @@ question_3_010_eval_charts_predicted_happiness <- function(
   df %>%
     # Begin Exclude Linting
     generate_latitude_charts_with_cluster_colour(
-    # End Exclude Linting  
+    # End Exclude Linting
       c(
         "hours_sun",
         "rain_mm",

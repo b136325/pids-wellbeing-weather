@@ -1,4 +1,5 @@
 library(dplyr)
+library(magrittr)
 library(plotly)
 ####################################################
 #                                                  #
@@ -6,9 +7,9 @@ library(plotly)
 #                                                  #
 ####################################################
 #' question_1_014_eda_charts_latitude_longitude_hours_sun
-#' 
+#'
 #' Generate scatterplot charts comparing hours_sun with both latitude and longitude.
-#' @examples
+#' @usage
 #' question_1_014_eda_charts_latitude_longitude_hours_sun()
 #' @export
 question_1_014_eda_charts_latitude_longitude_hours_sun <- function() {

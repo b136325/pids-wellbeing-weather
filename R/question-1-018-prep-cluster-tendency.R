@@ -1,19 +1,20 @@
-library(factoextra)
 library(dplyr)
+library(factoextra)
+library(magrittr)
 ####################################################
 #                                                  #
 # EXPORTED FUNCTION                                #
 #                                                  #
 ####################################################
 #' question_1_018_prep_cluster_tendency
-#' 
+#'
 #' Calculate the Hopkins cluster tendency.
-#' 
+#'
 #' @param df An OPTIONAL data frame containing weather feature data,
 #'
 #' @param show_chart An OPTIONAL boolean flag, incdicating whether or not a chart should be generated.
-#' 
-#' @return A list describing the Hopkins cluster tendency                         
+#'
+#' @return A list describing the Hopkins cluster tendency
 #' @usage pids.wellbeing.weather::question_1_018_prep_cluster_tendency()
 #' @export
 question_1_018_prep_cluster_tendency <- function(

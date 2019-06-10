@@ -1,5 +1,6 @@
 library(class)
 library(dplyr)
+library(magrittr)
 ####################################################
 #                                                  #
 # EXPORTED FUNCTION                                #

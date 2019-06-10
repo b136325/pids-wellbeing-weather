@@ -1,4 +1,5 @@
 library(dplyr)
+library(magrittr)
 library(xtable)
 ####################################################
 #                                                  #

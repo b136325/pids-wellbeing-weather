@@ -5,11 +5,8 @@
 \alias{question_1_017_eda_charts_latitude_longitude_min_temp}
 \title{question_1_017_eda_charts_latitude_longitude_max_temp}
 \usage{
-question_1_017_eda_charts_latitude_longitude_min_temp()
+question_1_017_eda_charts_latitude_longitude_max_temp()
 }
 \description{
 Generate scatterplot charts comparing max_temp with both latitude and longitude.
-}
-\examples{
-question_1_017_eda_charts_latitude_longitude_max_temp()
 }

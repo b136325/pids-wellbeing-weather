@@ -1,5 +1,6 @@
 library(dplyr)
 library(ggplot2)
+library(magrittr)
 library(plotly)
 ####################################################
 #                                                  #
@@ -7,9 +8,9 @@ library(plotly)
 #                                                  #
 ####################################################
 #' question_1_016_eda_charts_latitude_longitude_max_temp
-#' 
+#'
 #' Generate scatterplot charts comparing rain mm with both latitude and longitude.
-#' @examples
+#' @usage
 #' question_1_016_eda_charts_latitude_longitude_max_temp()
 #' @export
 question_1_016_eda_charts_latitude_longitude_max_temp <- function() {

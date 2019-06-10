@@ -1,5 +1,6 @@
 library(dplyr)
 library(ggplot2)
+library(magrittr)
 library(plotly)
 ####################################################
 #                                                  #
@@ -7,9 +8,9 @@ library(plotly)
 #                                                  #
 ####################################################
 #' question_1_017_eda_charts_latitude_longitude_max_temp
-#' 
+#'
 #' Generate scatterplot charts comparing max_temp with both latitude and longitude.
-#' @examples
+#' @usage
 #' question_1_017_eda_charts_latitude_longitude_max_temp()
 #' @export
 question_1_017_eda_charts_latitude_longitude_min_temp <- function() {

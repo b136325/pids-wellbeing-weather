@@ -9,6 +9,3 @@ question_1_013_eda_charts_latitude()
 \description{
 Generate scatterplot charts comparing weather variables with latitude.
 }
-\examples{
-question_1_013_eda_charts_latitude()
-}

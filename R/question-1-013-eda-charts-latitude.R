@@ -10,9 +10,9 @@ library(Hmisc)
 #                                                  #
 ####################################################
 #' question_1_013_eda_charts_latitude
-#' 
+#'
 #' Generate scatterplot charts comparing weather variables with latitude.
-#' @examples
+#' @usage
 #' question_1_013_eda_charts_latitude()
 #' @export
 question_1_013_eda_charts_latitude <- function() {

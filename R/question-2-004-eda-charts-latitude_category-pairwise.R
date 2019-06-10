@@ -2,6 +2,7 @@ library(dplyr)
 # Begin Exclude Linting
 library(GGally)
 # End Exclude Linting
+library(magrittr)
 ####################################################
 #                                                  #
 # EXPORTED FUNCTIONS                               #

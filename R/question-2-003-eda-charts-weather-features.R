@@ -3,6 +3,7 @@ library(ggplot2)
 # Begin Exclude Linting
 library(gridExtra)
 # End Exclude Linting
+library(magrittr)
 ####################################################
 #                                                  #
 # EXPORTED FUNCTIONS (A-Z                          #

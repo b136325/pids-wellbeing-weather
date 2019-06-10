@@ -10,6 +10,3 @@ question_1_016_eda_charts_latitude_longitude_max_temp()
 \description{
 Generate scatterplot charts comparing rain mm with both latitude and longitude.
 }
-\examples{
-question_1_016_eda_charts_latitude_longitude_max_temp()
-}

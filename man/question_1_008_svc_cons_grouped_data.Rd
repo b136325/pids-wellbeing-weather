@@ -4,9 +4,9 @@
 \alias{question_1_008_svc_cons_grouped_data}
 \title{question_1_008_svc_cons_grouped_data}
 \usage{
-
-  question_1_008_svc_cons_grouped_data(group_by_variable_name = "weather_station_name",
-  scale = TRUE)
+question_1_008_svc_cons_grouped_data()
+question_1_008_svc_cons_grouped_data(scale = FALSE)
+question_1_008_svc_cons_grouped_data(group_by_variable_name = "some_variable")
 }
 \arguments{
 \item{group_by_variable_name}{Defines the group by variable. String. Defaults to "weather_station_name"}
@@ -15,9 +15,4 @@
 }
 \description{
 question_1_008_svc_cons_grouped_data
-}
-\examples{
-question_1_008_svc_cons_grouped_data()
-question_1_008_svc_cons_grouped_data(scale = FALSE)
-question_1_008_svc_cons_grouped_data(group_by_variable_name = "some_variable")
 }
