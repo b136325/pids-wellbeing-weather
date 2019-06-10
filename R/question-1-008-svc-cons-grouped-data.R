@@ -8,8 +8,18 @@ library(scales)
 #                                                  #
 ####################################################
 #' question_1_008_svc_cons_grouped_data
-#' @param group_by_variable_name Defines the group by variable. String. Defaults to "weather_station_name"
-#' @param scale Whether or not the data should be scaled. Boolean. Defaults to TRUE.
+#'
+#'A function that returns 'consistently correct' data grouped by weather station.
+#'
+#' @param df An OPTIONAL data frame.
+#'           Deafults to load_technically_correct_data_frame().
+#'
+#' @param group_by_variable_name Defines the group by variable. String.
+#'
+#'        Defaults to "weather_station_name"
+#'
+#' @param scale Whether or not the data should be scaled. Boolean.
+#'              Defaults to TRUE.
 #' @usage
 #' question_1_008_svc_cons_grouped_data()
 #' question_1_008_svc_cons_grouped_data(scale = FALSE)

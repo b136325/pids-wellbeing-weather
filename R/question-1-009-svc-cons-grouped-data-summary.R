@@ -6,7 +6,14 @@ library(scales)
 #                                                  #
 ####################################################
 #' question_1_009_svc_cons_grouped_data_summary
-#' @param group_by_variable_name Defines the group by variable. String. Defaults to "weather_station_name"
+#'
+#' A function that returns list of both 'non_scaled' and 'scaled' 'consistently correct' data grouped by weather station.
+#'
+#' @param group_by_variable_name Defines the group by variable. String.
+#'                               Defaults to "weather_station_name"
+#'
+#' @return A list containing both 'non_scaled' and 'scaled' 'consistently correct' data.
+#'
 #' @usage
 #' question_1_009_svc_cons_grouped_data_summary()
 #' question_1_009_svc_cons_grouped_data_summary(scale = FALSE)
@@ -16,19 +23,17 @@ question_1_009_svc_cons_grouped_data_summary <- function(
   group_by_variable_name = "weather_station_name"
 ) {
   results <- list()
-  data_frame <- question_1_008_svc_cons_grouped_data(
+  df <- question_1_008_svc_cons_grouped_data(
     group_by_variable_name,
     scale = FALSE
   )
-  results$non_scaled <- build_summary(
-    data_frame
-  )
-  data_frame <- question_1_008_svc_cons_grouped_data(
+  results$non_scaled <- build_summary(df)
+  df <- question_1_008_svc_cons_grouped_data(
     group_by_variable_name,
     scale = TRUE
   )
   results$scaled <- build_summary(
-    data_frame
+    df
   )
   results
 }

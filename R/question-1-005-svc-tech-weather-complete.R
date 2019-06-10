@@ -15,6 +15,7 @@ library(readr)
 #'                        Defaults to DIR_TECHNICALLY_CORRECT_WEATHER_COMPLETE defined within constants.dirs.R.
 #'
 #' @param force An optional flag idicating whether or not the destination flags should be overwritten.
+#'              Defaults to TRUE.
 #'
 #' @return A list describing the success or failure of each file.
 #' @usage pids.wellbeing.weather::question_1_005_svc_tech_weather_complete()

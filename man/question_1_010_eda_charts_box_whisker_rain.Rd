@@ -4,8 +4,11 @@
 \alias{question_1_010_eda_charts_box_whisker_rain}
 \title{question_1_010_eda_charts_box_whisker_rain}
 \usage{
-question_1_010_eda_charts_box_whisker_rain()
+pids.wellbeing.weather::question_1_010_eda_charts_box_whisker_rain()
+}
+\value{
+A ggplot2 object containing the 'box and whisker' plot.
 }
 \description{
-question_1_010_eda_charts_box_whisker_rain
+A functions that returns a 'box and whisker' plot for 'rain' per each weather station.
 }

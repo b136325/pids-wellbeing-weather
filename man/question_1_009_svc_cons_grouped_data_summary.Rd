@@ -9,8 +9,12 @@ question_1_009_svc_cons_grouped_data_summary(scale = FALSE)
 question_1_009_svc_cons_grouped_data_summary(group_by_variable_name = "some_variable")
 }
 \arguments{
-\item{group_by_variable_name}{Defines the group by variable. String. Defaults to "weather_station_name"}
+\item{group_by_variable_name}{Defines the group by variable. String.
+Defaults to "weather_station_name"}
+}
+\value{
+A list containing both 'non_scaled' and 'scaled' 'consistently correct' data.
 }
 \description{
-question_1_009_svc_cons_grouped_data_summary
+A function that returns list of both 'non_scaled' and 'scaled' 'consistently correct' data grouped by weather station.
 }

@@ -9,10 +9,15 @@ question_1_008_svc_cons_grouped_data(scale = FALSE)
 question_1_008_svc_cons_grouped_data(group_by_variable_name = "some_variable")
 }
 \arguments{
-\item{group_by_variable_name}{Defines the group by variable. String. Defaults to "weather_station_name"}
+\item{df}{An OPTIONAL data frame.
+Deafults to load_technically_correct_data_frame().}
 
-\item{scale}{Whether or not the data should be scaled. Boolean. Defaults to TRUE.}
+\item{group_by_variable_name}{Defines the group by variable. String.\preformatted{   Defaults to "weather_station_name"
+}}
+
+\item{scale}{Whether or not the data should be scaled. Boolean.
+Defaults to TRUE.}
 }
 \description{
-question_1_008_svc_cons_grouped_data
+A function that returns 'consistently correct' data grouped by weather station.
 }

@@ -13,7 +13,8 @@ Defaults to DIR_TECHNICALLY_CORRECT_WEATHER_DATAFRAME defined within constants.d
 \item{destination_dir}{An OPTIONAL string describing the destination dir.
 Defaults to DIR_TECHNICALLY_CORRECT_WEATHER_COMPLETE defined within constants.dirs.R.}
 
-\item{force}{An optional flag idicating whether or not the destination flags should be overwritten.}
+\item{force}{An optional flag idicating whether or not the destination flags should be overwritten.
+Defaults to TRUE.}
 }
 \value{
 A list describing the success or failure of each file.

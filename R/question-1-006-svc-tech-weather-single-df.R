@@ -17,6 +17,7 @@ library(tidyr)
 #'                        Defaults to DIR_TECHNICALLY_CORRECT_ALL defined within constants.dirs.R.
 #'
 #' @param force An optional flag idicating whether or not the destination flags should be overwritten.
+#'              Defaults to TRUE.
 #'
 #' @return A list describing the success or failure of each file.
 #' @usage pids.wellbeing.weather::question_1_006_svc_tech_weather_single_df()

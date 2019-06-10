@@ -4,8 +4,11 @@
 \alias{question_1_010_eda_charts_box_whisker_hours_sun}
 \title{question_1_010_eda_charts_box_whisker_hours_sun}
 \usage{
-question_1_010_eda_charts_box_whisker_hours_sun()
+pids.wellbeing.weather::question_1_010_eda_charts_box_whisker_hours_sun()
+}
+\value{
+A ggplot2 object containing the 'box and whisker' plot.
 }
 \description{
-question_1_010_eda_charts_box_whisker_hours_sun
+A functions that returns a 'box and whisker' plot for 'hours of sunshine' per each weather station.
 }

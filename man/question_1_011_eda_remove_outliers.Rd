@@ -4,10 +4,22 @@
 \alias{question_1_011_eda_remove_outliers}
 \title{question_1_011_eda_remove_outliers}
 \usage{
+pids.wellbeing.weather::question_1_011_eda_remove_outliers()
+}
+\arguments{
+\item{df}{An OPTIONAL data frame.
+Defaults to the result of load_technically_correct_data_frame().}
 
-  question_1_011_eda_remove_outliers(df = load_technically_correct_data_frame(),
-  group_by_variable_name = "weather_station_name", scale = TRUE)
+\item{group_by_variable_name}{An OPTIONAL string describing the group_by feature.
+Defaults to "weather_station_name".}
+
+\item{scale}{An OPTIONAL boolean flag, indicating whther or not the results should be scaled.
+Defaults to TRUE.}
+}
+\value{
+Returns a data frame with the outliers removed.
 }
 \description{
-question_1_011_eda_remove_outliers
+A function that removed 'outliers' (greater than 1.5 * the inerquartile range)
+from the 'hours_sun' and the 'rain_mm" features.
 }

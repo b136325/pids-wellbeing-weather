@@ -9,6 +9,11 @@ library(Hmisc)
 #                                                  #
 ####################################################
 #' question_1_010_eda_charts_box_whisker_hours_sun
+#'
+#' A functions that returns a 'box and whisker' plot for 'hours of sunshine' per each weather station.
+#'
+#' @return A ggplot2 object containing the 'box and whisker' plot.
+#' @usage pids.wellbeing.weather::question_1_010_eda_charts_box_whisker_hours_sun()
 #' @export
 question_1_010_eda_charts_box_whisker_hours_sun <- function() {
   generate_box_whisker_chart_by_weather_station_name(
@@ -21,6 +26,11 @@ question_1_010_eda_charts_box_whisker_hours_sun <- function() {
 }
 
 #' question_1_010_eda_charts_box_whisker_rain
+#'
+#' A functions that returns a 'box and whisker' plot for 'rain' per each weather station.
+#'
+#' @return A ggplot2 object containing the 'box and whisker' plot.
+#' @usage pids.wellbeing.weather::question_1_010_eda_charts_box_whisker_rain()
 #' @export
 question_1_010_eda_charts_box_whisker_rain <- function() {
   generate_box_whisker_chart_by_weather_station_name(
@@ -33,6 +43,11 @@ question_1_010_eda_charts_box_whisker_rain <- function() {
 }
 
 #' question_1_010_eda_charts_box_whisker_max_temp
+#'
+#' A functions that returns a 'box and whisker' plot for 'max temp' per each weather station.
+#'
+#' @return A ggplot2 object containing the 'box and whisker' plot.
+#' @usage pids.wellbeing.weather::question_1_010_eda_charts_box_whisker_max_temp()
 #' @export
 question_1_010_eda_charts_box_whisker_max_temp <- function() {
   generate_box_whisker_chart_by_weather_station_name(
@@ -45,6 +60,11 @@ question_1_010_eda_charts_box_whisker_max_temp <- function() {
 }
 
 #' question_1_010_eda_charts_box_whisker_min_temp
+#'
+#' A functions that returns a 'box and whisker' plot for 'min temp' per each weather station.
+#'
+#' @return A ggplot2 object containing the 'box and whisker' plot.
+#' @usage pids.wellbeing.weather::question_1_010_eda_charts_box_whisker_min_temp()
 #' @export
 question_1_010_eda_charts_box_whisker_min_temp <- function() {
   generate_box_whisker_chart_by_weather_station_name(

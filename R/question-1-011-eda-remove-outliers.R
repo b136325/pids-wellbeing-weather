@@ -6,6 +6,22 @@ library(magrittr)
 #                                                  #
 ####################################################
 #' question_1_011_eda_remove_outliers
+#'
+#' A function that removed 'outliers' (greater than 1.5 * the inerquartile range)
+#' from the 'hours_sun' and the 'rain_mm" features.
+#'
+#' @param df An OPTIONAL data frame.
+#'           Defaults to the result of load_technically_correct_data_frame().
+#'
+#' @param group_by_variable_name An OPTIONAL string describing the group_by feature.
+#'                               Defaults to "weather_station_name".
+#'
+#' @param scale An OPTIONAL boolean flag, indicating whther or not the results should be scaled.
+#'              Defaults to TRUE.
+#'
+#' @return Returns a data frame with the outliers removed.
+#'
+#' @usage pids.wellbeing.weather::question_1_011_eda_remove_outliers()
 #' @export
 question_1_011_eda_remove_outliers <- function(
   df = load_technically_correct_data_frame(),
