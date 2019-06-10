@@ -1,4 +1,4 @@
-library("xtable")
+library(xtable)
 ####################################################
 #                                                  #
 # EXPORTED FUNCTIONS (A-Z                          #

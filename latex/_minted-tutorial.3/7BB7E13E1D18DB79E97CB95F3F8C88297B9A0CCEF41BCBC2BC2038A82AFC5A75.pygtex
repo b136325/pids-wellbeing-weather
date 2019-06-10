@@ -1,4 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n}{pids.wellbeing.weather}\PYG{o}{::}\PYG{n+nf}{question\PYGZus{}1\PYGZus{}021\PYGZus{}k\PYGZus{}means}\PYG{p}{()}
-\PYG{n}{pids.wellbeing.weather}\PYG{o}{::}\PYG{n}{question}\PYG{l+m}{\PYGZhy{}1\PYGZhy{}022}\PYG{o}{\PYGZhy{}}\PYG{n}{charts}\PYG{o}{\PYGZhy{}}\PYG{n}{sum}\PYG{o}{\PYGZhy{}}\PYG{n+nf}{squares}\PYG{p}{()}
-\end{Verbatim}

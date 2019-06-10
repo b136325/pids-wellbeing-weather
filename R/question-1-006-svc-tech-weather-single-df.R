@@ -6,18 +6,18 @@ library(tidyr)
 #                                                  #
 ####################################################
 #' question_1_006_svc_tech_weather_single_df
-#' 
+#'
 #' Convert the weather files into a delimited file format with a standard number of columns.
-#' 
+#'
 #' @param source_dir An OPTIONAL string describing the source dir.
 #'                   Defaults to DIR_TECHNICALLY_CORRECT_WEATHER_COMPLETE defined within constants.dirs.R.
 #'
 #' @param destination_dir An OPTIONAL string describing the destination dir.
 #'                        Defaults to DIR_TECHNICALLY_CORRECT_ALL defined within constants.dirs.R.
-#'  
+#'
 #' @param force An optional flag idicating whether or not the destination flags should be overwritten.
-#' 
-#' @return A list describing the success or failure of each file.                           
+#'
+#' @return A list describing the success or failure of each file.
 #' @usage pids.wellbeing.weather::question_1_006_svc_tech_weather_single_df()
 #' @export
 question_1_006_svc_tech_weather_single_df <- function(

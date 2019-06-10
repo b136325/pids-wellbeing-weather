@@ -5,16 +5,16 @@ library(stringr)
 #                                                  #
 ####################################################
 #' question_1_003_svc_tech_weather_dsv
-#' 
+#'
 #' Convert the weather files into a delimited file format with a standard number of columns.
-#' 
+#'
 #' @param destination_dir An OPTIONAL string describing the destination dir.
 #'                        Defaults to DIR_TECHNICALLY_CORRECT_WEATHER_DSV defined within constants.dirs.R.
-#'                                   
+#'
 #' @param source_dir An OPTIONAL string describing the source dir.
 #'                   Defaults to DIR_TECHNICALLY_CORRECT_WEATHER_TXT defined within constants.dirs.R.
-#'  
-#' @return A list describing the success or failure of each file.                           
+#'
+#' @return A list describing the success or failure of each file.
 #' @usage pids.wellbeing.weather::question_1_003_svc_tech_weather_dsv()
 #' @export
 question_1_003_svc_tech_weather_dsv <- function(

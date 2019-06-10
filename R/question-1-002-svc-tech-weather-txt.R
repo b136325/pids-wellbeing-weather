@@ -5,16 +5,16 @@ library(stringr)
 #                                                  #
 ####################################################
 #' question_1_002_svc_tech_weather_txt
-#' 
+#'
 #' Move the raw wether data into data/weather/stage-010-technically-correct-text and add a closing character.
-#' 
+#'
 #' @param destination_dir An OPTIONAL string describing the destination dir.
 #'                                   Defaults to DIR_TECHNICALLY_CORRECT_WEATHER_TXT defined within constants.dirs.R.
-#'                                   
+#'
 #' @param source_dir An OPTIONAL string describing the source dir.
 #'                                   Defaults to DIR_RAW_DATA_WEATHER defined within constants.dirs.R.
-#'  
-#' @return A list containing the names of the files that have been moved.                           
+#'
+#' @return A list containing the names of the files that have been moved.
 #' @usage pids.wellbeing.weather::question_1_002_technically_correct_weather_txt()
 #' @export
 question_1_002_svc_tech_weather_txt <- function(
